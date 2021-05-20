@@ -1,0 +1,15 @@
+{
+  "name": "wasm-barcode",
+  "collaborators": [
+    "MaitreRenard <tom.mounet@pm.me>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "wasm_barcode_bg.wasm",
+    "wasm_barcode.js",
+    "wasm_barcode.d.ts"
+  ],
+  "module": "wasm_barcode.js",
+  "types": "wasm_barcode.d.ts",
+  "sideEffects": false
+}
