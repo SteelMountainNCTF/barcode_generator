@@ -19,14 +19,25 @@ function ltrim(x) {
       }
     }
 
+    var = ltrim($1)
     if ($2 ~ /^[[:space:]]*=$/ && $3 ~ /(w2c_.[0-9]+|[0-9]+u);$/) {
-      v[ltrim($1)] = gensub(";", "", "g", ltrim($3))
-      print "  // v[" ltrim($1) "] = " v[ltrim($1)]
+      v[var] = gensub(";", "", "g", ltrim($3))
+      print "  // v[" var "] = " v[var]
+    } else if ($2 ~ /^[[:space:]]*[+\-*/|&]=$/ && $3 ~ /(w2c_.[0-9]+|[0-9]+u);$/ && v[var] != "") {
+      v[var] = v[var] " " gensub("&", "\\\\&", "g", gensub(/[[:space:]=]/, "", "g", $2)) " " gensub(";", "", "g", ltrim($3))
+      print "  // v[" var "] = " v[var]
+      gsub(/.=/, "=", $2)
+      gsub(ltrim($3), v[var], $3)
     } else {
-      print "  // clear " ltrim($1)
-      delete v[ltrim($1)]
+      print "  // clear " var
+      delete v[var]
     }
-  } else {
+  } else if ($1 ~ /^[[:space:]]*return$/ && $2 ~ /^[[:space:]]*w2c_.[0-9]+;$/) {
+    for (var in v) {
+      if (v[var] == "") continue;
+      gsub(var, v[var], $2)
+    }
+  } else if (ltrim($0) != "FUNC_EPILOGUE;") {
     # invalidate cache
     if (alen(v) > 0) {
       print "  // clear cache"

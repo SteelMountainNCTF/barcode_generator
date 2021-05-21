@@ -374,26 +374,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   w2c_l10 = i32_load((&w2c_memory), (u64)(w2c_l2) + 16u);
@@ -428,8 +428,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l24;
   // v[w2c_i2] = 961987163u
   w2c_i2 = 961987163u;
-  // clear w2c_i1
-  w2c_i1 += 961987163u;
+  // v[w2c_i1] = w2c_l24 + 961987163u
+  w2c_i1 = w2c_l24 + 961987163u
   // clear cache
   w2c_l21 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -439,8 +439,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l17;
   // v[w2c_i2] = 1508970993u
   w2c_i2 = 1508970993u;
-  // clear w2c_i1
-  w2c_i1 += 1508970993u;
+  // v[w2c_i1] = w2c_l17 + 1508970993u
+  w2c_i1 = w2c_l17 + 1508970993u
   // clear cache
   w2c_l22 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -450,8 +450,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l16;
   // v[w2c_i2] = 2453635748u
   w2c_i2 = 2453635748u;
-  // clear w2c_i1
-  w2c_i1 += 2453635748u;
+  // v[w2c_i1] = w2c_l16 + 2453635748u
+  w2c_i1 = w2c_l16 + 2453635748u
   // clear cache
   w2c_l23 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -461,8 +461,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l15;
   // v[w2c_i2] = 2870763221u
   w2c_i2 = 2870763221u;
-  // clear w2c_i1
-  w2c_i1 += 2870763221u;
+  // v[w2c_i1] = w2c_l15 + 2870763221u
+  w2c_i1 = w2c_l15 + 2870763221u
   // clear cache
   w2c_l25 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -470,26 +470,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -588,26 +588,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -704,8 +704,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l25;
   // v[w2c_i2] = 3624381080u
   w2c_i2 = 3624381080u;
-  // clear w2c_i1
-  w2c_i1 += 3624381080u;
+  // v[w2c_i1] = w2c_l25 + 3624381080u
+  w2c_i1 = w2c_l25 + 3624381080u
   // clear cache
   w2c_l7 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -715,8 +715,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l23;
   // v[w2c_i2] = 310598401u
   w2c_i2 = 310598401u;
-  // clear w2c_i1
-  w2c_i1 += 310598401u;
+  // v[w2c_i1] = w2c_l23 + 310598401u
+  w2c_i1 = w2c_l23 + 310598401u
   // clear cache
   w2c_l8 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -726,8 +726,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l22;
   // v[w2c_i2] = 607225278u
   w2c_i2 = 607225278u;
-  // clear w2c_i1
-  w2c_i1 += 607225278u;
+  // v[w2c_i1] = w2c_l22 + 607225278u
+  w2c_i1 = w2c_l22 + 607225278u
   // clear cache
   w2c_l9 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -737,8 +737,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l21;
   // v[w2c_i2] = 1426881987u
   w2c_i2 = 1426881987u;
-  // clear w2c_i1
-  w2c_i1 += 1426881987u;
+  // v[w2c_i1] = w2c_l21 + 1426881987u
+  w2c_i1 = w2c_l21 + 1426881987u
   // clear cache
   w2c_l14 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -746,26 +746,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -864,26 +864,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -980,8 +980,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 1925078388u
   w2c_i2 = 1925078388u;
-  // clear w2c_i1
-  w2c_i1 += 1925078388u;
+  // v[w2c_i1] = w2c_p1 + 1925078388u
+  w2c_i1 = w2c_p1 + 1925078388u
   // clear cache
   w2c_l14 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -991,8 +991,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l12;
   // v[w2c_i2] = 2162078206u
   w2c_i2 = 2162078206u;
-  // clear w2c_i1
-  w2c_i1 += 2162078206u;
+  // v[w2c_i1] = w2c_l12 + 2162078206u
+  w2c_i1 = w2c_l12 + 2162078206u
   // clear cache
   w2c_l28 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -1002,8 +1002,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l11;
   // v[w2c_i2] = 2614888103u
   w2c_i2 = 2614888103u;
-  // clear w2c_i1
-  w2c_i1 += 2614888103u;
+  // v[w2c_i1] = w2c_l11 + 2614888103u
+  w2c_i1 = w2c_l11 + 2614888103u
   // clear cache
   w2c_l27 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -1013,8 +1013,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l10;
   // v[w2c_i2] = 3248222580u
   w2c_i2 = 3248222580u;
-  // clear w2c_i1
-  w2c_i1 += 3248222580u;
+  // v[w2c_i1] = w2c_l10 + 3248222580u
+  w2c_i1 = w2c_l10 + 3248222580u
   // clear cache
   w2c_l29 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -1022,26 +1022,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -1140,26 +1140,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -1234,20 +1234,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -1258,8 +1258,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l23 + w2c_i2
+  w2c_i1 = w2c_l23 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -1270,8 +1270,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l22 + w2c_i2
+  w2c_i1 = w2c_l22 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -1282,8 +1282,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l21 + w2c_i2
+  w2c_i1 = w2c_l21 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -1294,8 +1294,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_p1 + w2c_i2
+  w2c_i1 = w2c_p1 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -1328,14 +1328,14 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -1442,26 +1442,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -1560,26 +1560,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -1654,20 +1654,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -1678,8 +1678,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l12 + w2c_i2
+  w2c_i1 = w2c_l12 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -1690,8 +1690,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l11 + w2c_i2
+  w2c_i1 = w2c_l11 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -1702,8 +1702,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l10 + w2c_i2
+  w2c_i1 = w2c_l10 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -1724,8 +1724,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 72u
   w2c_i1 = 72u;
-  // clear w2c_i0
-  w2c_i0 += 72u;
+  // v[w2c_i0] = w2c_l2 + 72u
+  w2c_i0 = w2c_l2 + 72u
   // clear cache
   w2c_l26 = w2c_i0;
   // v[w2c_i1] = w2c_l2
@@ -1744,20 +1744,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -1834,8 +1834,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l24;
   // v[w2c_i2] = 770255983u
   w2c_i2 = 770255983u;
-  // clear w2c_i1
-  w2c_i1 += 770255983u;
+  // v[w2c_i1] = w2c_l24 + 770255983u
+  w2c_i1 = w2c_l24 + 770255983u
   // clear cache
   w2c_l7 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -1845,8 +1845,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l17;
   // v[w2c_i2] = 1249150122u
   w2c_i2 = 1249150122u;
-  // clear w2c_i1
-  w2c_i1 += 1249150122u;
+  // v[w2c_i1] = w2c_l17 + 1249150122u
+  w2c_i1 = w2c_l17 + 1249150122u
   // clear cache
   w2c_l8 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -1856,8 +1856,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l16;
   // v[w2c_i2] = 1555081692u
   w2c_i2 = 1555081692u;
-  // clear w2c_i1
-  w2c_i1 += 1555081692u;
+  // v[w2c_i1] = w2c_l16 + 1555081692u
+  w2c_i1 = w2c_l16 + 1555081692u
   // clear cache
   w2c_l9 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -1867,8 +1867,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l15;
   // v[w2c_i2] = 1996064986u
   w2c_i2 = 1996064986u;
-  // clear w2c_i1
-  w2c_i1 += 1996064986u;
+  // v[w2c_i1] = w2c_l15 + 1996064986u
+  w2c_i1 = w2c_l15 + 1996064986u
   // clear cache
   w2c_l14 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -1876,26 +1876,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -1994,26 +1994,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -2088,20 +2088,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -2154,8 +2154,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l24 + w2c_i2
+  w2c_i1 = w2c_l24 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -2186,20 +2186,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -2276,8 +2276,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l25;
   // v[w2c_i2] = 2554220882u
   w2c_i2 = 2554220882u;
-  // clear w2c_i1
-  w2c_i1 += 2554220882u;
+  // v[w2c_i1] = w2c_l25 + 2554220882u
+  w2c_i1 = w2c_l25 + 2554220882u
   // clear cache
   w2c_l7 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -2287,8 +2287,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l23;
   // v[w2c_i2] = 2821834349u
   w2c_i2 = 2821834349u;
-  // clear w2c_i1
-  w2c_i1 += 2821834349u;
+  // v[w2c_i1] = w2c_l23 + 2821834349u
+  w2c_i1 = w2c_l23 + 2821834349u
   // clear cache
   w2c_l8 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -2298,8 +2298,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l22;
   // v[w2c_i2] = 2952996808u
   w2c_i2 = 2952996808u;
-  // clear w2c_i1
-  w2c_i1 += 2952996808u;
+  // v[w2c_i1] = w2c_l22 + 2952996808u
+  w2c_i1 = w2c_l22 + 2952996808u
   // clear cache
   w2c_l9 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -2309,8 +2309,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l21;
   // v[w2c_i2] = 3210313671u
   w2c_i2 = 3210313671u;
-  // clear w2c_i1
-  w2c_i1 += 3210313671u;
+  // v[w2c_i1] = w2c_l21 + 3210313671u
+  w2c_i1 = w2c_l21 + 3210313671u
   // clear cache
   w2c_l14 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -2318,26 +2318,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -2436,26 +2436,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -2520,20 +2520,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -2544,8 +2544,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l17 + w2c_i2
+  w2c_i1 = w2c_l17 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -2556,8 +2556,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l16 + w2c_i2
+  w2c_i1 = w2c_l16 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -2568,8 +2568,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l15 + w2c_i2
+  w2c_i1 = w2c_l15 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -2580,8 +2580,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l25 + w2c_i2
+  w2c_i1 = w2c_l25 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -2612,20 +2612,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -2702,8 +2702,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l12;
   // v[w2c_i2] = 3336571891u
   w2c_i2 = 3336571891u;
-  // clear w2c_i1
-  w2c_i1 += 3336571891u;
+  // v[w2c_i1] = w2c_l12 + 3336571891u
+  w2c_i1 = w2c_l12 + 3336571891u
   // clear cache
   w2c_l18 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -2713,8 +2713,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l11;
   // v[w2c_i2] = 3584528711u
   w2c_i2 = 3584528711u;
-  // clear w2c_i1
-  w2c_i1 += 3584528711u;
+  // v[w2c_i1] = w2c_l11 + 3584528711u
+  w2c_i1 = w2c_l11 + 3584528711u
   // clear cache
   w2c_l19 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -2724,8 +2724,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l10;
   // v[w2c_i2] = 113926993u
   w2c_i2 = 113926993u;
-  // clear w2c_i1
-  w2c_i1 += 113926993u;
+  // v[w2c_i1] = w2c_l10 + 113926993u
+  w2c_i1 = w2c_l10 + 113926993u
   // clear cache
   w2c_l20 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -2735,8 +2735,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 338241895u
   w2c_i2 = 338241895u;
-  // clear w2c_i1
-  w2c_i1 += 338241895u;
+  // v[w2c_i1] = w2c_p1 + 338241895u
+  w2c_i1 = w2c_p1 + 338241895u
   // clear cache
   w2c_l13 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -2744,26 +2744,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -2862,26 +2862,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -2908,8 +2908,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 56u
   w2c_i1 = 56u;
-  // clear w2c_i0
-  w2c_i0 += 56u;
+  // v[w2c_i0] = w2c_l2 + 56u
+  w2c_i0 = w2c_l2 + 56u
   // clear cache
   w2c_l28 = w2c_i0;
   // v[w2c_i1] = w2c_l2
@@ -2952,20 +2952,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -2976,8 +2976,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l23 + w2c_i2
+  w2c_i1 = w2c_l23 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -2988,8 +2988,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l22 + w2c_i2
+  w2c_i1 = w2c_l22 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3000,8 +3000,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l21 + w2c_i2
+  w2c_i1 = w2c_l21 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3012,8 +3012,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l12 + w2c_i2
+  w2c_i1 = w2c_l12 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3044,20 +3044,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -3134,8 +3134,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l13;
   // v[w2c_i2] = 666307205u
   w2c_i2 = 666307205u;
-  // clear w2c_i1
-  w2c_i1 += 666307205u;
+  // v[w2c_i1] = w2c_l13 + 666307205u
+  w2c_i1 = w2c_l13 + 666307205u
   // clear cache
   w2c_l27 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -3145,8 +3145,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l20;
   // v[w2c_i2] = 773529912u
   w2c_i2 = 773529912u;
-  // clear w2c_i1
-  w2c_i1 += 773529912u;
+  // v[w2c_i1] = w2c_l20 + 773529912u
+  w2c_i1 = w2c_l20 + 773529912u
   // clear cache
   w2c_l29 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -3156,8 +3156,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l19;
   // v[w2c_i2] = 1294757372u
   w2c_i2 = 1294757372u;
-  // clear w2c_i1
-  w2c_i1 += 1294757372u;
+  // v[w2c_i1] = w2c_l19 + 1294757372u
+  w2c_i1 = w2c_l19 + 1294757372u
   // clear cache
   w2c_l30 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -3167,8 +3167,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l18;
   // v[w2c_i2] = 1396182291u
   w2c_i2 = 1396182291u;
-  // clear w2c_i1
-  w2c_i1 += 1396182291u;
+  // v[w2c_i1] = w2c_l18 + 1396182291u
+  w2c_i1 = w2c_l18 + 1396182291u
   // clear cache
   w2c_l31 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -3176,26 +3176,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -3294,26 +3294,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -3388,20 +3388,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -3412,8 +3412,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l11 + w2c_i2
+  w2c_i1 = w2c_l11 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3424,8 +3424,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l10 + w2c_i2
+  w2c_i1 = w2c_l10 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3436,8 +3436,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_p1 + w2c_i2
+  w2c_i1 = w2c_p1 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3448,8 +3448,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l13 + w2c_i2
+  w2c_i1 = w2c_l13 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3482,14 +3482,14 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -3598,26 +3598,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -3716,26 +3716,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -3810,20 +3810,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -3834,8 +3834,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l20 + w2c_i2
+  w2c_i1 = w2c_l20 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3846,8 +3846,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l19 + w2c_i2
+  w2c_i1 = w2c_l19 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3858,8 +3858,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l18 + w2c_i2
+  w2c_i1 = w2c_l18 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -3870,8 +3870,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l15 + w2c_i2
+  w2c_i1 = w2c_l15 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l26
@@ -3892,20 +3892,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -3982,8 +3982,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l24;
   // v[w2c_i2] = 2730485921u
   w2c_i2 = 2730485921u;
-  // clear w2c_i1
-  w2c_i1 += 2730485921u;
+  // v[w2c_i1] = w2c_l24 + 2730485921u
+  w2c_i1 = w2c_l24 + 2730485921u
   // clear cache
   w2c_l7 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -3993,8 +3993,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l17;
   // v[w2c_i2] = 2820302411u
   w2c_i2 = 2820302411u;
-  // clear w2c_i1
-  w2c_i1 += 2820302411u;
+  // v[w2c_i1] = w2c_l17 + 2820302411u
+  w2c_i1 = w2c_l17 + 2820302411u
   // clear cache
   w2c_l8 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -4004,8 +4004,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l16;
   // v[w2c_i2] = 3259730800u
   w2c_i2 = 3259730800u;
-  // clear w2c_i1
-  w2c_i1 += 3259730800u;
+  // v[w2c_i1] = w2c_l16 + 3259730800u
+  w2c_i1 = w2c_l16 + 3259730800u
   // clear cache
   w2c_l9 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -4015,8 +4015,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l15;
   // v[w2c_i2] = 3345764771u
   w2c_i2 = 3345764771u;
-  // clear w2c_i1
-  w2c_i1 += 3345764771u;
+  // v[w2c_i1] = w2c_l15 + 3345764771u
+  w2c_i1 = w2c_l15 + 3345764771u
   // clear cache
   w2c_l14 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -4024,26 +4024,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -4142,26 +4142,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -4236,20 +4236,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -4302,8 +4302,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l24 + w2c_i2
+  w2c_i1 = w2c_l24 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -4334,20 +4334,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -4424,8 +4424,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l12;
   // v[w2c_i2] = 3516065817u
   w2c_i2 = 3516065817u;
-  // clear w2c_i1
-  w2c_i1 += 3516065817u;
+  // v[w2c_i1] = w2c_l12 + 3516065817u
+  w2c_i1 = w2c_l12 + 3516065817u
   // clear cache
   w2c_l21 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -4435,8 +4435,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l11;
   // v[w2c_i2] = 3600352804u
   w2c_i2 = 3600352804u;
-  // clear w2c_i1
-  w2c_i1 += 3600352804u;
+  // v[w2c_i1] = w2c_l11 + 3600352804u
+  w2c_i1 = w2c_l11 + 3600352804u
   // clear cache
   w2c_l22 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -4446,8 +4446,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l10;
   // v[w2c_i2] = 4094571909u
   w2c_i2 = 4094571909u;
-  // clear w2c_i1
-  w2c_i1 += 4094571909u;
+  // v[w2c_i1] = w2c_l10 + 4094571909u
+  w2c_i1 = w2c_l10 + 4094571909u
   // clear cache
   w2c_l23 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -4457,8 +4457,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 275423344u
   w2c_i2 = 275423344u;
-  // clear w2c_i1
-  w2c_i1 += 275423344u;
+  // v[w2c_i1] = w2c_p1 + 275423344u
+  w2c_i1 = w2c_p1 + 275423344u
   // clear cache
   w2c_l25 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -4466,26 +4466,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -4584,26 +4584,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -4668,20 +4668,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -4692,8 +4692,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l17 + w2c_i2
+  w2c_i1 = w2c_l17 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -4704,8 +4704,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l16 + w2c_i2
+  w2c_i1 = w2c_l16 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -4716,8 +4716,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l15 + w2c_i2
+  w2c_i1 = w2c_l15 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -4728,8 +4728,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l12 + w2c_i2
+  w2c_i1 = w2c_l12 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -4760,20 +4760,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -4850,8 +4850,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l25;
   // v[w2c_i2] = 430227734u
   w2c_i2 = 430227734u;
-  // clear w2c_i1
-  w2c_i1 += 430227734u;
+  // v[w2c_i1] = w2c_l25 + 430227734u
+  w2c_i1 = w2c_l25 + 430227734u
   // clear cache
   w2c_l18 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -4861,8 +4861,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l23;
   // v[w2c_i2] = 506948616u
   w2c_i2 = 506948616u;
-  // clear w2c_i1
-  w2c_i1 += 506948616u;
+  // v[w2c_i1] = w2c_l23 + 506948616u
+  w2c_i1 = w2c_l23 + 506948616u
   // clear cache
   w2c_l19 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -4872,8 +4872,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l22;
   // v[w2c_i2] = 659060556u
   w2c_i2 = 659060556u;
-  // clear w2c_i1
-  w2c_i1 += 659060556u;
+  // v[w2c_i1] = w2c_l22 + 659060556u
+  w2c_i1 = w2c_l22 + 659060556u
   // clear cache
   w2c_l20 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -4883,8 +4883,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l21;
   // v[w2c_i2] = 883997877u
   w2c_i2 = 883997877u;
-  // clear w2c_i1
-  w2c_i1 += 883997877u;
+  // v[w2c_i1] = w2c_l21 + 883997877u
+  w2c_i1 = w2c_l21 + 883997877u
   // clear cache
   w2c_l13 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -4892,26 +4892,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -5010,26 +5010,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -5094,20 +5094,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -5118,8 +5118,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l11 + w2c_i2
+  w2c_i1 = w2c_l11 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5130,8 +5130,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l10 + w2c_i2
+  w2c_i1 = w2c_l10 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5142,8 +5142,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_p1 + w2c_i2
+  w2c_i1 = w2c_p1 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5154,8 +5154,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l25 + w2c_i2
+  w2c_i1 = w2c_l25 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5186,20 +5186,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -5276,8 +5276,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l13;
   // v[w2c_i2] = 958139571u
   w2c_i2 = 958139571u;
-  // clear w2c_i1
-  w2c_i1 += 958139571u;
+  // v[w2c_i1] = w2c_l13 + 958139571u
+  w2c_i1 = w2c_l13 + 958139571u
   // clear cache
   w2c_l28 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -5287,8 +5287,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l20;
   // v[w2c_i2] = 1322822218u
   w2c_i2 = 1322822218u;
-  // clear w2c_i1
-  w2c_i1 += 1322822218u;
+  // v[w2c_i1] = w2c_l20 + 1322822218u
+  w2c_i1 = w2c_l20 + 1322822218u
   // clear cache
   w2c_l27 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -5298,8 +5298,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l19;
   // v[w2c_i2] = 1537002063u
   w2c_i2 = 1537002063u;
-  // clear w2c_i1
-  w2c_i1 += 1537002063u;
+  // v[w2c_i1] = w2c_l19 + 1537002063u
+  w2c_i1 = w2c_l19 + 1537002063u
   // clear cache
   w2c_l29 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -5309,8 +5309,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l18;
   // v[w2c_i2] = 1747873779u
   w2c_i2 = 1747873779u;
-  // clear w2c_i1
-  w2c_i1 += 1747873779u;
+  // v[w2c_i1] = w2c_l18 + 1747873779u
+  w2c_i1 = w2c_l18 + 1747873779u
   // clear cache
   w2c_l30 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -5318,26 +5318,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -5436,26 +5436,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -5530,20 +5530,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -5554,8 +5554,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l23 + w2c_i2
+  w2c_i1 = w2c_l23 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5566,8 +5566,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l22 + w2c_i2
+  w2c_i1 = w2c_l22 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5578,8 +5578,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l21 + w2c_i2
+  w2c_i1 = w2c_l21 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5590,8 +5590,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l13 + w2c_i2
+  w2c_i1 = w2c_l13 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5624,14 +5624,14 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -5740,26 +5740,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -5858,26 +5858,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -5952,20 +5952,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f29(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -5976,8 +5976,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 44u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l20 + w2c_i2
+  w2c_i1 = w2c_l20 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -5988,8 +5988,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 40u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l19 + w2c_i2
+  w2c_i1 = w2c_l19 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -6000,8 +6000,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 36u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l18 + w2c_i2
+  w2c_i1 = w2c_l18 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -6012,8 +6012,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l2) + 32u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l7 + w2c_i2
+  w2c_i1 = w2c_l7 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_l26
@@ -6034,20 +6034,20 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l2 + 16u
+  w2c_i1 = w2c_l2 + 16u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 4294967232u
   w2c_i3 = 4294967232u;
-  // clear w2c_i2
-  w2c_i2 -= 4294967232u;
+  // v[w2c_i2] = w2c_l2 - 4294967232u
+  w2c_i2 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f28(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
@@ -6124,8 +6124,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l12;
   // v[w2c_i2] = 2428436474u
   w2c_i2 = 2428436474u;
-  // clear w2c_i1
-  w2c_i1 += 2428436474u;
+  // v[w2c_i1] = w2c_l12 + 2428436474u
+  w2c_i1 = w2c_l12 + 2428436474u
   // clear cache
   w2c_l15 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 76, w2c_i1);
@@ -6135,8 +6135,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l11;
   // v[w2c_i2] = 2756734187u
   w2c_i2 = 2756734187u;
-  // clear w2c_i1
-  w2c_i1 += 2756734187u;
+  // v[w2c_i1] = w2c_l11 + 2756734187u
+  w2c_i1 = w2c_l11 + 2756734187u
   // clear cache
   w2c_l16 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 72, w2c_i1);
@@ -6146,8 +6146,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l10;
   // v[w2c_i2] = 3204031479u
   w2c_i2 = 3204031479u;
-  // clear w2c_i1
-  w2c_i1 += 3204031479u;
+  // v[w2c_i1] = w2c_l10 + 3204031479u
+  w2c_i1 = w2c_l10 + 3204031479u
   // clear cache
   w2c_l17 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 68, w2c_i1);
@@ -6157,8 +6157,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 3329325298u
   w2c_i2 = 3329325298u;
-  // clear w2c_i1
-  w2c_i1 += 3329325298u;
+  // v[w2c_i1] = w2c_p1 + 3329325298u
+  w2c_i1 = w2c_p1 + 3329325298u
   // clear cache
   w2c_l24 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0) + 64, w2c_i1);
@@ -6166,26 +6166,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -6284,26 +6284,26 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // v[w2c_i2] = w2c_l2
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 48u
   w2c_i3 = 48u;
-  // clear w2c_i2
-  w2c_i2 += 48u;
+  // v[w2c_i2] = w2c_l2 + 48u
+  w2c_i2 = w2c_l2 + 48u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967232u
   w2c_i4 = 4294967232u;
-  // clear w2c_i3
-  w2c_i3 -= 4294967232u;
+  // v[w2c_i3] = w2c_l2 - 4294967232u
+  w2c_i3 = w2c_l2 - 4294967232u
   // clear cache
   w2c_f21(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l2
@@ -6343,8 +6343,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p0) + 4u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l17 + w2c_i2
+  w2c_i1 = w2c_l17 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -6355,8 +6355,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p0) + 8u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_p1 + w2c_i2
+  w2c_i1 = w2c_p1 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 8, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -6367,8 +6367,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p0) + 12u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l10 + w2c_i2
+  w2c_i1 = w2c_l10 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 12, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -6379,8 +6379,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p0) + 16u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l16 + w2c_i2
+  w2c_i1 = w2c_l16 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 16, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -6391,8 +6391,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p0) + 20u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l15 + w2c_i2
+  w2c_i1 = w2c_l15 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 20, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -6403,8 +6403,8 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p0) + 24u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l11 + w2c_i2
+  w2c_i1 = w2c_l11 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -6415,16 +6415,16 @@ static void w2c_f0(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // clear w2c_i2
   w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p0) + 28u);
-  // clear w2c_i1
-  w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l12 + w2c_i2
+  w2c_i1 = w2c_l12 + w2c_i2
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_l2
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 80u
   w2c_i1 = 80u;
-  // clear w2c_i0
-  w2c_i0 += 80u;
+  // v[w2c_i0] = w2c_l2 + 80u
+  w2c_i0 = w2c_l2 + 80u
   // clear cache
   w2c_g0 = w2c_i0;
   FUNC_EPILOGUE;
@@ -6441,8 +6441,8 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l11 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -6460,8 +6460,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_p0;
   // v[w2c_i2] = 4u
     w2c_i2 = 4u;
-  // clear w2c_i1
-    w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_p0 + 4u
+    w2c_i1 = w2c_p0 + 4u
   // v[w2c_i2] = 16u
     w2c_i2 = 16u;
   // v[w2c_i3] = 8u
@@ -6477,7 +6477,7 @@ static u32 w2c_f1(u32 w2c_p0) {
   // clear w2c_i2
     w2c_i2 = w2c_i2 > w2c_p0;
   // clear w2c_i0
-    w2c_i0 = w2c_i2 ? 16u : w2c_i1;
+    w2c_i0 = w2c_i2 ? 16u : w2c_p0 + 4u;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
   // clear w2c_i0
@@ -6554,8 +6554,8 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i1 = w2c_p0;
   // v[w2c_i2] = 1050348u
       w2c_i2 = 1050348u;
-  // clear w2c_i1
-      w2c_i1 += 1050348u;
+  // v[w2c_i1] = w2c_p0 + 1050348u
+      w2c_i1 = w2c_p0 + 1050348u
   // clear cache
       w2c_p0 = w2c_i1;
   // clear w2c_i0
@@ -6571,8 +6571,8 @@ static u32 w2c_f1(u32 w2c_p0) {
         w2c_i3 = w2c_l3;
   // clear w2c_i2
         w2c_i2 = I32_ROTL(4294967294u, w2c_l3);
-  // clear w2c_i1
-        w2c_i1 &= w2c_i2;
+  // v[w2c_i1] = w2c_l1 \& w2c_i2
+        w2c_i1 = w2c_l1 & w2c_i2
   // clear cache
         i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
         goto w2c_B6;
@@ -6668,8 +6668,8 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i1 = w2c_p0;
   // v[w2c_i2] = 1050348u
       w2c_i2 = 1050348u;
-  // clear w2c_i1
-      w2c_i1 += 1050348u;
+  // v[w2c_i1] = w2c_p0 + 1050348u
+      w2c_i1 = w2c_p0 + 1050348u
   // clear cache
       w2c_p0 = w2c_i1;
   // clear w2c_i0
@@ -6773,10 +6773,10 @@ static u32 w2c_f1(u32 w2c_p0) {
         w2c_i2 = w2c_p0;
   // v[w2c_i3] = 31u
         w2c_i3 = 31u;
-  // clear w2c_i2
-        w2c_i2 &= 31u;
+  // v[w2c_i2] = w2c_p0 \& 31u
+        w2c_i2 = w2c_p0 & 31u
   // clear w2c_i1
-        w2c_i1 <<= (w2c_i2 & 31);
+        w2c_i1 <<= (w2c_p0 & 31u & 31);
   // clear cache
         w2c_p0 = w2c_i1;
   // clear w2c_i0
@@ -6790,8 +6790,8 @@ static u32 w2c_f1(u32 w2c_p0) {
           w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_l1
           w2c_i2 = w2c_l1;
-  // clear w2c_i1
-          w2c_i1 |= w2c_l1;
+  // v[w2c_i1] = w2c_p0 | w2c_l1
+          w2c_i1 = w2c_p0 | w2c_l1
   // clear cache
           i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l7
@@ -6946,8 +6946,8 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i3 = 2u;
   // clear w2c_i2
   w2c_i2 <<= (2u & 31);
-  // clear w2c_i1
-  w2c_i1 -= w2c_i2;
+  // v[w2c_i1] = 0u - w2c_i2
+  w2c_i1 = 0u - w2c_i2
   // clear cache
   w2c_l1 = w2c_i1;
   // v[w2c_i2] = w2c_l2
@@ -6968,12 +6968,12 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
-  // clear w2c_i0
-  w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p0 + 4u
+  w2c_i0 = w2c_p0 + 4u
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
   // clear w2c_i0
-  w2c_i0 = w2c_f72(w2c_i0, 8u);
+  w2c_i0 = w2c_f72(w2c_p0 + 4u, 8u);
   // clear cache
   w2c_l4 = w2c_i0;
   // v[w2c_i0] = 1050344u
@@ -6987,8 +6987,8 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i0 = 0u;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
-  // clear w2c_i0
-  w2c_i0 -= w2c_l4;
+  // v[w2c_i0] = 0u - w2c_l4
+  w2c_i0 = 0u - w2c_l4
   // clear cache
   w2c_l3 = w2c_i0;
   // v[w2c_i0] = 0u
@@ -7098,8 +7098,8 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i0 = w2c_l2;
   // v[w2c_i1] = w2c_l4
       w2c_i1 = w2c_l4;
-  // clear w2c_i0
-      w2c_i0 -= w2c_l4;
+  // v[w2c_i0] = w2c_l2 - w2c_l4
+      w2c_i0 = w2c_l2 - w2c_l4
   // clear cache
       w2c_l2 = w2c_i0;
   // v[w2c_i1] = w2c_l3
@@ -7127,10 +7127,10 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i0 = w2c_p0;
   // v[w2c_i1] = 20u
       w2c_i1 = 20u;
+  // v[w2c_i0] = w2c_p0 + 20u
+      w2c_i0 = w2c_p0 + 20u
   // clear w2c_i0
-      w2c_i0 += 20u;
-  // clear w2c_i0
-      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 20u));
   // clear cache
       w2c_l2 = w2c_i0;
   // v[w2c_i1] = w2c_l5
@@ -7149,14 +7149,14 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i5 = 4u;
   // clear w2c_i4
       w2c_i4 &= 4u;
-  // clear w2c_i3
-      w2c_i3 += w2c_i4;
+  // v[w2c_i3] = w2c_p0 + w2c_i4
+      w2c_i3 = w2c_p0 + w2c_i4
   // v[w2c_i4] = 16u
       w2c_i4 = 16u;
+  // v[w2c_i3] = w2c_p0 + w2c_i4 + 16u
+      w2c_i3 = w2c_p0 + w2c_i4 + 16u
   // clear w2c_i3
-      w2c_i3 += 16u;
-  // clear w2c_i3
-      w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3));
+      w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_p0 + 16u + 16u));
   // clear cache
       w2c_p0 = w2c_i3;
   // clear w2c_i2
@@ -7208,10 +7208,10 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i1 = w2c_l6;
   // v[w2c_i2] = 31u
   w2c_i2 = 31u;
-  // clear w2c_i1
-  w2c_i1 &= 31u;
+  // v[w2c_i1] = w2c_l6 \& 31u
+  w2c_i1 = w2c_l6 & 31u
   // clear w2c_i0
-  w2c_i0 <<= (w2c_i1 & 31);
+  w2c_i0 <<= (w2c_l6 & 31u & 31);
   // clear w2c_i0
   w2c_i0 = w2c_f76(w2c_i0);
   // v[w2c_i1] = 1050344u
@@ -7266,8 +7266,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i3 = w2c_l1;
   // v[w2c_i4] = w2c_l4
     w2c_i4 = w2c_l4;
-  // clear w2c_i3
-    w2c_i3 -= w2c_l4;
+  // v[w2c_i3] = w2c_l1 - w2c_l4
+    w2c_i3 = w2c_l1 - w2c_l4
   // clear cache
     w2c_l5 = w2c_i3;
   // v[w2c_i4] = w2c_l3
@@ -7320,10 +7320,10 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i3 = w2c_p0;
   // v[w2c_i4] = w2c_l4
   w2c_i4 = w2c_l4;
-  // clear w2c_i3
-  w2c_i3 -= w2c_l4;
+  // v[w2c_i3] = w2c_p0 - w2c_l4
+  w2c_i3 = w2c_p0 - w2c_l4
   // clear w2c_i2
-  w2c_i2 = w2c_l3 >= w2c_i3;
+  w2c_i2 = w2c_l3 >= w2c_p0 - w2c_l4;
   // clear w2c_i0
   w2c_i0 = w2c_i2 ? w2c_i0 : 0u;
   // clear cache
@@ -7360,8 +7360,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = w2c_l4
     w2c_i2 = w2c_l4;
-  // clear w2c_i1
-    w2c_i1 += w2c_l4;
+  // v[w2c_i1] = w2c_l3 + w2c_l4
+    w2c_i1 = w2c_l3 + w2c_l4
   // clear cache
     w2c_f67(w2c_i0, w2c_i1);
     goto w2c_B22;
@@ -7428,8 +7428,8 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i1 = w2c_l1;
   // v[w2c_i2] = w2c_l2
       w2c_i2 = w2c_l2;
-  // clear w2c_i1
-      w2c_i1 |= w2c_l2;
+  // v[w2c_i1] = w2c_l1 | w2c_l2
+      w2c_i1 = w2c_l1 | w2c_l2
   // clear cache
       i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l5
@@ -7557,8 +7557,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = w2c_l4
     w2c_i2 = w2c_l4;
-  // clear w2c_i1
-    w2c_i1 += w2c_l4;
+  // v[w2c_i1] = w2c_l3 + w2c_l4
+    w2c_i1 = w2c_l3 + w2c_l4
   // clear cache
     w2c_f67(w2c_i0, w2c_i1);
     goto w2c_B28;
@@ -7615,10 +7615,10 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i2 = w2c_l1;
   // v[w2c_i3] = 31u
     w2c_i3 = 31u;
-  // clear w2c_i2
-    w2c_i2 &= 31u;
+  // v[w2c_i2] = w2c_l1 \& 31u
+    w2c_i2 = w2c_l1 & 31u
   // clear w2c_i1
-    w2c_i1 <<= (w2c_i2 & 31);
+    w2c_i1 <<= (w2c_l1 & 31u & 31);
   // clear cache
     w2c_l1 = w2c_i1;
   // clear w2c_i0
@@ -7632,8 +7632,8 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i1 = w2c_l1;
   // v[w2c_i2] = w2c_l2
       w2c_i2 = w2c_l2;
-  // clear w2c_i1
-      w2c_i1 |= w2c_l2;
+  // v[w2c_i1] = w2c_l1 | w2c_l2
+      w2c_i1 = w2c_l1 | w2c_l2
   // clear cache
       i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l7
@@ -7712,8 +7712,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_l4
     w2c_i1 = w2c_l4;
-  // clear w2c_i0
-    w2c_i0 -= w2c_l4;
+  // v[w2c_i0] = w2c_p0 - w2c_l4
+    w2c_i0 = w2c_p0 - w2c_l4
   // clear cache
     w2c_l1 = w2c_i0;
   // v[w2c_i1] = 16u
@@ -8421,24 +8421,24 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = w2c_l10
     w2c_i2 = w2c_l10;
-  // clear w2c_i1
-    w2c_i1 += w2c_l10;
+  // v[w2c_i1] = w2c_l3 + w2c_l10
+    w2c_i1 = w2c_l3 + w2c_l10
   // v[w2c_i2] = w2c_l5
     w2c_i2 = w2c_l5;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l5;
+  // v[w2c_i1] = w2c_l3 + w2c_l10 - w2c_l5
+    w2c_i1 = w2c_l3 + w2c_l10 - w2c_l5
   // v[w2c_i2] = w2c_l2
     w2c_i2 = w2c_l2;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l2;
+  // v[w2c_i1] = w2c_l3 + w2c_l10 - w2c_l5 - w2c_l2
+    w2c_i1 = w2c_l3 + w2c_l10 - w2c_l5 - w2c_l2
   // v[w2c_i2] = w2c_l1
     w2c_i2 = w2c_l1;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l1;
+  // v[w2c_i1] = w2c_l3 + w2c_l10 - w2c_l5 - w2c_l2 - w2c_l1
+    w2c_i1 = w2c_l3 + w2c_l10 - w2c_l5 - w2c_l2 - w2c_l1
   // v[w2c_i2] = w2c_p0
     w2c_i2 = w2c_p0;
-  // clear w2c_i1
-    w2c_i1 -= w2c_p0;
+  // v[w2c_i1] = w2c_l3 + w2c_l10 - w2c_l5 - w2c_l2 - w2c_l1 - w2c_p0
+    w2c_i1 = w2c_l3 + w2c_l10 - w2c_l5 - w2c_l2 - w2c_l1 - w2c_p0
   // clear cache
     w2c_l3 = w2c_i1;
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
@@ -8454,8 +8454,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = 1u
     w2c_i2 = 1u;
-  // clear w2c_i1
-    w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_l3 | 1u
+    w2c_i1 = w2c_l3 | 1u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = 0u
@@ -8499,12 +8499,12 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i3 = w2c_l2;
   // v[w2c_i4] = w2c_l5
     w2c_i4 = w2c_l5;
-  // clear w2c_i3
-    w2c_i3 -= w2c_l5;
-  // clear w2c_i2
-    w2c_i2 += w2c_i3;
-  // clear w2c_i1
-    w2c_i1 += w2c_i2;
+  // v[w2c_i3] = w2c_l2 - w2c_l5
+    w2c_i3 = w2c_l2 - w2c_l5
+  // v[w2c_i2] = w2c_l1 + w2c_l2 - w2c_l5
+    w2c_i2 = w2c_l1 + w2c_l2 - w2c_l5
+  // v[w2c_i1] = w2c_p0 + w2c_l1 + w2c_l2 - w2c_l5
+    w2c_i1 = w2c_l1 + w2c_l2 - w2c_l5;
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = 1050780u
@@ -8587,12 +8587,12 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l1;
   // v[w2c_i2] = w2c_l10
     w2c_i2 = w2c_l10;
-  // clear w2c_i1
-    w2c_i1 += w2c_l10;
+  // v[w2c_i1] = w2c_l1 + w2c_l10
+    w2c_i1 = w2c_l1 + w2c_l10
   // v[w2c_i2] = w2c_p0
     w2c_i2 = w2c_p0;
-  // clear w2c_i1
-    w2c_i1 -= w2c_p0;
+  // v[w2c_i1] = w2c_l1 + w2c_l10 - w2c_p0
+    w2c_i1 = w2c_l1 + w2c_l10 - w2c_p0
   // clear cache
     w2c_l3 = w2c_i1;
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
@@ -8608,8 +8608,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = 1u
     w2c_i2 = 1u;
-  // clear w2c_i1
-    w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_l3 | 1u
+    w2c_i1 = w2c_l3 | 1u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = 0u
@@ -8653,12 +8653,12 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i3 = w2c_l2;
   // v[w2c_i4] = w2c_l5
     w2c_i4 = w2c_l5;
-  // clear w2c_i3
-    w2c_i3 -= w2c_l5;
-  // clear w2c_i2
-    w2c_i2 += w2c_i3;
-  // clear w2c_i1
-    w2c_i1 += w2c_i2;
+  // v[w2c_i3] = w2c_l2 - w2c_l5
+    w2c_i3 = w2c_l2 - w2c_l5
+  // v[w2c_i2] = w2c_l1 + w2c_l2 - w2c_l5
+    w2c_i2 = w2c_l1 + w2c_l2 - w2c_l5
+  // v[w2c_i1] = w2c_p0 + w2c_l1 + w2c_l2 - w2c_l5
+    w2c_i1 = w2c_l1 + w2c_l2 - w2c_l5;
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = 1050780u
@@ -8693,8 +8693,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i0 = w2c_l8;
   // v[w2c_i1] = w2c_l10
     w2c_i1 = w2c_l10;
-  // clear w2c_i0
-    w2c_i0 += w2c_l10;
+  // v[w2c_i0] = w2c_l8 + w2c_l10
+    w2c_i0 = w2c_l8 + w2c_l10
   // clear cache
     w2c_l1 = w2c_i0;
   // v[w2c_i0] = 1050764u
@@ -8785,10 +8785,10 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = w2c_l5
     w2c_i2 = w2c_l5;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l5;
-  // clear w2c_i0
-    w2c_i0 += w2c_i1;
+  // v[w2c_i1] = w2c_l2 - w2c_l5
+    w2c_i1 = w2c_l2 - w2c_l5
+  // v[w2c_i0] = w2c_l8 + w2c_l2 - w2c_l5
+    w2c_i0 = w2c_l8 + w2c_l2 - w2c_l5
   // clear cache
     w2c_l6 = w2c_i0;
   // v[w2c_i1] = w2c_l4
@@ -8809,10 +8809,10 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_l1
     w2c_i2 = w2c_l1;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l1;
-  // clear w2c_i0
-    w2c_i0 += w2c_i1;
+  // v[w2c_i1] = w2c_p0 - w2c_l1
+    w2c_i1 = w2c_p0 - w2c_l1
+  // v[w2c_i0] = w2c_l3 + w2c_p0 - w2c_l1
+    w2c_i0 = w2c_l3 + w2c_p0 - w2c_l1
   // clear cache
     w2c_p0 = w2c_i0;
   // v[w2c_i1] = w2c_l6
@@ -8859,8 +8859,8 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i1 = w2c_p0;
   // v[w2c_i2] = 1u
       w2c_i2 = 1u;
-  // clear w2c_i1
-      w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_p0 | 1u
+      w2c_i1 = w2c_p0 | 1u
   // clear cache
       i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_l6
@@ -8940,20 +8940,20 @@ static u32 w2c_f1(u32 w2c_p0) {
         w2c_i0 = w2c_p0;
   // v[w2c_i1] = 12u
         w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_p0 + 12u
+        w2c_i0 = w2c_p0 + 12u
   // clear w2c_i0
-        w2c_i0 += 12u;
-  // clear w2c_i0
-        w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+        w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 12u));
   // clear cache
         w2c_l2 = w2c_i0;
   // v[w2c_i1] = w2c_p0
         w2c_i1 = w2c_p0;
   // v[w2c_i2] = 8u
         w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_p0 + 8u
+        w2c_i1 = w2c_p0 + 8u
   // clear w2c_i1
-        w2c_i1 += 8u;
-  // clear w2c_i1
-        w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+        w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 8u));
   // clear cache
         w2c_l1 = w2c_i1;
   // clear w2c_i0
@@ -9004,8 +9004,8 @@ static u32 w2c_f1(u32 w2c_p0) {
       w2c_i0 = w2c_l4;
   // v[w2c_i1] = w2c_l5
       w2c_i1 = w2c_l5;
-  // clear w2c_i0
-      w2c_i0 += w2c_l5;
+  // v[w2c_i0] = w2c_l4 + w2c_l5
+      w2c_i0 = w2c_l4 + w2c_l5
   // clear cache
       w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_p0
@@ -9075,8 +9075,8 @@ static u32 w2c_f1(u32 w2c_p0) {
         w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_l1
         w2c_i2 = w2c_l1;
-  // clear w2c_i1
-        w2c_i1 |= w2c_l1;
+  // v[w2c_i1] = w2c_p0 | w2c_l1
+        w2c_i1 = w2c_p0 | w2c_l1
   // clear cache
         i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -9300,24 +9300,24 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l6;
   // v[w2c_i2] = w2c_l10
     w2c_i2 = w2c_l10;
-  // clear w2c_i1
-    w2c_i1 += w2c_l10;
+  // v[w2c_i1] = w2c_l6 + w2c_l10
+    w2c_i1 = w2c_l6 + w2c_l10
   // v[w2c_i2] = w2c_l3
     w2c_i2 = w2c_l3;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l3;
+  // v[w2c_i1] = w2c_l6 + w2c_l10 - w2c_l3
+    w2c_i1 = w2c_l6 + w2c_l10 - w2c_l3
   // v[w2c_i2] = w2c_l5
     w2c_i2 = w2c_l5;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l5;
+  // v[w2c_i1] = w2c_l6 + w2c_l10 - w2c_l3 - w2c_l5
+    w2c_i1 = w2c_l6 + w2c_l10 - w2c_l3 - w2c_l5
   // v[w2c_i2] = w2c_l2
     w2c_i2 = w2c_l2;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l2;
+  // v[w2c_i1] = w2c_l6 + w2c_l10 - w2c_l3 - w2c_l5 - w2c_l2
+    w2c_i1 = w2c_l6 + w2c_l10 - w2c_l3 - w2c_l5 - w2c_l2
   // v[w2c_i2] = w2c_l1
     w2c_i2 = w2c_l1;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l1;
+  // v[w2c_i1] = w2c_l6 + w2c_l10 - w2c_l3 - w2c_l5 - w2c_l2 - w2c_l1
+    w2c_i1 = w2c_l6 + w2c_l10 - w2c_l3 - w2c_l5 - w2c_l2 - w2c_l1
   // clear cache
     w2c_l6 = w2c_i1;
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
@@ -9333,8 +9333,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l6;
   // v[w2c_i2] = 1u
     w2c_i2 = 1u;
-  // clear w2c_i1
-    w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_l6 | 1u
+    w2c_i1 = w2c_l6 | 1u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = 0u
@@ -9378,12 +9378,12 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i3 = w2c_l5;
   // v[w2c_i4] = w2c_l3
     w2c_i4 = w2c_l3;
-  // clear w2c_i3
-    w2c_i3 -= w2c_l3;
-  // clear w2c_i2
-    w2c_i2 += w2c_i3;
-  // clear w2c_i1
-    w2c_i1 += w2c_i2;
+  // v[w2c_i3] = w2c_l5 - w2c_l3
+    w2c_i3 = w2c_l5 - w2c_l3
+  // v[w2c_i2] = w2c_l2 + w2c_l5 - w2c_l3
+    w2c_i2 = w2c_l2 + w2c_l5 - w2c_l3
+  // v[w2c_i1] = w2c_l1 + w2c_l2 + w2c_l5 - w2c_l3
+    w2c_i1 = w2c_l2 + w2c_l5 - w2c_l3;
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = 1050780u
@@ -9407,8 +9407,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i0 = w2c_l14;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l14 + 8u
+    w2c_i0 = w2c_l14 + 8u
   // v[w2c_i1] = 1050772u
     w2c_i1 = 1050772u;
   // clear cache
@@ -9486,8 +9486,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l13;
   // v[w2c_i2] = w2c_l9
     w2c_i2 = w2c_l9;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l9;
+  // v[w2c_i1] = w2c_l13 - w2c_l9
+    w2c_i1 = w2c_l13 - w2c_l9
   // clear cache
     w2c_p0 = w2c_i1;
   // v[w2c_i2] = w2c_l9
@@ -9548,8 +9548,8 @@ static u32 w2c_f1(u32 w2c_p0) {
         w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_l1
         w2c_i2 = w2c_l1;
-  // clear w2c_i1
-        w2c_i1 |= w2c_l1;
+  // v[w2c_i1] = w2c_p0 | w2c_l1
+        w2c_i1 = w2c_p0 | w2c_l1
   // clear cache
         i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -9617,8 +9617,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_l4
     w2c_i2 = w2c_l4;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l4;
+  // v[w2c_i1] = w2c_p0 - w2c_l4
+    w2c_i1 = w2c_p0 - w2c_l4
   // clear cache
     w2c_l1 = w2c_i1;
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
@@ -9643,8 +9643,8 @@ static u32 w2c_f1(u32 w2c_p0) {
     w2c_i1 = w2c_l1;
   // v[w2c_i2] = 1u
     w2c_i2 = 1u;
-  // clear w2c_i1
-    w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_l1 | 1u
+    w2c_i1 = w2c_l1 | 1u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -9666,8 +9666,8 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_l4
   w2c_i2 = w2c_l4;
-  // clear w2c_i1
-  w2c_i1 -= w2c_l4;
+  // v[w2c_i1] = w2c_p0 - w2c_l4
+  w2c_i1 = w2c_p0 - w2c_l4
   // clear cache
   w2c_l1 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
@@ -9692,8 +9692,8 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i1 = w2c_l1;
   // v[w2c_i2] = 1u
   w2c_i2 = 1u;
-  // clear w2c_i1
-  w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_l1 | 1u
+  w2c_i1 = w2c_l1 | 1u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -9712,15 +9712,15 @@ static u32 w2c_f1(u32 w2c_p0) {
   w2c_i0 = w2c_l11;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l11 + 16u
+  w2c_i0 = w2c_l11 + 16u
   // clear cache
   w2c_g0 = w2c_i0;
   // v[w2c_i0] = w2c_l3
   w2c_i0 = w2c_l3;
-  // clear cache
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_l3;
+  // clear cache
 }
 
 static void w2c_f2(u32 w2c_p0) {
@@ -9857,8 +9857,9 @@ static void w2c_f2(u32 w2c_p0) {
     w2c_i1 = 0u;
   // clear w2c_i2
     w2c_i2 = w2c_l4 << (2u & 31);
-  // clear w2c_i1
-    w2c_i1 -= w2c_i2;
+  // v[w2c_i1] = 0u - w2c_i2
+    w2c_i1 = 0u - w2c_i2
+  // clear cache
     w2c_l1 = w2c_i1;
   // v[w2c_i2] = w2c_p0
     w2c_i2 = w2c_p0;
@@ -9915,12 +9916,12 @@ static void w2c_f2(u32 w2c_p0) {
     w2c_i4 = w2c_l1;
   // v[w2c_i5] = w2c_p0
     w2c_i5 = w2c_p0;
-  // clear w2c_i4
-    w2c_i4 -= w2c_p0;
-  // clear w2c_i3
-    w2c_i3 += w2c_i4;
-  // clear w2c_i2
-    w2c_i2 += w2c_i3;
+  // v[w2c_i4] = w2c_l1 - w2c_p0
+    w2c_i4 = w2c_l1 - w2c_p0
+  // v[w2c_i3] = w2c_l2 + w2c_l1 - w2c_p0
+    w2c_i3 = w2c_l2 + w2c_l1 - w2c_p0
+  // v[w2c_i2] = w2c_l4 + w2c_l2 + w2c_l1 - w2c_p0
+    w2c_i2 = w2c_l2 + w2c_l1 - w2c_p0;
   // clear cache
     w2c_l2 = w2c_i2;
   // clear w2c_i1
@@ -9977,10 +9978,10 @@ static void w2c_f2(u32 w2c_p0) {
     w2c_i1 = w2c_p0;
   // v[w2c_i2] = 12u
     w2c_i2 = 12u;
+  // v[w2c_i1] = w2c_p0 + 12u
+    w2c_i1 = w2c_p0 + 12u
   // clear w2c_i1
-    w2c_i1 += 12u;
-  // clear w2c_i1
-    w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+    w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 12u));
   // clear cache
     goto w2c_B11;
     w2c_B11:;
@@ -9988,10 +9989,11 @@ static void w2c_f2(u32 w2c_p0) {
     w2c_i1 = 0u;
   // clear w2c_i2
     w2c_i2 = w2c_f16();
-  // clear w2c_i1
-    w2c_i1 -= w2c_i2;
+  // v[w2c_i1] = 0u - w2c_i2
+    w2c_i1 = 0u - w2c_i2
   // clear w2c_i0
-    w2c_i0 = w2c_i0 != w2c_i1;
+    w2c_i0 = w2c_i0 != 0u - w2c_i2;
+  // clear cache
     if (w2c_i0) {goto w2c_B1;}
   // v[w2c_i0] = 1050744u
     w2c_i0 = 1050744u;
@@ -10054,20 +10056,20 @@ static void w2c_f2(u32 w2c_p0) {
     w2c_i0 = w2c_l1;
   // v[w2c_i1] = 12u
     w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_l1 + 12u
+    w2c_i0 = w2c_l1 + 12u
   // clear w2c_i0
-    w2c_i0 += 12u;
-  // clear w2c_i0
-    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l1 + 12u));
   // clear cache
     w2c_l4 = w2c_i0;
   // v[w2c_i1] = w2c_l1
     w2c_i1 = w2c_l1;
   // v[w2c_i2] = 8u
     w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_l1 + 8u
+    w2c_i1 = w2c_l1 + 8u
   // clear w2c_i1
-    w2c_i1 += 8u;
-  // clear w2c_i1
-    w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+    w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_l1 + 8u));
   // clear cache
     w2c_l1 = w2c_i1;
   // clear w2c_i0
@@ -10187,8 +10189,8 @@ static void w2c_f2(u32 w2c_p0) {
       w2c_i1 = w2c_l2;
   // v[w2c_i2] = w2c_l3
       w2c_i2 = w2c_l3;
-  // clear w2c_i1
-      w2c_i1 |= w2c_l3;
+  // v[w2c_i1] = w2c_l2 | w2c_l3
+      w2c_i1 = w2c_l2 | w2c_l3
   // clear cache
       i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l1
@@ -10330,18 +10332,18 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_p1;
   // v[w2c_i1] = w2c_p2
   w2c_i1 = w2c_p2;
-  // clear w2c_i0
-  w2c_i0 += w2c_p2;
+  // v[w2c_i0] = w2c_p1 + w2c_p2
+  w2c_i0 = w2c_p1 + w2c_p2
   // clear cache
   w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 20u
   w2c_i1 = 20u;
+  // v[w2c_i0] = w2c_p0 + 20u
+  w2c_i0 = w2c_p0 + 20u
   // clear w2c_i0
-  w2c_i0 += 20u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 20u));
   // clear cache
   w2c_l8 = w2c_i0;
   // clear w2c_i0
@@ -10371,8 +10373,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_l7;
   // v[w2c_i1] = 1u
     w2c_i1 = 1u;
-  // clear w2c_i0
-    w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l7 + 1u
+    w2c_i0 = w2c_l7 + 1u
   // clear cache
     w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_l7
@@ -10390,8 +10392,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_l6;
   // v[w2c_i1] = 255u
     w2c_i1 = 255u;
-  // clear w2c_i0
-    w2c_i0 &= 255u;
+  // v[w2c_i0] = w2c_l6 \& 255u
+    w2c_i0 = w2c_l6 & 255u
   // clear cache
     w2c_l9 = w2c_i0;
   // v[w2c_i0] = w2c_l3
@@ -10425,8 +10427,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_l7;
   // v[w2c_i1] = 2u
     w2c_i1 = 2u;
-  // clear w2c_i0
-    w2c_i0 += 2u;
+  // v[w2c_i0] = w2c_l7 + 2u
+    w2c_i0 = w2c_l7 + 2u
   // clear cache
     w2c_l4 = w2c_i0;
     w2c_B9:;
@@ -10470,8 +10472,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_l6;
   // v[w2c_i1] = 1u
     w2c_i1 = 1u;
-  // clear w2c_i0
-    w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l6 + 1u
+    w2c_i0 = w2c_l6 + 1u
   // clear cache
     w2c_l4 = w2c_i0;
     w2c_B11:;
@@ -10500,8 +10502,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
       w2c_i0 = w2c_l6;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l6 + 1u
+      w2c_i0 = w2c_l6 + 1u
   // clear cache
       w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_l6
@@ -10553,20 +10555,20 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_l4;
   // v[w2c_i1] = w2c_l7
     w2c_i1 = w2c_l7;
-  // clear w2c_i0
-    w2c_i0 -= w2c_l7;
+  // v[w2c_i0] = w2c_l4 - w2c_l7
+    w2c_i0 = w2c_l4 - w2c_l7
   // v[w2c_i1] = w2c_l5
     w2c_i1 = w2c_l5;
-  // clear w2c_i0
-    w2c_i0 += w2c_l5;
+  // v[w2c_i0] = w2c_l4 - w2c_l7 + w2c_l5
+    w2c_i0 = w2c_l4 - w2c_l7 + w2c_l5
   // clear cache
     w2c_l5 = w2c_i0;
   // v[w2c_i0] = w2c_l8
     w2c_i0 = w2c_l8;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l8 + 4294967295u
+    w2c_i0 = w2c_l8 + 4294967295u
   // clear cache
     w2c_l8 = w2c_i0;
     if (w2c_i0) {goto w2c_L7;}
@@ -10596,10 +10598,10 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l4;
   // v[w2c_i2] = 1u
   w2c_i2 = 1u;
-  // clear w2c_i1
-  w2c_i1 += 1u;
+  // v[w2c_i1] = w2c_l4 + 1u
+  w2c_i1 = w2c_l4 + 1u
   // clear w2c_i0
-  w2c_i0 = w2c_l3 == w2c_i1;
+  w2c_i0 = w2c_l3 == w2c_l4 + 1u;
   // clear cache
   if (w2c_i0) {
   // v[w2c_i0] = w2c_l3
@@ -10615,8 +10617,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 2u
   w2c_i1 = 2u;
-  // clear w2c_i0
-  w2c_i0 += 2u;
+  // v[w2c_i0] = w2c_l4 + 2u
+  w2c_i0 = w2c_l4 + 2u
   // clear cache
   w2c_l8 = w2c_i0;
   // v[w2c_i0] = w2c_l4
@@ -10637,12 +10639,12 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l7;
   // v[w2c_i2] = 255u
   w2c_i2 = 255u;
-  // clear w2c_i1
-  w2c_i1 &= 255u;
+  // v[w2c_i1] = w2c_l7 \& 255u
+  w2c_i1 = w2c_l7 & 255u
   // v[w2c_i2] = 224u
   w2c_i2 = 224u;
   // clear w2c_i1
-  w2c_i1 = w2c_i1 < 224u;
+  w2c_i1 = w2c_l7 & 255u < 224u;
   // clear cache
   if (w2c_i1) {goto w2c_B14;}
   // v[w2c_i1] = w2c_l3
@@ -10666,8 +10668,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l8;
   // v[w2c_i2] = 1u
   w2c_i2 = 1u;
-  // clear w2c_i1
-  w2c_i1 += 1u;
+  // v[w2c_i1] = w2c_l8 + 1u
+  w2c_i1 = w2c_l8 + 1u
   // clear cache
   w2c_l6 = w2c_i1;
   // v[w2c_i1] = w2c_l8
@@ -10684,20 +10686,20 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i2 = w2c_l7;
   // v[w2c_i3] = 255u
   w2c_i3 = 255u;
-  // clear w2c_i2
-  w2c_i2 &= 255u;
+  // v[w2c_i2] = w2c_l7 \& 255u
+  w2c_i2 = w2c_l7 & 255u
   // v[w2c_i3] = 240u
   w2c_i3 = 240u;
   // clear w2c_i2
-  w2c_i2 = w2c_i2 < 240u;
+  w2c_i2 = w2c_l7 & 255u < 240u;
   // clear cache
   if (w2c_i2) {goto w2c_B14;}
   // v[w2c_i2] = w2c_l7
   w2c_i2 = w2c_l7;
   // v[w2c_i3] = 255u
   w2c_i3 = 255u;
-  // clear w2c_i2
-  w2c_i2 &= 255u;
+  // v[w2c_i2] = w2c_l7 \& 255u
+  w2c_i2 = w2c_l7 & 255u
   // clear cache
   w2c_l7 = w2c_i2;
   // clear w2c_i0
@@ -10784,10 +10786,10 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_p1;
   // v[w2c_i1] = w2c_l5
     w2c_i1 = w2c_l5;
+  // v[w2c_i0] = w2c_p1 + w2c_l5
+    w2c_i0 = w2c_p1 + w2c_l5
   // clear w2c_i0
-    w2c_i0 += w2c_l5;
-  // clear w2c_i0
-    w2c_i0 = i32_load8_s((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load8_s((&w2c_memory), (u64)(w2c_p1 + w2c_l5));
   // v[w2c_i1] = 4294967232u
     w2c_i1 = 4294967232u;
   // clear w2c_i0
@@ -10862,24 +10864,24 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
       w2c_i2 = 128u;
   // clear w2c_i1
       w2c_i1 = w2c_i1 != 128u;
-  // clear w2c_i0
-      w2c_i0 += w2c_i1;
+  // v[w2c_i0] = w2c_l4 + w2c_i1
+      w2c_i0 = w2c_l4 + w2c_i1
   // clear cache
       w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_l3
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l3 + 1u
+      w2c_i0 = w2c_l3 + 1u
   // clear cache
       w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_l5
       w2c_i0 = w2c_l5;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l5 + 4294967295u
+      w2c_i0 = w2c_l5 + 4294967295u
   // clear cache
       w2c_l5 = w2c_i0;
       if (w2c_i0) {goto w2c_L24;}
@@ -10921,24 +10923,24 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
       w2c_i2 = 128u;
   // clear w2c_i1
       w2c_i1 = w2c_i1 != 128u;
-  // clear w2c_i0
-      w2c_i0 += w2c_i1;
+  // v[w2c_i0] = w2c_l4 + w2c_i1
+      w2c_i0 = w2c_l4 + w2c_i1
   // clear cache
       w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_l3
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l3 + 1u
+      w2c_i0 = w2c_l3 + 1u
   // clear cache
       w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_l5
       w2c_i0 = w2c_l5;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l5 + 4294967295u
+      w2c_i0 = w2c_l5 + 4294967295u
   // clear cache
       w2c_l5 = w2c_i0;
       if (w2c_i0) {goto w2c_L25;}
@@ -10964,8 +10966,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l6;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
-  // clear w2c_i0
-  w2c_i0 -= w2c_l4;
+  // v[w2c_i0] = w2c_l6 - w2c_l4
+  w2c_i0 = w2c_l6 - w2c_l4
   // clear cache
   w2c_l4 = w2c_i0;
   w2c_l5 = w2c_i0;
@@ -11013,8 +11015,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l4 + 1u
+  w2c_i0 = w2c_l4 + 1u
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
   // clear w2c_i0
@@ -11036,8 +11038,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l3 + 1u
+  w2c_i0 = w2c_l3 + 1u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_L31: 
@@ -11045,8 +11047,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_l3;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l3 + 4294967295u
+    w2c_i0 = w2c_l3 + 4294967295u
   // clear cache
     w2c_l3 = w2c_i0;
     if (w2c_i0) {
@@ -11100,8 +11102,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l5;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l5 + 1u
+  w2c_i0 = w2c_l5 + 1u
   // clear cache
   w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_p0
@@ -11119,8 +11121,8 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_l3;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l3 + 4294967295u
+    w2c_i0 = w2c_l3 + 4294967295u
   // clear cache
     w2c_l3 = w2c_i0;
   // clear w2c_i0
@@ -11164,10 +11166,10 @@ static u32 w2c_f3(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i3 = w2c_p0;
   // v[w2c_i4] = 28u
   w2c_i4 = 28u;
+  // v[w2c_i3] = w2c_p0 + 28u
+  w2c_i3 = w2c_p0 + 28u
   // clear w2c_i3
-  w2c_i3 += 28u;
-  // clear w2c_i3
-  w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3));
+  w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_p0 + 28u));
   // clear w2c_i3
   w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3) + 12u);
   // clear w2c_i0
@@ -11249,8 +11251,8 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i3 = 2u;
   // clear w2c_i2
     w2c_i2 <<= (2u & 31);
-  // clear w2c_i1
-    w2c_i1 -= w2c_i2;
+  // v[w2c_i1] = 0u - w2c_i2
+    w2c_i1 = 0u - w2c_i2
   // clear cache
     w2c_l4 = w2c_i1;
   // v[w2c_i2] = w2c_p1
@@ -11273,8 +11275,8 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i1 = w2c_p3;
   // v[w2c_i2] = 4u
     w2c_i2 = 4u;
-  // clear w2c_i1
-    w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_p3 + 4u
+    w2c_i1 = w2c_p3 + 4u
   // v[w2c_i2] = 16u
     w2c_i2 = 16u;
   // v[w2c_i3] = 8u
@@ -11290,7 +11292,7 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   // clear w2c_i2
     w2c_i2 = w2c_i2 > w2c_p3;
   // clear w2c_i0
-    w2c_i0 = w2c_i2 ? 16u : w2c_i1;
+    w2c_i0 = w2c_i2 ? 16u : w2c_p3 + 4u;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
   // clear w2c_i0
@@ -11334,10 +11336,10 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i1 = w2c_l6;
   // v[w2c_i2] = 4u
       w2c_i2 = 4u;
-  // clear w2c_i1
-      w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_l6 + 4u
+      w2c_i1 = w2c_l6 + 4u
   // clear w2c_i0
-      w2c_i0 = w2c_l5 >= w2c_i1;
+      w2c_i0 = w2c_l5 >= w2c_l6 + 4u;
   // clear cache
       if (w2c_i0) {
   // v[w2c_i0] = w2c_p1
@@ -11348,12 +11350,12 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
         w2c_i0 = w2c_l5;
   // v[w2c_i1] = w2c_l6
         w2c_i1 = w2c_l6;
-  // clear w2c_i0
-        w2c_i0 -= w2c_l6;
+  // v[w2c_i0] = w2c_l5 - w2c_l6
+        w2c_i0 = w2c_l5 - w2c_l6
   // v[w2c_i1] = 131073u
         w2c_i1 = 131073u;
   // clear w2c_i0
-        w2c_i0 = w2c_i0 < 131073u;
+        w2c_i0 = w2c_l5 - w2c_l6 < 131073u;
   // clear cache
         if (w2c_i0) {goto w2c_B2;}
       }
@@ -11376,12 +11378,12 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i0 = w2c_l6;
   // v[w2c_i1] = 31u
       w2c_i1 = 31u;
-  // clear w2c_i0
-      w2c_i0 += 31u;
+  // v[w2c_i0] = w2c_l6 + 31u
+      w2c_i0 = w2c_l6 + 31u
   // v[w2c_i1] = 65536u
       w2c_i1 = 65536u;
   // clear w2c_i0
-      w2c_i0 = w2c_f72(w2c_i0, 65536u);
+      w2c_i0 = w2c_f72(w2c_l6 + 31u, 65536u);
   // clear cache
       w2c_l5 = w2c_i0;
   // v[w2c_i0] = 0u
@@ -11395,16 +11397,16 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i0 = w2c_l6;
   // v[w2c_i1] = w2c_l7
       w2c_i1 = w2c_l7;
-  // clear w2c_i0
-      w2c_i0 += w2c_l7;
+  // v[w2c_i0] = w2c_l6 + w2c_l7
+      w2c_i0 = w2c_l6 + w2c_l7
   // clear cache
       w2c_l4 = w2c_i0;
   // v[w2c_i1] = w2c_l5
       w2c_i1 = w2c_l5;
   // v[w2c_i2] = w2c_l7
       w2c_i2 = w2c_l7;
-  // clear w2c_i1
-      w2c_i1 -= w2c_l7;
+  // v[w2c_i1] = w2c_l5 - w2c_l7
+      w2c_i1 = w2c_l5 - w2c_l7
   // clear cache
       w2c_l7 = w2c_i1;
   // v[w2c_i2] = 4294967280u
@@ -11430,10 +11432,10 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i1 = w2c_l7;
   // v[w2c_i2] = 4294967284u
       w2c_i2 = 4294967284u;
-  // clear w2c_i1
-      w2c_i1 += 4294967284u;
+  // v[w2c_i1] = w2c_l7 + 4294967284u
+      w2c_i1 = w2c_l7 + 4294967284u
   // clear w2c_i0
-      w2c_i0 = w2c_f94(w2c_l4, w2c_i1);
+      w2c_i0 = w2c_f94(w2c_l4, w2c_l7 + 4294967284u);
   // v[w2c_i1] = 0u
       w2c_i1 = 0u;
   // clear cache
@@ -11448,10 +11450,10 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i2 = w2c_l5;
   // v[w2c_i3] = w2c_l8
       w2c_i3 = w2c_l8;
-  // clear w2c_i2
-      w2c_i2 -= w2c_l8;
+  // v[w2c_i2] = w2c_l5 - w2c_l8
+      w2c_i2 = w2c_l5 - w2c_l8
   // clear w2c_i1
-      w2c_i1 += w2c_i2;
+      w2c_i1 += w2c_l5 - w2c_l8;
   // clear cache
       w2c_l5 = w2c_i1;
       i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
@@ -11513,8 +11515,8 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i0 = w2c_l5;
   // v[w2c_i1] = w2c_l6
       w2c_i1 = w2c_l6;
-  // clear w2c_i0
-      w2c_i0 -= w2c_l6;
+  // v[w2c_i0] = w2c_l5 - w2c_l6
+      w2c_i0 = w2c_l5 - w2c_l6
   // clear cache
       w2c_l5 = w2c_i0;
   // v[w2c_i1] = 16u
@@ -11595,8 +11597,8 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
         w2c_i0 = w2c_l4;
   // v[w2c_i1] = w2c_l6
         w2c_i1 = w2c_l6;
-  // clear w2c_i0
-        w2c_i0 -= w2c_l6;
+  // v[w2c_i0] = w2c_l4 - w2c_l6
+        w2c_i0 = w2c_l4 - w2c_l6
   // clear cache
         w2c_l5 = w2c_i0;
   // v[w2c_i1] = 16u
@@ -11704,8 +11706,8 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i0 = w2c_l8;
   // v[w2c_i1] = w2c_l6
       w2c_i1 = w2c_l6;
-  // clear w2c_i0
-      w2c_i0 -= w2c_l6;
+  // v[w2c_i0] = w2c_l8 - w2c_l6
+      w2c_i0 = w2c_l8 - w2c_l6
   // clear cache
       w2c_l5 = w2c_i0;
   // v[w2c_i0] = w2c_l7
@@ -11720,20 +11722,20 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
         w2c_i0 = w2c_l4;
   // v[w2c_i1] = 12u
         w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_l4 + 12u
+        w2c_i0 = w2c_l4 + 12u
   // clear w2c_i0
-        w2c_i0 += 12u;
-  // clear w2c_i0
-        w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+        w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l4 + 12u));
   // clear cache
         w2c_l9 = w2c_i0;
   // v[w2c_i1] = w2c_l4
         w2c_i1 = w2c_l4;
   // v[w2c_i2] = 8u
         w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_l4 + 8u
+        w2c_i1 = w2c_l4 + 8u
   // clear w2c_i1
-        w2c_i1 += 8u;
-  // clear w2c_i1
-        w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+        w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_l4 + 8u));
   // clear cache
         w2c_l4 = w2c_i1;
   // clear w2c_i0
@@ -11906,8 +11908,8 @@ static u32 w2c_f4(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i1 = w2c_l5;
   // v[w2c_i2] = w2c_l6
   w2c_i2 = w2c_l6;
-  // clear w2c_i1
-  w2c_i1 -= w2c_l6;
+  // v[w2c_i1] = w2c_l5 - w2c_l6
+  w2c_i1 = w2c_l5 - w2c_l6
   // clear cache
   w2c_l6 = w2c_i1;
   // v[w2c_i2] = 1u
@@ -12032,18 +12034,18 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_p4;
   // v[w2c_i1] = w2c_l5
   w2c_i1 = w2c_l5;
-  // clear w2c_i0
-  w2c_i0 += w2c_l5;
+  // v[w2c_i0] = w2c_p4 + w2c_l5
+  w2c_i0 = w2c_p4 + w2c_l5
   // clear cache
   w2c_l8 = w2c_i0;
   // v[w2c_i0] = w2c_l9
   w2c_i0 = w2c_l9;
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
+  // v[w2c_i0] = w2c_l9 \& 4u
+  w2c_i0 = w2c_l9 & 4u
   // clear w2c_i0
-  w2c_i0 &= 4u;
-  // clear w2c_i0
-  w2c_i0 = !(w2c_i0);
+  w2c_i0 = !(w2c_l9 & 4u);
   // clear cache
   if (w2c_i0) {
   // v[w2c_i0] = 0u
@@ -12079,24 +12081,24 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
       w2c_i2 = 128u;
   // clear w2c_i1
       w2c_i1 = w2c_i1 != 128u;
-  // clear w2c_i0
-      w2c_i0 += w2c_i1;
+  // v[w2c_i0] = w2c_l7 + w2c_i1
+      w2c_i0 = w2c_l7 + w2c_i1
   // clear cache
       w2c_l7 = w2c_i0;
   // v[w2c_i0] = w2c_l5
       w2c_i0 = w2c_l5;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l5 + 1u
+      w2c_i0 = w2c_l5 + 1u
   // clear cache
       w2c_l5 = w2c_i0;
   // v[w2c_i0] = w2c_l6
       w2c_i0 = w2c_l6;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l6 + 4294967295u
+      w2c_i0 = w2c_l6 + 4294967295u
   // clear cache
       w2c_l6 = w2c_i0;
       if (w2c_i0) {goto w2c_L3;}
@@ -12105,8 +12107,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_l7;
   // v[w2c_i1] = w2c_l8
   w2c_i1 = w2c_l8;
-  // clear w2c_i0
-  w2c_i0 += w2c_l8;
+  // v[w2c_i0] = w2c_l7 + w2c_l8
+  w2c_i0 = w2c_l7 + w2c_l8
   // clear cache
   w2c_l8 = w2c_i0;
   w2c_B0:;
@@ -12138,10 +12140,10 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 12u
   w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_p0 + 12u
+  w2c_i0 = w2c_p0 + 12u
   // clear w2c_i0
-  w2c_i0 += 12u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 12u));
   // clear cache
   w2c_l6 = w2c_i0;
   // v[w2c_i1] = w2c_l8
@@ -12168,8 +12170,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_l9;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 &= 8u;
+  // v[w2c_i0] = w2c_l9 \& 8u
+  w2c_i0 = w2c_l9 & 8u
   // clear cache
   if (w2c_i0) {
   // v[w2c_i0] = w2c_p0
@@ -12214,8 +12216,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
     w2c_i0 = w2c_l6;
   // v[w2c_i1] = w2c_l8
     w2c_i1 = w2c_l8;
-  // clear w2c_i0
-    w2c_i0 -= w2c_l8;
+  // v[w2c_i0] = w2c_l6 - w2c_l8
+    w2c_i0 = w2c_l6 - w2c_l8
   // clear cache
     w2c_p2 = w2c_i0;
     w2c_p1 = w2c_i0;
@@ -12259,8 +12261,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_l6;
   // v[w2c_i1] = w2c_l8
   w2c_i1 = w2c_l8;
-  // clear w2c_i0
-  w2c_i0 -= w2c_l8;
+  // v[w2c_i0] = w2c_l6 - w2c_l8
+  w2c_i0 = w2c_l6 - w2c_l8
   // clear cache
   w2c_l6 = w2c_i0;
   w2c_l8 = w2c_i0;
@@ -12308,8 +12310,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_l6;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l6 + 1u
+  w2c_i0 = w2c_l6 + 1u
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
   // clear w2c_i0
@@ -12331,8 +12333,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_l5;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l5 + 1u
+  w2c_i0 = w2c_l5 + 1u
   // clear cache
   w2c_l5 = w2c_i0;
   w2c_L16: 
@@ -12340,8 +12342,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
     w2c_i0 = w2c_l5;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l5 + 4294967295u
+    w2c_i0 = w2c_l5 + 4294967295u
   // clear cache
     w2c_l5 = w2c_i0;
   // clear w2c_i0
@@ -12383,8 +12385,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_p2;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_p2 + 1u
+  w2c_i0 = w2c_p2 + 1u
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
   // clear w2c_i0
@@ -12406,8 +12408,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_l5;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l5 + 1u
+  w2c_i0 = w2c_l5 + 1u
   // clear cache
   w2c_l5 = w2c_i0;
   w2c_L18: 
@@ -12415,8 +12417,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
     w2c_i0 = w2c_l5;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l5 + 4294967295u
+    w2c_i0 = w2c_l5 + 4294967295u
   // clear cache
     w2c_l5 = w2c_i0;
   // clear w2c_i0
@@ -12473,8 +12475,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_p1;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_p1 + 1u
+  w2c_i0 = w2c_p1 + 1u
   // clear cache
   w2c_l7 = w2c_i0;
   // v[w2c_i0] = w2c_p0
@@ -12492,8 +12494,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
     w2c_i0 = w2c_l7;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l7 + 4294967295u
+    w2c_i0 = w2c_l7 + 4294967295u
   // clear cache
     w2c_l7 = w2c_i0;
     if (w2c_i0) {
@@ -12569,8 +12571,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i0 = w2c_l8;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l8 + 1u
+  w2c_i0 = w2c_l8 + 1u
   // clear cache
   w2c_l7 = w2c_i0;
   // v[w2c_i0] = w2c_p0
@@ -12588,8 +12590,8 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
     w2c_i0 = w2c_l7;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l7 + 4294967295u
+    w2c_i0 = w2c_l7 + 4294967295u
   // clear cache
     w2c_l7 = w2c_i0;
   // clear w2c_i0
@@ -12632,10 +12634,10 @@ static u32 w2c_f5(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3, u32 w2c_p4) {
   w2c_i3 = w2c_p0;
   // v[w2c_i4] = 28u
   w2c_i4 = 28u;
+  // v[w2c_i3] = w2c_p0 + 28u
+  w2c_i3 = w2c_p0 + 28u
   // clear w2c_i3
-  w2c_i3 += 28u;
-  // clear w2c_i3
-  w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3));
+  w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_p0 + 28u));
   // clear w2c_i3
   w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3) + 12u);
   // clear w2c_i0
@@ -12656,8 +12658,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 -= 48u;
+  // v[w2c_i0] = w2c_g0 - 48u
+  w2c_i0 = w2c_g0 - 48u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -12665,8 +12667,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 36u
   w2c_i1 = 36u;
-  // clear w2c_i0
-  w2c_i0 += 36u;
+  // v[w2c_i0] = w2c_l2 + 36u
+  w2c_i0 = w2c_l2 + 36u
   // v[w2c_i1] = 1049512u
   w2c_i1 = 1049512u;
   // clear cache
@@ -12720,10 +12722,10 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
     w2c_i1 = w2c_p1;
   // v[w2c_i2] = 12u
     w2c_i2 = 12u;
+  // v[w2c_i1] = w2c_p1 + 12u
+    w2c_i1 = w2c_p1 + 12u
   // clear w2c_i1
-    w2c_i1 += 12u;
-  // clear w2c_i1
-    w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+    w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p1 + 12u));
   // clear cache
     w2c_l4 = w2c_i1;
   // v[w2c_i2] = w2c_l4
@@ -12760,8 +12762,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l5;
   // v[w2c_i1] = 12u
     w2c_i1 = 12u;
-  // clear w2c_i0
-    w2c_i0 += 12u;
+  // v[w2c_i0] = w2c_l5 + 12u
+    w2c_i0 = w2c_l5 + 12u
   // clear cache
     w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_p1
@@ -12780,10 +12782,10 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i1 = w2c_l3;
   // v[w2c_i2] = 28u
       w2c_i2 = 28u;
+  // v[w2c_i1] = w2c_l3 + 28u
+      w2c_i1 = w2c_l3 + 28u
   // clear w2c_i1
-      w2c_i1 += 28u;
-  // clear w2c_i1
-      w2c_i1 = i32_load8_u((&w2c_memory), (u64)(w2c_i1));
+      w2c_i1 = i32_load8_u((&w2c_memory), (u64)(w2c_l3 + 28u));
   // clear cache
       i32_store8((&w2c_memory), (u64)(w2c_i0) + 40, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -12792,8 +12794,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i1 = w2c_l3;
   // v[w2c_i2] = 4u
       w2c_i2 = 4u;
-  // clear w2c_i1
-      w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_l3 + 4u
+      w2c_i1 = w2c_l3 + 4u
   // clear cache
       w2c_j1 = i64_load((&w2c_memory), (u64)(w2c_i1));
       w2c_j2 = 32ull;
@@ -12803,10 +12805,10 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 24u
       w2c_i1 = 24u;
+  // v[w2c_i0] = w2c_l3 + 24u
+      w2c_i0 = w2c_l3 + 24u
   // clear w2c_i0
-      w2c_i0 += 24u;
-  // clear w2c_i0
-      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l3 + 24u));
   // clear cache
       w2c_l6 = w2c_i0;
   // v[w2c_i0] = 0u
@@ -12821,10 +12823,10 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 20u
       w2c_i1 = 20u;
+  // v[w2c_i0] = w2c_l3 + 20u
+      w2c_i0 = w2c_l3 + 20u
   // clear w2c_i0
-      w2c_i0 += 20u;
-  // clear w2c_i0
-      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l3 + 20u));
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
   // clear w2c_i0
@@ -12885,20 +12887,20 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 16u
       w2c_i1 = 16u;
+  // v[w2c_i0] = w2c_l3 + 16u
+      w2c_i0 = w2c_l3 + 16u
   // clear w2c_i0
-      w2c_i0 += 16u;
-  // clear w2c_i0
-      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l3 + 16u));
   // clear cache
       w2c_p1 = w2c_i0;
   // v[w2c_i0] = w2c_l3
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 12u
       w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_l3 + 12u
+      w2c_i0 = w2c_l3 + 12u
   // clear w2c_i0
-      w2c_i0 += 12u;
-  // clear w2c_i0
-      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l3 + 12u));
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
   // clear w2c_i0
@@ -12965,8 +12967,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i2 = 3u;
   // clear w2c_i1
       w2c_i1 <<= (3u & 31);
-  // clear w2c_i0
-      w2c_i0 += w2c_i1;
+  // v[w2c_i0] = w2c_l7 + w2c_i1
+      w2c_i0 = w2c_l7 + w2c_i1
   // clear cache
       w2c_p1 = w2c_i0;
   // clear w2c_i0
@@ -12975,21 +12977,22 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i1 = w2c_l2;
   // v[w2c_i2] = 8u
       w2c_i2 = 8u;
-  // clear w2c_i1
-      w2c_i1 += 8u;
+  // v[w2c_i1] = w2c_l2 + 8u
+      w2c_i1 = w2c_l2 + 8u
   // v[w2c_i2] = w2c_p1
       w2c_i2 = w2c_p1;
   // clear w2c_i2
       w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_p1) + 4u);
   // clear w2c_i0
-      w2c_i0 = CALL_INDIRECT(w2c_T0, u32 (*)(u32, u32), 1, w2c_i2, w2c_i0, w2c_i1);
+      w2c_i0 = CALL_INDIRECT(w2c_T0, u32 (*)(u32, u32), 1, w2c_i2, w2c_i0, w2c_l2 + 8u);
+  // clear cache
       if (w2c_i0) {goto w2c_B1;}
   // v[w2c_i0] = w2c_l9
       w2c_i0 = w2c_l9;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l9 + 4294967295u
+      w2c_i0 = w2c_l9 + 4294967295u
   // clear cache
       w2c_l9 = w2c_i0;
   // clear w2c_i0
@@ -12999,16 +13002,16 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 32u
       w2c_i1 = 32u;
-  // clear w2c_i0
-      w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l3 + 32u
+      w2c_i0 = w2c_l3 + 32u
   // clear cache
       w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_p0
       w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4294967292u
       w2c_i1 = 4294967292u;
-  // clear w2c_i0
-      w2c_i0 += 4294967292u;
+  // v[w2c_i0] = w2c_p0 + 4294967292u
+      w2c_i0 = w2c_p0 + 4294967292u
   // clear cache
       w2c_p1 = w2c_i0;
   // v[w2c_i0] = w2c_p0
@@ -13020,8 +13023,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
       w2c_i1 = 8u;
-  // clear w2c_i0
-      w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+      w2c_i0 = w2c_p0 + 8u
   // clear cache
       w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l2
@@ -13062,10 +13065,10 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 20u
   w2c_i2 = 20u;
+  // v[w2c_i1] = w2c_p1 + 20u
+  w2c_i1 = w2c_p1 + 20u
   // clear w2c_i1
-  w2c_i1 += 20u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p1 + 20u));
   // clear cache
   w2c_l4 = w2c_i1;
   // v[w2c_i2] = w2c_l4
@@ -13107,8 +13110,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l5;
   // v[w2c_i1] = 12u
   w2c_i1 = 12u;
-  // clear w2c_i0
-  w2c_i0 += 12u;
+  // v[w2c_i0] = w2c_l5 + 12u
+  w2c_i0 = w2c_l5 + 12u
   // clear cache
   w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l4
@@ -13124,26 +13127,26 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = 8u
     w2c_i2 = 8u;
-  // clear w2c_i1
-    w2c_i1 += 8u;
+  // v[w2c_i1] = w2c_l2 + 8u
+    w2c_i1 = w2c_l2 + 8u
   // v[w2c_i2] = w2c_l3
     w2c_i2 = w2c_l3;
   // v[w2c_i3] = 4u
     w2c_i3 = 4u;
+  // v[w2c_i2] = w2c_l3 + 4u
+    w2c_i2 = w2c_l3 + 4u
   // clear w2c_i2
-    w2c_i2 += 4u;
-  // clear w2c_i2
-    w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_i2));
+    w2c_i2 = i32_load((&w2c_memory), (u64)(w2c_l3 + 4u));
   // clear w2c_i0
-    w2c_i0 = CALL_INDIRECT(w2c_T0, u32 (*)(u32, u32), 1, w2c_i2, w2c_i0, w2c_i1);
+    w2c_i0 = CALL_INDIRECT(w2c_T0, u32 (*)(u32, u32), 1, w2c_i2, w2c_i0, w2c_l2 + 8u);
   // clear cache
     if (w2c_i0) {goto w2c_B1;}
   // v[w2c_i0] = w2c_p1
     w2c_i0 = w2c_p1;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p1 + 4294967295u
+    w2c_i0 = w2c_p1 + 4294967295u
   // clear cache
     w2c_p1 = w2c_i0;
   // clear w2c_i0
@@ -13153,16 +13156,16 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l3;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l3 + 8u
+    w2c_i0 = w2c_l3 + 8u
   // clear cache
     w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_p0
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4294967292u
     w2c_i1 = 4294967292u;
-  // clear w2c_i0
-    w2c_i0 += 4294967292u;
+  // v[w2c_i0] = w2c_p0 + 4294967292u
+    w2c_i0 = w2c_p0 + 4294967292u
   // clear cache
     w2c_l9 = w2c_i0;
   // v[w2c_i0] = w2c_p0
@@ -13174,8 +13177,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+    w2c_i0 = w2c_p0 + 8u
   // clear cache
     w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l2
@@ -13227,8 +13230,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
     w2c_i3 = 3u;
   // clear w2c_i2
     w2c_i2 <<= (3u & 31);
-  // clear w2c_i1
-    w2c_i1 += w2c_i2;
+  // v[w2c_i1] = w2c_l5 + w2c_i2
+    w2c_i1 = w2c_l5 + w2c_i2
   // clear cache
     w2c_p0 = w2c_i1;
   // clear w2c_i1
@@ -13260,8 +13263,8 @@ static u32 w2c_f6(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // clear cache
   w2c_g0 = w2c_i1;
   FUNC_EPILOGUE;
@@ -13328,10 +13331,10 @@ static void w2c_f7(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 80u
   w2c_i2 = 80u;
+  // v[w2c_i1] = w2c_p0 + 80u
+  w2c_i1 = w2c_p0 + 80u
   // clear w2c_i1
-  w2c_i1 += 80u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 80u));
   // clear cache
   w2c_l2 = w2c_i1;
   // v[w2c_i2] = 24u
@@ -13378,10 +13381,10 @@ static void w2c_f7(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 84u
   w2c_i2 = 84u;
+  // v[w2c_i1] = w2c_p0 + 84u
+  w2c_i1 = w2c_p0 + 84u
   // clear w2c_i1
-  w2c_i1 += 84u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 84u));
   // clear cache
   w2c_l2 = w2c_i1;
   // v[w2c_i2] = 24u
@@ -13428,10 +13431,10 @@ static void w2c_f7(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 88u
   w2c_i2 = 88u;
+  // v[w2c_i1] = w2c_p0 + 88u
+  w2c_i1 = w2c_p0 + 88u
   // clear w2c_i1
-  w2c_i1 += 88u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 88u));
   // clear cache
   w2c_l2 = w2c_i1;
   // v[w2c_i2] = 24u
@@ -13478,10 +13481,10 @@ static void w2c_f7(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 92u
   w2c_i2 = 92u;
+  // v[w2c_i1] = w2c_p0 + 92u
+  w2c_i1 = w2c_p0 + 92u
   // clear w2c_i1
-  w2c_i1 += 92u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 92u));
   // clear cache
   w2c_l2 = w2c_i1;
   // v[w2c_i2] = 24u
@@ -13528,10 +13531,10 @@ static void w2c_f7(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 96u
   w2c_i2 = 96u;
+  // v[w2c_i1] = w2c_p0 + 96u
+  w2c_i1 = w2c_p0 + 96u
   // clear w2c_i1
-  w2c_i1 += 96u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 96u));
   // clear cache
   w2c_l2 = w2c_i1;
   // v[w2c_i2] = 24u
@@ -13578,10 +13581,10 @@ static void w2c_f7(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 100u
   w2c_i2 = 100u;
+  // v[w2c_i1] = w2c_p0 + 100u
+  w2c_i1 = w2c_p0 + 100u
   // clear w2c_i1
-  w2c_i1 += 100u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 100u));
   // clear cache
   w2c_l2 = w2c_i1;
   // v[w2c_i2] = 24u
@@ -13628,10 +13631,10 @@ static void w2c_f7(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 104u
   w2c_i2 = 104u;
+  // v[w2c_i1] = w2c_p0 + 104u
+  w2c_i1 = w2c_p0 + 104u
   // clear w2c_i1
-  w2c_i1 += 104u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 104u));
   // clear cache
   w2c_p0 = w2c_i1;
   // v[w2c_i2] = 24u
@@ -13706,12 +13709,12 @@ static void w2c_f8(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_p1;
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
-  // clear w2c_i0
-    w2c_i0 += w2c_l3;
+  // v[w2c_i0] = w2c_p1 + w2c_l3
+    w2c_i0 = w2c_p1 + w2c_l3
   // v[w2c_i1] = 16u
     w2c_i1 = 16u;
-  // clear w2c_i0
-    w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_p1 + w2c_l3 + 16u
+    w2c_i0 = w2c_p1 + w2c_l3 + 16u
   // clear cache
     w2c_p0 = w2c_i0;
     goto w2c_B1;
@@ -13720,8 +13723,8 @@ static void w2c_f8(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p1;
   // v[w2c_i1] = w2c_l3
   w2c_i1 = w2c_l3;
-  // clear w2c_i0
-  w2c_i0 += w2c_l3;
+  // v[w2c_i0] = w2c_p1 + w2c_l3
+  w2c_i0 = w2c_p1 + w2c_l3
   // clear cache
   w2c_p1 = w2c_i0;
   // v[w2c_i0] = w2c_p0
@@ -13751,20 +13754,20 @@ static void w2c_f8(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_p0;
   // v[w2c_i1] = 12u
       w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_p0 + 12u
+      w2c_i0 = w2c_p0 + 12u
   // clear w2c_i0
-      w2c_i0 += 12u;
-  // clear w2c_i0
-      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 12u));
   // clear cache
       w2c_l4 = w2c_i0;
   // v[w2c_i1] = w2c_p0
       w2c_i1 = w2c_p0;
   // v[w2c_i2] = 8u
       w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_p0 + 8u
+      w2c_i1 = w2c_p0 + 8u
   // clear w2c_i1
-      w2c_i1 += 8u;
-  // clear w2c_i1
-      w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+      w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 8u));
   // clear cache
       w2c_l5 = w2c_i1;
   // clear w2c_i0
@@ -13883,8 +13886,8 @@ static void w2c_f8(u32 w2c_p0, u32 w2c_p1) {
       w2c_i1 = w2c_p1;
   // v[w2c_i2] = 1u
       w2c_i2 = 1u;
-  // clear w2c_i1
-      w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_p1 | 1u
+      w2c_i1 = w2c_p1 | 1u
   // clear cache
       i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -13942,20 +13945,20 @@ static void w2c_f8(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_l2;
   // v[w2c_i1] = 12u
       w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_l2 + 12u
+      w2c_i0 = w2c_l2 + 12u
   // clear w2c_i0
-      w2c_i0 += 12u;
-  // clear w2c_i0
-      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+      w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l2 + 12u));
   // clear cache
       w2c_l4 = w2c_i0;
   // v[w2c_i1] = w2c_l2
       w2c_i1 = w2c_l2;
   // v[w2c_i2] = 8u
       w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_l2 + 8u
+      w2c_i1 = w2c_l2 + 8u
   // clear w2c_i1
-      w2c_i1 += 8u;
-  // clear w2c_i1
-      w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+      w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_l2 + 8u));
   // clear cache
       w2c_l2 = w2c_i1;
   // clear w2c_i0
@@ -14084,8 +14087,8 @@ static void w2c_f8(u32 w2c_p0, u32 w2c_p1) {
       w2c_i1 = w2c_l2;
   // v[w2c_i2] = w2c_l3
       w2c_i2 = w2c_l3;
-  // clear w2c_i1
-      w2c_i1 |= w2c_l3;
+  // v[w2c_i1] = w2c_l2 | w2c_l3
+      w2c_i1 = w2c_l2 | w2c_l3
   // clear cache
       i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_p1
@@ -14171,8 +14174,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 -= 32u;
+  // v[w2c_i0] = w2c_g0 - 32u
+  w2c_i0 = w2c_g0 - 32u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -14207,8 +14210,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
     w2c_i1 = 16u;
-  // clear w2c_i0
-    w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+    w2c_i0 = w2c_l2 + 16u
   // clear cache
     w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_p1
@@ -14225,12 +14228,12 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
       w2c_i1 = w2c_p1;
   // v[w2c_i2] = 63u
       w2c_i2 = 63u;
-  // clear w2c_i1
-      w2c_i1 &= 63u;
+  // v[w2c_i1] = w2c_p1 \& 63u
+      w2c_i1 = w2c_p1 & 63u
   // v[w2c_i2] = 128u
       w2c_i2 = 128u;
-  // clear w2c_i1
-      w2c_i1 |= 128u;
+  // v[w2c_i1] = w2c_p1 \& 63u | 128u
+      w2c_i1 = w2c_p1 & 63u | 128u
   // clear cache
       i32_store8((&w2c_memory), (u64)(w2c_i0) + 18, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -14277,12 +14280,12 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
     w2c_i1 = w2c_p1;
   // v[w2c_i2] = 63u
     w2c_i2 = 63u;
-  // clear w2c_i1
-    w2c_i1 &= 63u;
+  // v[w2c_i1] = w2c_p1 \& 63u
+    w2c_i1 = w2c_p1 & 63u
   // v[w2c_i2] = 128u
     w2c_i2 = 128u;
-  // clear w2c_i1
-    w2c_i1 |= 128u;
+  // v[w2c_i1] = w2c_p1 \& 63u | 128u
+    w2c_i1 = w2c_p1 & 63u | 128u
   // clear cache
     i32_store8((&w2c_memory), (u64)(w2c_i0) + 19, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -14350,10 +14353,10 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l4;
   // v[w2c_i2] = 4u
   w2c_i2 = 4u;
+  // v[w2c_i1] = w2c_l4 + 4u
+  w2c_i1 = w2c_l4 + 4u
   // clear w2c_i1
-  w2c_i1 += 4u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_l4 + 4u));
   // clear w2c_i0
   w2c_i0 = w2c_i0 != w2c_i1;
   // clear cache
@@ -14369,8 +14372,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
-  // clear w2c_i0
-  w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_p0 + 1u
+  w2c_i0 = w2c_p0 + 1u
   // clear cache
   w2c_l3 = w2c_i0;
   // v[w2c_i1] = w2c_p0
@@ -14428,8 +14431,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 24u
   w2c_i1 = 24u;
-  // clear w2c_i0
-  w2c_i0 += 24u;
+  // v[w2c_i0] = w2c_l2 + 24u
+  w2c_i0 = w2c_l2 + 24u
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
   // clear cache
@@ -14457,18 +14460,18 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 16u
   w2c_i3 = 16u;
-  // clear w2c_i2
-  w2c_i2 += 16u;
+  // v[w2c_i2] = w2c_l2 + 16u
+  w2c_i2 = w2c_l2 + 16u
   // clear cache
   w2c_f24(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l2
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
+  // v[w2c_i0] = w2c_l2 + 8u
+  w2c_i0 = w2c_l2 + 8u
   // clear w2c_i0
-  w2c_i0 += 8u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l2 + 8u));
   // clear cache
   w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l2
@@ -14496,8 +14499,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l4;
   // v[w2c_i1] = 4u
     w2c_i1 = 4u;
-  // clear w2c_i0
-    w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_l4 + 4u
+    w2c_i0 = w2c_l4 + 4u
   // v[w2c_i1] = w2c_p0
     w2c_i1 = w2c_p0;
   // clear cache
@@ -14528,12 +14531,12 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 63u
   w2c_i2 = 63u;
-  // clear w2c_i1
-  w2c_i1 &= 63u;
+  // v[w2c_i1] = w2c_p1 \& 63u
+  w2c_i1 = w2c_p1 & 63u
   // v[w2c_i2] = 128u
   w2c_i2 = 128u;
-  // clear w2c_i1
-  w2c_i1 |= 128u;
+  // v[w2c_i1] = w2c_p1 \& 63u | 128u
+  w2c_i1 = w2c_p1 & 63u | 128u
   // clear cache
   i32_store8((&w2c_memory), (u64)(w2c_i0) + 17, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -14554,8 +14557,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // clear cache
   w2c_p0 = w2c_i0;
   // v[w2c_i0] = 2u
@@ -14571,8 +14574,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_l3
   w2c_i1 = w2c_l3;
-  // clear w2c_i0
-  w2c_i0 += w2c_l3;
+  // v[w2c_i0] = w2c_p0 + w2c_l3
+  w2c_i0 = w2c_p0 + w2c_l3
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // clear cache
@@ -14599,8 +14602,8 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // v[w2c_i3] = w2c_p1
   w2c_i3 = w2c_p1;
-  // clear w2c_i2
-  w2c_i2 += w2c_p1;
+  // v[w2c_i2] = w2c_p0 + w2c_p1
+  w2c_i2 = w2c_p0 + w2c_p1
   // clear cache
   w2c_f19(w2c_i0, w2c_i1, w2c_i2);
   w2c_B0:;
@@ -14608,15 +14611,15 @@ static u32 w2c_f9(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l2 + 32u
+  w2c_i0 = w2c_l2 + 32u
   // clear cache
   w2c_g0 = w2c_i0;
   // v[w2c_i0] = 0u
   w2c_i0 = 0u;
-  // clear cache
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return 0u;
+  // clear cache
 }
 
 static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
@@ -14713,8 +14716,8 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
   w2c_i3 = 2u;
   // clear w2c_i2
   w2c_i2 <<= (2u & 31);
-  // clear w2c_i1
-  w2c_i1 -= w2c_i2;
+  // v[w2c_i1] = 0u - w2c_i2
+  w2c_i1 = 0u - w2c_i2
   // clear cache
   w2c_l2 = w2c_i1;
   // v[w2c_i2] = w2c_l3
@@ -14743,8 +14746,8 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p0;
   // v[w2c_i3] = 4u
   w2c_i3 = 4u;
-  // clear w2c_i2
-  w2c_i2 += 4u;
+  // v[w2c_i2] = w2c_p0 + 4u
+  w2c_i2 = w2c_p0 + 4u
   // v[w2c_i3] = 16u
   w2c_i3 = 16u;
   // v[w2c_i4] = 8u
@@ -14760,7 +14763,7 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
   // clear w2c_i3
   w2c_i3 = w2c_i3 > w2c_p0;
   // clear w2c_i1
-  w2c_i1 = w2c_i3 ? 16u : w2c_i2;
+  w2c_i1 = w2c_i3 ? 16u : w2c_p0 + 4u;
   // v[w2c_i2] = 8u
   w2c_i2 = 8u;
   // clear w2c_i1
@@ -14797,8 +14800,8 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p1;
   // v[w2c_i1] = 4294967295u
   w2c_i1 = 4294967295u;
-  // clear w2c_i0
-  w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p1 + 4294967295u
+  w2c_i0 = w2c_p1 + 4294967295u
   // clear cache
   w2c_l4 = w2c_i0;
   // v[w2c_i1] = w2c_l2
@@ -14819,18 +14822,18 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
-  // clear w2c_i0
-  w2c_i0 += w2c_l4;
+  // v[w2c_i0] = w2c_l2 + w2c_l4
+  w2c_i0 = w2c_l2 + w2c_l4
   // v[w2c_i1] = 0u
   w2c_i1 = 0u;
   // v[w2c_i2] = w2c_p1
   w2c_i2 = w2c_p1;
-  // clear w2c_i1
-  w2c_i1 -= w2c_p1;
+  // v[w2c_i1] = 0u - w2c_p1
+  w2c_i1 = 0u - w2c_p1
+  // v[w2c_i0] = w2c_l2 + w2c_l4 \& 0u - w2c_p1
+  w2c_i0 = w2c_l2 + w2c_l4 & 0u - w2c_p1
   // clear w2c_i0
-  w2c_i0 &= w2c_i1;
-  // clear w2c_i0
-  w2c_i0 = w2c_f97(w2c_i0);
+  w2c_i0 = w2c_f97(w2c_l2 + w2c_l4 & 0u - w2c_p1);
   // clear cache
   w2c_l2 = w2c_i0;
   // v[w2c_i0] = 16u
@@ -14851,20 +14854,20 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p1;
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
-  // clear w2c_i2
-  w2c_i2 += w2c_l2;
+  // v[w2c_i2] = w2c_p1 + w2c_l2
+  w2c_i2 = w2c_p1 + w2c_l2
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = w2c_p0
   w2c_i4 = w2c_p0;
-  // clear w2c_i3
-  w2c_i3 -= w2c_p0;
+  // v[w2c_i3] = w2c_l2 - w2c_p0
+  w2c_i3 = w2c_l2 - w2c_p0
   // v[w2c_i4] = w2c_l4
   w2c_i4 = w2c_l4;
   // clear w2c_i3
-  w2c_i3 = w2c_i3 > w2c_l4;
+  w2c_i3 = w2c_l2 - w2c_p0 > w2c_l4;
   // clear w2c_i1
-  w2c_i1 = w2c_i3 ? w2c_l2 : w2c_i2;
+  w2c_i1 = w2c_i3 ? w2c_l2 : w2c_p1 + w2c_l2;
   // clear cache
   w2c_p1 = w2c_i1;
   // v[w2c_i2] = w2c_p0
@@ -14898,8 +14901,8 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
     w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_l2
     w2c_i2 = w2c_l2;
-  // clear w2c_i1
-    w2c_i1 += w2c_l2;
+  // v[w2c_i1] = w2c_p0 + w2c_l2
+    w2c_i1 = w2c_p0 + w2c_l2
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
     goto w2c_B3;
@@ -14967,8 +14970,8 @@ static u32 w2c_f10(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = w2c_l3
   w2c_i2 = w2c_l3;
-  // clear w2c_i1
-  w2c_i1 -= w2c_l3;
+  // v[w2c_i1] = w2c_l2 - w2c_l3
+  w2c_i1 = w2c_l2 - w2c_l3
   // clear cache
   w2c_l3 = w2c_i1;
   w2c_f59(w2c_i0, w2c_i1);
@@ -15015,8 +15018,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = 64u;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
-  // clear w2c_i0
-  w2c_i0 -= w2c_l4;
+  // v[w2c_i0] = 64u - w2c_l4
+  w2c_i0 = 64u - w2c_l4
   // clear cache
   w2c_l5 = w2c_i0;
   // v[w2c_i1] = w2c_p2
@@ -15039,8 +15042,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 4u
   w2c_i2 = 4u;
-  // clear w2c_i1
-  w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_p0 + 4u
+  w2c_i1 = w2c_p0 + 4u
   // clear cache
   w2c_l4 = w2c_i1;
   // clear w2c_i0
@@ -15070,8 +15073,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_p2;
   // v[w2c_i1] = w2c_l5
   w2c_i1 = w2c_l5;
-  // clear w2c_i0
-  w2c_i0 -= w2c_l5;
+  // v[w2c_i0] = w2c_p2 - w2c_l5
+  w2c_i0 = w2c_p2 - w2c_l5
   // clear cache
   w2c_l6 = w2c_i0;
   // v[w2c_i1] = 64u
@@ -15090,8 +15093,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_p2;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
-  // clear w2c_i0
-  w2c_i0 += w2c_l4;
+  // v[w2c_i0] = w2c_p2 + w2c_l4
+  w2c_i0 = w2c_p2 + w2c_l4
   // clear cache
   w2c_p3 = w2c_i0;
   // v[w2c_i1] = w2c_l4
@@ -15112,18 +15115,18 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
-  // clear w2c_i0
-  w2c_i0 += w2c_l4;
+  // v[w2c_i0] = w2c_p0 + w2c_l4
+  w2c_i0 = w2c_p0 + w2c_l4
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
-  // clear w2c_i0
-  w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p0 + w2c_l4 + 4u
+  w2c_i0 = w2c_p0 + w2c_l4 + 4u
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = w2c_p2
   w2c_i2 = w2c_p2;
   // clear w2c_i0
-  w2c_i0 = w2c_f51(w2c_i0, w2c_p1, w2c_p2);
+  w2c_i0 = w2c_f51(w2c_p0 + w2c_l4 + 4u, w2c_p1, w2c_p2);
   // clear cache
   goto w2c_B1;
   w2c_B8:;
@@ -15140,8 +15143,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i0 = w2c_l5;
   // v[w2c_i1] = 4294967232u
     w2c_i1 = 4294967232u;
-  // clear w2c_i0
-    w2c_i0 -= 4294967232u;
+  // v[w2c_i0] = w2c_l5 - 4294967232u
+    w2c_i0 = w2c_l5 - 4294967232u
   // clear cache
     w2c_l4 = w2c_i0;
   // v[w2c_i1] = w2c_p2
@@ -15158,8 +15161,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i1 = w2c_p1;
   // v[w2c_i2] = w2c_l5
     w2c_i2 = w2c_l5;
-  // clear w2c_i1
-    w2c_i1 += w2c_l5;
+  // v[w2c_i1] = w2c_p1 + w2c_l5
+    w2c_i1 = w2c_p1 + w2c_l5
   // clear cache
     w2c_f18(w2c_i0, w2c_i1);
   // v[w2c_i0] = w2c_l4
@@ -15170,8 +15173,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i0 = w2c_l6;
   // v[w2c_i1] = 4294967232u
     w2c_i1 = 4294967232u;
-  // clear w2c_i0
-    w2c_i0 += 4294967232u;
+  // v[w2c_i0] = w2c_l6 + 4294967232u
+    w2c_i0 = w2c_l6 + 4294967232u
   // clear cache
     w2c_l6 = w2c_i0;
   // v[w2c_i1] = 63u
@@ -15212,8 +15215,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i1 = w2c_l5;
   // v[w2c_i2] = 4294967232u
   w2c_i2 = 4294967232u;
-  // clear w2c_i1
-  w2c_i1 -= 4294967232u;
+  // v[w2c_i1] = w2c_l5 - 4294967232u
+  w2c_i1 = w2c_l5 - 4294967232u
   // clear cache
   w2c_f34(w2c_i0, w2c_i1);
   UNREACHABLE;
@@ -15222,8 +15225,8 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_l5;
   // v[w2c_i1] = 4294967232u
   w2c_i1 = 4294967232u;
-  // clear w2c_i0
-  w2c_i0 -= 4294967232u;
+  // v[w2c_i0] = w2c_l5 - 4294967232u
+  w2c_i0 = w2c_l5 - 4294967232u
   // v[w2c_i1] = w2c_p2
   w2c_i1 = w2c_p2;
   // clear cache
@@ -15242,18 +15245,18 @@ static void w2c_f11(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
-  // clear w2c_i0
-  w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p0 + 4u
+  w2c_i0 = w2c_p0 + 4u
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = w2c_l4
   w2c_i2 = w2c_l4;
-  // clear w2c_i1
-  w2c_i1 += w2c_l4;
+  // v[w2c_i1] = w2c_p1 + w2c_l4
+  w2c_i1 = w2c_p1 + w2c_l4
   // v[w2c_i2] = w2c_l6
   w2c_i2 = w2c_l6;
   // clear w2c_i0
-  w2c_i0 = w2c_f51(w2c_i0, w2c_i1, w2c_l6);
+  w2c_i0 = w2c_f51(w2c_p0 + 4u, w2c_p1 + w2c_l4, w2c_l6);
   // v[w2c_i0] = w2c_l6
   w2c_i0 = w2c_l6;
   // clear cache
@@ -15296,8 +15299,8 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 -= 48u;
+  // v[w2c_i0] = w2c_g0 - 48u
+  w2c_i0 = w2c_g0 - 48u
   // clear cache
   w2c_l4 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -15319,12 +15322,12 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l4;
   // v[w2c_i1] = 9u
     w2c_i1 = 9u;
-  // clear w2c_i0
-    w2c_i0 += 9u;
+  // v[w2c_i0] = w2c_l4 + 9u
+    w2c_i0 = w2c_l4 + 9u
   // v[w2c_i1] = w2c_l2
     w2c_i1 = w2c_l2;
-  // clear w2c_i0
-    w2c_i0 += w2c_l2;
+  // v[w2c_i0] = w2c_l4 + 9u + w2c_l2
+    w2c_i0 = w2c_l4 + 9u + w2c_l2
   // clear cache
     w2c_l3 = w2c_i0;
   // v[w2c_i1] = 4294967292u
@@ -15369,22 +15372,22 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l3;
   // v[w2c_i1] = 4294967294u
     w2c_i1 = 4294967294u;
-  // clear w2c_i0
-    w2c_i0 += 4294967294u;
+  // v[w2c_i0] = w2c_l3 + 4294967294u
+    w2c_i0 = w2c_l3 + 4294967294u
   // v[w2c_i1] = w2c_l5
     w2c_i1 = w2c_l5;
   // v[w2c_i2] = w2c_l6
     w2c_i2 = w2c_l6;
   // v[w2c_i3] = 100u
     w2c_i3 = 100u;
-  // clear w2c_i2
-    w2c_i2 *= 100u;
-  // clear w2c_i1
-    w2c_i1 -= w2c_i2;
+  // v[w2c_i2] = w2c_l6 * 100u
+    w2c_i2 = w2c_l6 * 100u
+  // v[w2c_i1] = w2c_l5 - w2c_l6 * 100u
+    w2c_i1 = w2c_l6 * 100u;
   // v[w2c_i2] = 65535u
     w2c_i2 = 65535u;
-  // clear w2c_i1
-    w2c_i1 &= 65535u;
+  // v[w2c_i1] = w2c_l5 - w2c_l6 * 100u \& 65535u
+    w2c_i1 = w2c_l5 - w2c_l6 * 100u & 65535u
   // v[w2c_i2] = 1u
     w2c_i2 = 1u;
   // clear w2c_i1
@@ -15401,8 +15404,8 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 4294967292u
     w2c_i1 = 4294967292u;
-  // clear w2c_i0
-    w2c_i0 += 4294967292u;
+  // v[w2c_i0] = w2c_l2 + 4294967292u
+    w2c_i0 = w2c_l2 + 4294967292u
   // clear cache
     w2c_l2 = w2c_i0;
     w2c_j0 = w2c_p0;
@@ -15427,18 +15430,18 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 4294967294u
     w2c_i1 = 4294967294u;
-  // clear w2c_i0
-    w2c_i0 += 4294967294u;
+  // v[w2c_i0] = w2c_l2 + 4294967294u
+    w2c_i0 = w2c_l2 + 4294967294u
   // clear cache
     w2c_l2 = w2c_i0;
   // v[w2c_i1] = w2c_l4
     w2c_i1 = w2c_l4;
   // v[w2c_i2] = 9u
     w2c_i2 = 9u;
-  // clear w2c_i1
-    w2c_i1 += 9u;
+  // v[w2c_i1] = w2c_l4 + 9u
+    w2c_i1 = w2c_l4 + 9u
   // clear w2c_i0
-    w2c_i0 += w2c_i1;
+    w2c_i0 += w2c_l4 + 9u;
   // clear cache
     w2c_j1 = w2c_l7;
   // clear w2c_i1
@@ -15448,12 +15451,12 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
     w2c_i2 = w2c_l3;
   // v[w2c_i3] = 65535u
     w2c_i3 = 65535u;
-  // clear w2c_i2
-    w2c_i2 &= 65535u;
+  // v[w2c_i2] = w2c_l3 \& 65535u
+    w2c_i2 = w2c_l3 & 65535u
   // v[w2c_i3] = 100u
     w2c_i3 = 100u;
   // clear w2c_i2
-    w2c_i2 = DIV_U(w2c_i2, 100u);
+    w2c_i2 = DIV_U(w2c_l3 & 65535u, 100u);
   // clear cache
     w2c_l3 = w2c_i2;
   // v[w2c_i3] = 100u
@@ -15491,24 +15494,24 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l2 + 4294967295u
+    w2c_i0 = w2c_l2 + 4294967295u
   // clear cache
     w2c_l2 = w2c_i0;
   // v[w2c_i1] = w2c_l4
     w2c_i1 = w2c_l4;
   // v[w2c_i2] = 9u
     w2c_i2 = 9u;
-  // clear w2c_i1
-    w2c_i1 += 9u;
+  // v[w2c_i1] = w2c_l4 + 9u
+    w2c_i1 = w2c_l4 + 9u
   // clear w2c_i0
-    w2c_i0 += w2c_i1;
+    w2c_i0 += w2c_l4 + 9u;
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = 48u
     w2c_i2 = 48u;
-  // clear w2c_i1
-    w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l3 + 48u
+    w2c_i1 = w2c_l3 + 48u
   // clear cache
     i32_store8((&w2c_memory), (u64)(w2c_i0), w2c_i1);
     goto w2c_B4;
@@ -15517,18 +15520,18 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 4294967294u
   w2c_i1 = 4294967294u;
-  // clear w2c_i0
-  w2c_i0 += 4294967294u;
+  // v[w2c_i0] = w2c_l2 + 4294967294u
+  w2c_i0 = w2c_l2 + 4294967294u
   // clear cache
   w2c_l2 = w2c_i0;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
   // v[w2c_i2] = 9u
   w2c_i2 = 9u;
-  // clear w2c_i1
-  w2c_i1 += 9u;
+  // v[w2c_i1] = w2c_l4 + 9u
+  w2c_i1 = w2c_l4 + 9u
   // clear w2c_i0
-  w2c_i0 += w2c_i1;
+  w2c_i0 += w2c_l4 + 9u;
   // v[w2c_i1] = w2c_l3
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 1u
@@ -15554,26 +15557,26 @@ static u32 w2c_f12(u64 w2c_p0, u32 w2c_p1) {
   w2c_i3 = w2c_l4;
   // v[w2c_i4] = 9u
   w2c_i4 = 9u;
-  // clear w2c_i3
-  w2c_i3 += 9u;
+  // v[w2c_i3] = w2c_l4 + 9u
+  w2c_i3 = w2c_l4 + 9u
   // v[w2c_i4] = w2c_l2
   w2c_i4 = w2c_l2;
-  // clear w2c_i3
-  w2c_i3 += w2c_l2;
+  // v[w2c_i3] = w2c_l4 + 9u + w2c_l2
+  w2c_i3 = w2c_l4 + 9u + w2c_l2
   // v[w2c_i4] = 39u
   w2c_i4 = 39u;
   // v[w2c_i5] = w2c_l2
   w2c_i5 = w2c_l2;
-  // clear w2c_i4
-  w2c_i4 -= w2c_l2;
+  // v[w2c_i4] = 39u - w2c_l2
+  w2c_i4 = 39u - w2c_l2
   // clear w2c_i0
-  w2c_i0 = w2c_f5(w2c_p1, 1049792u, 0u, w2c_i3, w2c_i4);
+  w2c_i0 = w2c_f5(w2c_p1, 1049792u, 0u, w2c_l4 + 9u + w2c_l2, 39u - w2c_l2);
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l4 + 48u
+  w2c_i1 = w2c_l4 + 48u
   // clear cache
   w2c_g0 = w2c_i1;
   FUNC_EPILOGUE;
@@ -15680,10 +15683,10 @@ static void w2c_f13(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_l2;
   // v[w2c_i3] = 31u
   w2c_i3 = 31u;
-  // clear w2c_i2
-  w2c_i2 &= 31u;
+  // v[w2c_i2] = w2c_l2 \& 31u
+  w2c_i2 = w2c_l2 & 31u
   // clear w2c_i1
-  w2c_i1 <<= (w2c_i2 & 31);
+  w2c_i1 <<= (w2c_l2 & 31u & 31);
   // clear cache
   w2c_l6 = w2c_i1;
   // clear w2c_i0
@@ -15697,8 +15700,8 @@ static void w2c_f13(u32 w2c_p0, u32 w2c_p1) {
     w2c_i1 = w2c_l5;
   // v[w2c_i2] = w2c_l6
     w2c_i2 = w2c_l6;
-  // clear w2c_i1
-    w2c_i1 |= w2c_l6;
+  // v[w2c_i1] = w2c_l5 | w2c_l6
+    w2c_i1 = w2c_l5 | w2c_l6
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l3
@@ -15741,10 +15744,10 @@ static void w2c_f13(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 31u
   w2c_i2 = 31u;
-  // clear w2c_i1
-  w2c_i1 &= 31u;
+  // v[w2c_i1] = w2c_l2 \& 31u
+  w2c_i1 = w2c_l2 & 31u
   // clear w2c_i0
-  w2c_i0 <<= (w2c_i1 & 31);
+  w2c_i0 <<= (w2c_l2 & 31u & 31);
   // clear cache
   w2c_l5 = w2c_i0;
   w2c_L5: 
@@ -15760,12 +15763,12 @@ static void w2c_f13(u32 w2c_p0, u32 w2c_p1) {
     w2c_i2 = 4u;
   // clear w2c_i1
     w2c_i1 &= 4u;
-  // clear w2c_i0
-    w2c_i0 += w2c_i1;
+  // v[w2c_i0] = w2c_l3 + w2c_i1
+    w2c_i0 = w2c_l3 + w2c_i1
   // v[w2c_i1] = 16u
     w2c_i1 = 16u;
-  // clear w2c_i0
-    w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l3 + w2c_i1 + 16u
+    w2c_i0 = w2c_l3 + w2c_i1 + 16u
   // clear cache
     w2c_l6 = w2c_i0;
   // clear w2c_i0
@@ -15867,8 +15870,8 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 4294967232u
   w2c_i1 = 4294967232u;
-  // clear w2c_i0
-  w2c_i0 += 4294967232u;
+  // v[w2c_i0] = w2c_g0 + 4294967232u
+  w2c_i0 = w2c_g0 + 4294967232u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -15884,8 +15887,8 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_p1;
   // v[w2c_i1] = 4u
     w2c_i1 = 4u;
-  // clear w2c_i0
-    w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p1 + 4u
+    w2c_i0 = w2c_p1 + 4u
   // clear cache
     w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_p1
@@ -15910,22 +15913,22 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = 24u
     w2c_i2 = 24u;
-  // clear w2c_i1
-    w2c_i1 += 24u;
+  // v[w2c_i1] = w2c_l2 + 24u
+    w2c_i1 = w2c_l2 + 24u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 36, w2c_i1);
   // v[w2c_i0] = w2c_l2
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 56u
     w2c_i1 = 56u;
-  // clear w2c_i0
-    w2c_i0 += 56u;
+  // v[w2c_i0] = w2c_l2 + 56u
+    w2c_i0 = w2c_l2 + 56u
   // v[w2c_i1] = w2c_l4
     w2c_i1 = w2c_l4;
   // v[w2c_i2] = 16u
     w2c_i2 = 16u;
-  // clear w2c_i1
-    w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l4 + 16u
+    w2c_i1 = w2c_l4 + 16u
   // clear cache
     w2c_j1 = i64_load((&w2c_memory), (u64)(w2c_i1));
     i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -15933,14 +15936,14 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
     w2c_i1 = 48u;
-  // clear w2c_i0
-    w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+    w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l4
     w2c_i1 = w2c_l4;
   // v[w2c_i2] = 8u
     w2c_i2 = 8u;
-  // clear w2c_i1
-    w2c_i1 += 8u;
+  // v[w2c_i1] = w2c_l4 + 8u
+    w2c_i1 = w2c_l4 + 8u
   // clear cache
     w2c_j1 = i64_load((&w2c_memory), (u64)(w2c_i1));
     i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -15955,22 +15958,22 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 36u
     w2c_i1 = 36u;
-  // clear w2c_i0
-    w2c_i0 += 36u;
+  // v[w2c_i0] = w2c_l2 + 36u
+    w2c_i0 = w2c_l2 + 36u
   // v[w2c_i1] = w2c_l2
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = 40u
     w2c_i2 = 40u;
-  // clear w2c_i1
-    w2c_i1 += 40u;
+  // v[w2c_i1] = w2c_l2 + 40u
+    w2c_i1 = w2c_l2 + 40u
   // clear w2c_i0
-    w2c_i0 = w2c_f6(w2c_i0, w2c_i1);
+    w2c_i0 = w2c_f6(w2c_l2 + 36u, w2c_l2 + 40u);
   // v[w2c_i0] = w2c_l2
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
     w2c_i1 = 16u;
-  // clear w2c_i0
-    w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+    w2c_i0 = w2c_l2 + 16u
   // clear cache
     w2c_l4 = w2c_i0;
   // v[w2c_i1] = w2c_l2
@@ -15997,10 +16000,10 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_p1;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
+  // v[w2c_i0] = w2c_p1 + 8u
+    w2c_i0 = w2c_p1 + 8u
   // clear w2c_i0
-    w2c_i0 += 8u;
-  // clear w2c_i0
-    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p1 + 8u));
   // clear w2c_i0
     w2c_i0 = !(w2c_i0);
   // clear cache
@@ -16021,12 +16024,13 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l3;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l3 + 8u
+    w2c_i0 = w2c_l3 + 8u
   // v[w2c_i1] = w2c_l4
     w2c_i1 = w2c_l4;
   // clear w2c_i1
     w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_l4));
+  // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l3
     w2c_i0 = w2c_l3;
@@ -16044,18 +16048,18 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p1;
   // v[w2c_i1] = 12u
   w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_p1 + 12u
+  w2c_i0 = w2c_p1 + 12u
   // clear w2c_i0
-  w2c_i0 += 12u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p1 + 12u));
   // clear cache
   w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_p1
   w2c_i0 = w2c_p1;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p1 + 8u
+  w2c_i0 = w2c_p1 + 8u
   // clear cache
   w2c_p1 = w2c_i0;
   // clear w2c_i0
@@ -16119,8 +16123,8 @@ static void w2c_f14(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 4294967232u
   w2c_i1 = 4294967232u;
-  // clear w2c_i0
-  w2c_i0 -= 4294967232u;
+  // v[w2c_i0] = w2c_l2 - 4294967232u
+  w2c_i0 = w2c_l2 - 4294967232u
   // clear cache
   w2c_g0 = w2c_i0;
   FUNC_EPILOGUE;
@@ -16173,8 +16177,8 @@ static void w2c_f15(u32 w2c_p0) {
   w2c_i3 = w2c_p0;
   // v[w2c_i4] = 20u
   w2c_i4 = 20u;
-  // clear w2c_i3
-  w2c_i3 += 20u;
+  // v[w2c_i3] = w2c_p0 + 20u
+  w2c_i3 = w2c_p0 + 20u
   // clear cache
   w2c_l1 = w2c_i3;
   // clear w2c_i3
@@ -16202,12 +16206,12 @@ static void w2c_f15(u32 w2c_p0) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_p0 + 16u
+  w2c_i1 = w2c_p0 + 16u
   // v[w2c_i2] = w2c_l3
   w2c_i2 = w2c_l3;
   // clear w2c_i0
-  w2c_i0 = w2c_l3 ? w2c_l1 : w2c_i1;
+  w2c_i0 = w2c_l3 ? w2c_l1 : w2c_p0 + 16u;
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_L3: 
@@ -16235,8 +16239,8 @@ static void w2c_f15(u32 w2c_p0) {
       w2c_i0 = w2c_l1;
   // v[w2c_i1] = 16u
       w2c_i1 = 16u;
-  // clear w2c_i0
-      w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l1 + 16u
+      w2c_i0 = w2c_l1 + 16u
   // clear cache
       w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_l1
@@ -16328,8 +16332,8 @@ static void w2c_f15(u32 w2c_p0) {
   w2c_i3 = w2c_i3 == w2c_p0;
   // clear w2c_i1
   w2c_i1 = w2c_i3 ? 16u : 20u;
-  // clear w2c_i0
-  w2c_i0 += w2c_i1;
+  // v[w2c_i0] = w2c_l4 + w2c_i1
+  w2c_i0 = w2c_l4 + w2c_i1
   // v[w2c_i1] = w2c_l1
   w2c_i1 = w2c_l1;
   // clear cache
@@ -16369,10 +16373,10 @@ static void w2c_f15(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 20u
   w2c_i1 = 20u;
+  // v[w2c_i0] = w2c_p0 + 20u
+  w2c_i0 = w2c_p0 + 20u
   // clear w2c_i0
-  w2c_i0 += 20u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 20u));
   // clear cache
   w2c_p0 = w2c_i0;
   // clear w2c_i0
@@ -16382,8 +16386,8 @@ static void w2c_f15(u32 w2c_p0) {
   w2c_i0 = w2c_l1;
   // v[w2c_i1] = 20u
   w2c_i1 = 20u;
-  // clear w2c_i0
-  w2c_i0 += 20u;
+  // v[w2c_i0] = w2c_l1 + 20u
+  w2c_i0 = w2c_l1 + 20u
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
   // clear cache
@@ -16445,16 +16449,16 @@ static u32 w2c_f16(void) {
     w2c_i0 = w2c_l0;
   // v[w2c_i1] = 12u
     w2c_i1 = 12u;
+  // v[w2c_i0] = w2c_l0 + 12u
+    w2c_i0 = w2c_l0 + 12u
   // clear w2c_i0
-    w2c_i0 += 12u;
-  // clear w2c_i0
-    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l0 + 12u));
   // v[w2c_i0] = w2c_l3
     w2c_i0 = w2c_l3;
   // v[w2c_i1] = 1u
     w2c_i1 = 1u;
-  // clear w2c_i0
-    w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l3 + 1u
+    w2c_i0 = w2c_l3 + 1u
   // clear cache
     w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_l1
@@ -16494,8 +16498,8 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 160u
   w2c_i1 = 160u;
-  // clear w2c_i0
-  w2c_i0 -= 160u;
+  // v[w2c_i0] = w2c_g0 - 160u
+  w2c_i0 = w2c_g0 - 160u
   // clear cache
   w2c_l4 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -16503,16 +16507,16 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l4 + 16u
+  w2c_i0 = w2c_l4 + 16u
   // clear cache
   w2c_f46(w2c_i0);
   // v[w2c_i0] = w2c_l4
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l4 + 16u
+  w2c_i0 = w2c_l4 + 16u
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = w2c_p1
@@ -16523,8 +16527,8 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 152u
   w2c_i1 = 152u;
-  // clear w2c_i0
-  w2c_i0 += 152u;
+  // v[w2c_i0] = w2c_l4 + 152u
+  w2c_i0 = w2c_l4 + 152u
   // clear cache
   w2c_j1 = 0ull;
   i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -16532,8 +16536,8 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 144u
   w2c_i1 = 144u;
-  // clear w2c_i0
-  w2c_i0 += 144u;
+  // v[w2c_i0] = w2c_l4 + 144u
+  w2c_i0 = w2c_l4 + 144u
   // clear cache
   w2c_j1 = 0ull;
   i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -16541,8 +16545,8 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 136u
   w2c_i1 = 136u;
-  // clear w2c_i0
-  w2c_i0 += 136u;
+  // v[w2c_i0] = w2c_l4 + 136u
+  w2c_i0 = w2c_l4 + 136u
   // clear cache
   w2c_j1 = 0ull;
   i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -16555,22 +16559,22 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l4 + 16u
+  w2c_i0 = w2c_l4 + 16u
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
   // v[w2c_i2] = 128u
   w2c_i2 = 128u;
-  // clear w2c_i1
-  w2c_i1 += 128u;
+  // v[w2c_i1] = w2c_l4 + 128u
+  w2c_i1 = w2c_l4 + 128u
   // clear cache
   w2c_f7(w2c_i0, w2c_i1);
   // v[w2c_i0] = w2c_l4
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l4 + 8u
+  w2c_i0 = w2c_l4 + 8u
   // v[w2c_i1] = w2c_p3
   w2c_i1 = w2c_p3;
   // clear cache
@@ -16592,16 +16596,16 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_l5
     w2c_i1 = w2c_l5;
-  // clear w2c_i0
-    w2c_i0 -= w2c_l5;
+  // v[w2c_i0] = w2c_p0 - w2c_l5
+    w2c_i0 = w2c_p0 - w2c_l5
   // clear cache
     w2c_l6 = w2c_i0;
   // v[w2c_i0] = w2c_p2
     w2c_i0 = w2c_p2;
   // v[w2c_i1] = w2c_l5
     w2c_i1 = w2c_l5;
-  // clear w2c_i0
-    w2c_i0 += w2c_l5;
+  // v[w2c_i0] = w2c_p2 + w2c_l5
+    w2c_i0 = w2c_p2 + w2c_l5
   // clear cache
     w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l5
@@ -16648,12 +16652,12 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i0 = w2c_l4;
   // v[w2c_i1] = 128u
     w2c_i1 = 128u;
-  // clear w2c_i0
-    w2c_i0 += 128u;
+  // v[w2c_i0] = w2c_l4 + 128u
+    w2c_i0 = w2c_l4 + 128u
   // v[w2c_i1] = w2c_l5
     w2c_i1 = w2c_l5;
-  // clear w2c_i0
-    w2c_i0 += w2c_l5;
+  // v[w2c_i0] = w2c_l4 + 128u + w2c_l5
+    w2c_i0 = w2c_l4 + 128u + w2c_l5
   // clear cache
     w2c_l5 = w2c_i0;
     w2c_L3: 
@@ -16683,40 +16687,40 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
       w2c_i0 = w2c_p1;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p1 + 4294967295u
+      w2c_i0 = w2c_p1 + 4294967295u
   // clear cache
       w2c_p1 = w2c_i0;
   // v[w2c_i0] = w2c_p2
       w2c_i0 = w2c_p2;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p2 + 4294967295u
+      w2c_i0 = w2c_p2 + 4294967295u
   // clear cache
       w2c_p2 = w2c_i0;
   // v[w2c_i0] = w2c_p0
       w2c_i0 = w2c_p0;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_p0 + 1u
+      w2c_i0 = w2c_p0 + 1u
   // clear cache
       w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l5
       w2c_i0 = w2c_l5;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l5 + 1u
+      w2c_i0 = w2c_l5 + 1u
   // clear cache
       w2c_l5 = w2c_i0;
   // v[w2c_i0] = w2c_l6
       w2c_i0 = w2c_l6;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l6 + 4294967295u
+      w2c_i0 = w2c_l6 + 4294967295u
   // clear cache
       w2c_l6 = w2c_i0;
       if (w2c_i0) {goto w2c_L3;}
@@ -16725,8 +16729,8 @@ static void w2c_f17(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = 160u
   w2c_i1 = 160u;
-  // clear w2c_i0
-  w2c_i0 += 160u;
+  // v[w2c_i0] = w2c_l4 + 160u
+  w2c_i0 = w2c_l4 + 160u
   // clear cache
   w2c_g0 = w2c_i0;
   goto w2c_Bfunc;
@@ -16762,8 +16766,8 @@ static void w2c_f18(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 112u
   w2c_i1 = 112u;
-  // clear w2c_i0
-  w2c_i0 -= 112u;
+  // v[w2c_i0] = w2c_g0 - 112u
+  w2c_i0 = w2c_g0 - 112u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -16777,18 +16781,18 @@ static void w2c_f18(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+  w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = 64u
   w2c_i1 = 64u;
   // clear w2c_i0
-  w2c_i0 = w2c_f58(w2c_i0, 64u);
+  w2c_i0 = w2c_f58(w2c_l2 + 48u, 64u);
   // v[w2c_i0] = w2c_l2
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l2 + 8u
+  w2c_i0 = w2c_l2 + 8u
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
   // clear cache
@@ -16810,16 +16814,16 @@ static void w2c_f18(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l4;
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
-  // clear w2c_i0
-    w2c_i0 -= w2c_l3;
+  // v[w2c_i0] = w2c_l4 - w2c_l3
+    w2c_i0 = w2c_l4 - w2c_l3
   // clear cache
     w2c_l5 = w2c_i0;
   // v[w2c_i0] = w2c_l2
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
     w2c_i1 = 48u;
-  // clear w2c_i0
-    w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+    w2c_i0 = w2c_l2 + 48u
   // clear cache
     w2c_l3 = w2c_i0;
     w2c_L1: 
@@ -16873,24 +16877,24 @@ static void w2c_f18(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_p1;
   // v[w2c_i1] = 4u
       w2c_i1 = 4u;
-  // clear w2c_i0
-      w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p1 + 4u
+      w2c_i0 = w2c_p1 + 4u
   // clear cache
       w2c_p1 = w2c_i0;
   // v[w2c_i0] = w2c_l3
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 4u
       w2c_i1 = 4u;
-  // clear w2c_i0
-      w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_l3 + 4u
+      w2c_i0 = w2c_l3 + 4u
   // clear cache
       w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_l5
       w2c_i0 = w2c_l5;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_l5 + 4294967295u
+      w2c_i0 = w2c_l5 + 4294967295u
   // clear cache
       w2c_l5 = w2c_i0;
       if (w2c_i0) {goto w2c_L1;}
@@ -16901,16 +16905,16 @@ static void w2c_f18(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 48u
   w2c_i2 = 48u;
-  // clear w2c_i1
-  w2c_i1 += 48u;
+  // v[w2c_i1] = w2c_l2 + 48u
+  w2c_i1 = w2c_l2 + 48u
   // clear cache
   w2c_f0(w2c_i0, w2c_i1);
   // v[w2c_i0] = w2c_l2
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 112u
   w2c_i1 = 112u;
-  // clear w2c_i0
-  w2c_i0 += 112u;
+  // v[w2c_i0] = w2c_l2 + 112u
+  w2c_i0 = w2c_l2 + 112u
   // clear cache
   w2c_g0 = w2c_i0;
   FUNC_EPILOGUE;
@@ -16924,8 +16928,8 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 -= 32u;
+  // v[w2c_i0] = w2c_g0 - 32u
+  w2c_i0 = w2c_g0 - 32u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -16933,20 +16937,20 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
+  // v[w2c_i0] = w2c_p0 + 4u
+  w2c_i0 = w2c_p0 + 4u
   // clear w2c_i0
-  w2c_i0 += 4u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 4u));
   // clear cache
   w2c_l5 = w2c_i0;
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 8u
   w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_p0 + 8u
+  w2c_i1 = w2c_p0 + 8u
   // clear w2c_i1
-  w2c_i1 += 8u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 8u));
   // clear cache
   w2c_l4 = w2c_i1;
   // clear w2c_i0
@@ -16955,8 +16959,8 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_p2;
   // v[w2c_i2] = w2c_p1
   w2c_i2 = w2c_p1;
-  // clear w2c_i1
-  w2c_i1 -= w2c_p1;
+  // v[w2c_i1] = w2c_p2 - w2c_p1
+  w2c_i1 = w2c_p2 - w2c_p1
   // clear cache
   w2c_l6 = w2c_i1;
   // clear w2c_i0
@@ -16973,8 +16977,8 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l4;
   // v[w2c_i1] = w2c_l6
   w2c_i1 = w2c_l6;
-  // clear w2c_i0
-  w2c_i0 += w2c_l6;
+  // v[w2c_i0] = w2c_l4 + w2c_l6
+  w2c_i0 = w2c_l4 + w2c_l6
   // clear cache
   w2c_p2 = w2c_i0;
   // v[w2c_i1] = w2c_l4
@@ -17032,8 +17036,8 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 24u
   w2c_i1 = 24u;
-  // clear w2c_i0
-  w2c_i0 += 24u;
+  // v[w2c_i0] = w2c_l3 + 24u
+  w2c_i0 = w2c_l3 + 24u
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
   // clear cache
@@ -17061,18 +17065,18 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i2 = w2c_l3;
   // v[w2c_i3] = 16u
   w2c_i3 = 16u;
-  // clear w2c_i2
-  w2c_i2 += 16u;
+  // v[w2c_i2] = w2c_l3 + 16u
+  w2c_i2 = w2c_l3 + 16u
   // clear cache
   w2c_f24(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = w2c_l3
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
+  // v[w2c_i0] = w2c_l3 + 8u
+  w2c_i0 = w2c_l3 + 8u
   // clear w2c_i0
-  w2c_i0 += 8u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l3 + 8u));
   // clear cache
   w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_l3
@@ -17100,8 +17104,8 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4u
     w2c_i1 = 4u;
-  // clear w2c_i0
-    w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p0 + 4u
+    w2c_i0 = w2c_p0 + 4u
   // v[w2c_i1] = w2c_l4
     w2c_i1 = w2c_l4;
   // clear cache
@@ -17110,10 +17114,10 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+    w2c_i0 = w2c_p0 + 8u
   // clear w2c_i0
-    w2c_i0 += 8u;
-  // clear w2c_i0
-    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 8u));
   // clear cache
     w2c_l4 = w2c_i0;
     goto w2c_B0;
@@ -17138,20 +17142,20 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_p2;
   // v[w2c_i1] = w2c_l4
   w2c_i1 = w2c_l4;
-  // clear w2c_i0
-  w2c_i0 += w2c_l4;
+  // v[w2c_i0] = w2c_p2 + w2c_l4
+  w2c_i0 = w2c_p2 + w2c_l4
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = w2c_l6
   w2c_i2 = w2c_l6;
   // clear w2c_i0
-  w2c_i0 = w2c_f51(w2c_i0, w2c_p1, w2c_l6);
+  w2c_i0 = w2c_f51(w2c_p2 + w2c_l4, w2c_p1, w2c_l6);
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+  w2c_i0 = w2c_p0 + 8u
   // clear cache
   w2c_p0 = w2c_i0;
   // v[w2c_i1] = w2c_p0
@@ -17168,8 +17172,8 @@ static void w2c_f19(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l3 + 32u
+  w2c_i0 = w2c_l3 + 32u
   // clear cache
   w2c_g0 = w2c_i0;
   FUNC_EPILOGUE;
@@ -17183,8 +17187,8 @@ static void w2c_f20(u32 w2c_p0) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 -= 32u;
+  // v[w2c_i0] = w2c_g0 - 32u
+  w2c_i0 = w2c_g0 - 32u
   // clear cache
   w2c_l1 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -17201,32 +17205,32 @@ static void w2c_f20(u32 w2c_p0) {
     w2c_i1 = w2c_p0;
   // v[w2c_i2] = 76u
     w2c_i2 = 76u;
-  // clear w2c_i1
-    w2c_i1 += 76u;
+  // v[w2c_i1] = w2c_p0 + 76u
+    w2c_i1 = w2c_p0 + 76u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 28, w2c_i1);
   // v[w2c_i0] = w2c_p0
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+    w2c_i0 = w2c_p0 + 8u
   // clear cache
     w2c_l3 = w2c_i0;
   // v[w2c_i1] = w2c_l1
     w2c_i1 = w2c_l1;
   // v[w2c_i2] = 28u
     w2c_i2 = 28u;
-  // clear w2c_i1
-    w2c_i1 += 28u;
+  // v[w2c_i1] = w2c_l1 + 28u
+    w2c_i1 = w2c_l1 + 28u
   // clear cache
     w2c_f25(w2c_i0, w2c_i1);
   // v[w2c_i0] = w2c_l1
     w2c_i0 = w2c_l1;
   // v[w2c_i1] = 16u
     w2c_i1 = 16u;
-  // clear w2c_i0
-    w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l1 + 16u
+    w2c_i0 = w2c_l1 + 16u
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = 4u
@@ -17294,8 +17298,8 @@ static void w2c_f20(u32 w2c_p0) {
     w2c_i0 = w2c_l1;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l1 + 8u
+    w2c_i0 = w2c_l1 + 8u
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = 4u
@@ -17383,8 +17387,8 @@ static void w2c_f20(u32 w2c_p0) {
     w2c_i1 = w2c_p0;
   // v[w2c_i2] = 12u
     w2c_i2 = 12u;
-  // clear w2c_i1
-    w2c_i1 += 12u;
+  // v[w2c_i1] = w2c_p0 + 12u
+    w2c_i1 = w2c_p0 + 12u
   // clear cache
     w2c_f18(w2c_i0, w2c_i1);
   // v[w2c_i0] = w2c_p0
@@ -17398,8 +17402,8 @@ static void w2c_f20(u32 w2c_p0) {
   w2c_i0 = w2c_l1;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 += 32u;
+  // v[w2c_i0] = w2c_l1 + 32u
+  w2c_i0 = w2c_l1 + 32u
   // clear cache
   w2c_g0 = w2c_i0;
   goto w2c_Bfunc;
@@ -17548,10 +17552,10 @@ static void w2c_f21(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i3 = w2c_l5;
   // v[w2c_i4] = w2c_l9
   w2c_i4 = w2c_l9;
-  // clear w2c_i3
-  w2c_i3 &= w2c_l9;
+  // v[w2c_i3] = w2c_l5 \& w2c_l9
+  w2c_i3 = w2c_l5 & w2c_l9
   // clear w2c_i2
-  w2c_i2 ^= w2c_i3;
+  w2c_i2 ^= w2c_l5 & w2c_l9;
   // v[w2c_i3] = w2c_p1
   w2c_i3 = w2c_p1;
   // v[w2c_i4] = 30u
@@ -17591,8 +17595,8 @@ static void w2c_f21(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i3 = w2c_p3;
   // clear w2c_i3
   w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_p3) + 8u);
-  // clear w2c_i2
-  w2c_i2 += w2c_i3;
+  // v[w2c_i2] = w2c_l7 + w2c_i3
+  w2c_i2 = w2c_l7 + w2c_i3
   // v[w2c_i3] = w2c_l8
   w2c_i3 = w2c_l8;
   // v[w2c_i4] = w2c_l6
@@ -17603,12 +17607,12 @@ static void w2c_f21(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i6 = w2c_l8;
   // clear w2c_i5
   w2c_i5 ^= w2c_l8;
-  // clear w2c_i4
-  w2c_i4 &= w2c_i5;
+  // v[w2c_i4] = w2c_l6 \& w2c_i5
+  w2c_i4 = w2c_l6 & w2c_i5
   // clear w2c_i3
-  w2c_i3 ^= w2c_i4;
-  // clear w2c_i2
-  w2c_i2 += w2c_i3;
+  w2c_i3 ^= w2c_l6 & w2c_i5;
+  // v[w2c_i2] = w2c_l7 + w2c_i3 + w2c_i3
+  w2c_i2 = w2c_l7 + w2c_i3 + w2c_i3
   // v[w2c_i3] = w2c_l6
   w2c_i3 = w2c_l6;
   // v[w2c_i4] = 26u
@@ -17631,8 +17635,8 @@ static void w2c_f21(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i4 = I32_ROTL(w2c_l6, 7u);
   // clear w2c_i3
   w2c_i3 ^= w2c_i4;
-  // clear w2c_i2
-  w2c_i2 += w2c_i3;
+  // v[w2c_i2] = w2c_l7 + w2c_i3 + w2c_i3 + w2c_i3
+  w2c_i2 = w2c_l7 + w2c_i3 + w2c_i3 + w2c_i3
   // clear cache
   w2c_p3 = w2c_i2;
   // clear w2c_i1
@@ -17670,8 +17674,8 @@ static void w2c_f21(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i4 = w2c_l9;
   // clear w2c_i3
   w2c_i3 ^= w2c_l9;
-  // clear w2c_i2
-  w2c_i2 &= w2c_i3;
+  // v[w2c_i2] = w2c_p2 \& w2c_i3
+  w2c_i2 = w2c_p2 & w2c_i3
   // v[w2c_i3] = w2c_l10
   w2c_i3 = w2c_l10;
   // clear w2c_i2
@@ -17696,8 +17700,8 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 4294967232u
   w2c_i1 = 4294967232u;
-  // clear w2c_i0
-  w2c_i0 += 4294967232u;
+  // v[w2c_i0] = w2c_g0 + 4294967232u
+  w2c_i0 = w2c_g0 + 4294967232u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -17705,8 +17709,8 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p1;
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
-  // clear w2c_i0
-  w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p1 + 4u
+  w2c_i0 = w2c_p1 + 4u
   // clear cache
   w2c_l4 = w2c_i0;
   // v[w2c_i0] = w2c_p1
@@ -17738,22 +17742,22 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = 24u
     w2c_i2 = 24u;
-  // clear w2c_i1
-    w2c_i1 += 24u;
+  // v[w2c_i1] = w2c_l2 + 24u
+    w2c_i1 = w2c_l2 + 24u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0) + 36, w2c_i1);
   // v[w2c_i0] = w2c_l2
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 56u
     w2c_i1 = 56u;
-  // clear w2c_i0
-    w2c_i0 += 56u;
+  // v[w2c_i0] = w2c_l2 + 56u
+    w2c_i0 = w2c_l2 + 56u
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = 16u
     w2c_i2 = 16u;
-  // clear w2c_i1
-    w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_l3 + 16u
+    w2c_i1 = w2c_l3 + 16u
   // clear cache
     w2c_j1 = i64_load((&w2c_memory), (u64)(w2c_i1));
     i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -17761,14 +17765,14 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 48u
     w2c_i1 = 48u;
-  // clear w2c_i0
-    w2c_i0 += 48u;
+  // v[w2c_i0] = w2c_l2 + 48u
+    w2c_i0 = w2c_l2 + 48u
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
   // v[w2c_i2] = 8u
     w2c_i2 = 8u;
-  // clear w2c_i1
-    w2c_i1 += 8u;
+  // v[w2c_i1] = w2c_l3 + 8u
+    w2c_i1 = w2c_l3 + 8u
   // clear cache
     w2c_j1 = i64_load((&w2c_memory), (u64)(w2c_i1));
     i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -17783,22 +17787,22 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 36u
     w2c_i1 = 36u;
-  // clear w2c_i0
-    w2c_i0 += 36u;
+  // v[w2c_i0] = w2c_l2 + 36u
+    w2c_i0 = w2c_l2 + 36u
   // v[w2c_i1] = w2c_l2
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = 40u
     w2c_i2 = 40u;
-  // clear w2c_i1
-    w2c_i1 += 40u;
+  // v[w2c_i1] = w2c_l2 + 40u
+    w2c_i1 = w2c_l2 + 40u
   // clear w2c_i0
-    w2c_i0 = w2c_f6(w2c_i0, w2c_i1);
+    w2c_i0 = w2c_f6(w2c_l2 + 36u, w2c_l2 + 40u);
   // v[w2c_i0] = w2c_l2
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
     w2c_i1 = 16u;
-  // clear w2c_i0
-    w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+    w2c_i0 = w2c_l2 + 16u
   // clear cache
     w2c_l3 = w2c_i0;
   // v[w2c_i1] = w2c_l2
@@ -17825,10 +17829,10 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_p1;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
+  // v[w2c_i0] = w2c_p1 + 8u
+    w2c_i0 = w2c_p1 + 8u
   // clear w2c_i0
-    w2c_i0 += 8u;
-  // clear w2c_i0
-    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p1 + 8u));
   // clear w2c_i0
     w2c_i0 = !(w2c_i0);
   // clear cache
@@ -17849,12 +17853,13 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l4;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l4 + 8u
+    w2c_i0 = w2c_l4 + 8u
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
   // clear w2c_i1
     w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_l3));
+  // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   }
   // v[w2c_i0] = w2c_p0
@@ -17873,8 +17878,8 @@ static void w2c_f22(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 4294967232u
   w2c_i1 = 4294967232u;
-  // clear w2c_i0
-  w2c_i0 -= 4294967232u;
+  // v[w2c_i0] = w2c_l2 - 4294967232u
+  w2c_i0 = w2c_l2 - 4294967232u
   // clear cache
   w2c_g0 = w2c_i0;
   FUNC_EPILOGUE;
@@ -17889,8 +17894,8 @@ static void w2c_f23(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 -= 32u;
+  // v[w2c_i0] = w2c_g0 - 32u
+  w2c_i0 = w2c_g0 - 32u
   // clear cache
   w2c_l4 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -17990,8 +17995,8 @@ static void w2c_f23(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i1 = w2c_p2;
   // v[w2c_i2] = 1u
   w2c_i2 = 1u;
-  // clear w2c_i1
-  w2c_i1 += 1u;
+  // v[w2c_i1] = w2c_p2 + 1u
+  w2c_i1 = w2c_p2 + 1u
   // clear cache
   w2c_p2 = w2c_i1;
   i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
@@ -18012,8 +18017,8 @@ static void w2c_f23(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i2 = w2c_l4;
   // v[w2c_i3] = 8u
     w2c_i3 = 8u;
-  // clear w2c_i2
-    w2c_i2 += 8u;
+  // v[w2c_i2] = w2c_l4 + 8u
+    w2c_i2 = w2c_l4 + 8u
   // v[w2c_i3] = w2c_p0
     w2c_i3 = w2c_p0;
   // v[w2c_i4] = w2c_p1
@@ -18033,12 +18038,13 @@ static void w2c_f23(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i2 = w2c_l4;
   // v[w2c_i3] = 16u
     w2c_i3 = 16u;
-  // clear w2c_i2
-    w2c_i2 += 16u;
+  // v[w2c_i2] = w2c_l4 + 16u
+    w2c_i2 = w2c_l4 + 16u
   // v[w2c_i3] = w2c_p3
     w2c_i3 = w2c_p3;
   // clear w2c_i3
     w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_p3) + 12u);
+  // clear cache
     CALL_INDIRECT(w2c_T0, void (*)(u32, u32), 0, w2c_i3, w2c_i1, w2c_i2);
   // v[w2c_i1] = 1050324u
     w2c_i1 = 1050324u;
@@ -18067,8 +18073,8 @@ static void w2c_f23(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_p2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -18215,8 +18221,8 @@ static void w2c_f24(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+  w2c_i0 = w2c_p0 + 8u
   // v[w2c_i1] = w2c_l3
   w2c_i1 = w2c_l3;
   // clear cache
@@ -18232,8 +18238,8 @@ static void w2c_f25(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -18241,8 +18247,8 @@ static void w2c_f25(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l2 + 8u
+  w2c_i0 = w2c_l2 + 8u
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 1u
@@ -18293,8 +18299,8 @@ static void w2c_f25(u32 w2c_p0, u32 w2c_p1) {
       w2c_i1 = w2c_p0;
   // v[w2c_i2] = 4u
       w2c_i2 = 4u;
-  // clear w2c_i1
-      w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_p0 + 4u
+      w2c_i1 = w2c_p0 + 4u
   // clear cache
       w2c_l5 = w2c_i1;
   // clear w2c_i0
@@ -18326,8 +18332,8 @@ static void w2c_f25(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
     w2c_i1 = 16u;
-  // clear w2c_i0
-    w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+    w2c_i0 = w2c_l2 + 16u
   // clear cache
     w2c_g0 = w2c_i0;
     goto w2c_Bfunc;
@@ -18363,8 +18369,8 @@ static u32 w2c_f26(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 128u
   w2c_i1 = 128u;
-  // clear w2c_i0
-  w2c_i0 -= 128u;
+  // v[w2c_i0] = w2c_g0 - 128u
+  w2c_i0 = w2c_g0 - 128u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -18382,18 +18388,18 @@ static u32 w2c_f26(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
-  // clear w2c_i0
-    w2c_i0 += w2c_l3;
+  // v[w2c_i0] = w2c_p0 + w2c_l3
+    w2c_i0 = w2c_p0 + w2c_l3
   // v[w2c_i1] = 127u
     w2c_i1 = 127u;
-  // clear w2c_i0
-    w2c_i0 += 127u;
+  // v[w2c_i0] = w2c_p0 + w2c_l3 + 127u
+    w2c_i0 = w2c_p0 + w2c_l3 + 127u
   // v[w2c_i1] = w2c_l2
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = 15u
     w2c_i2 = 15u;
-  // clear w2c_i1
-    w2c_i1 &= 15u;
+  // v[w2c_i1] = w2c_l2 \& 15u
+    w2c_i1 = w2c_l2 & 15u
   // clear cache
     w2c_l4 = w2c_i1;
   // v[w2c_i2] = 48u
@@ -18404,8 +18410,8 @@ static u32 w2c_f26(u32 w2c_p0, u32 w2c_p1) {
     w2c_i2 = w2c_l4;
   // v[w2c_i3] = 87u
     w2c_i3 = 87u;
-  // clear w2c_i2
-    w2c_i2 += 87u;
+  // v[w2c_i2] = w2c_l4 + 87u
+    w2c_i2 = w2c_l4 + 87u
   // v[w2c_i3] = w2c_l4
     w2c_i3 = w2c_l4;
   // v[w2c_i4] = 10u
@@ -18413,15 +18419,15 @@ static u32 w2c_f26(u32 w2c_p0, u32 w2c_p1) {
   // clear w2c_i3
     w2c_i3 = w2c_l4 < 10u;
   // clear w2c_i1
-    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
+    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_l4 + 87u;
   // clear cache
     i32_store8((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_p0
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p0 + 4294967295u
+    w2c_i0 = w2c_p0 + 4294967295u
   // clear cache
     w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l2
@@ -18437,8 +18443,8 @@ static u32 w2c_f26(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 128u
   w2c_i1 = 128u;
-  // clear w2c_i0
-  w2c_i0 += 128u;
+  // v[w2c_i0] = w2c_p0 + 128u
+  w2c_i0 = w2c_p0 + 128u
   // clear cache
   w2c_l2 = w2c_i0;
   // v[w2c_i1] = 129u
@@ -18467,26 +18473,26 @@ static u32 w2c_f26(u32 w2c_p0, u32 w2c_p1) {
   w2c_i3 = w2c_p0;
   // v[w2c_i4] = w2c_l3
   w2c_i4 = w2c_l3;
-  // clear w2c_i3
-  w2c_i3 += w2c_l3;
+  // v[w2c_i3] = w2c_p0 + w2c_l3
+  w2c_i3 = w2c_p0 + w2c_l3
   // v[w2c_i4] = 128u
   w2c_i4 = 128u;
-  // clear w2c_i3
-  w2c_i3 += 128u;
+  // v[w2c_i3] = w2c_p0 + w2c_l3 + 128u
+  w2c_i3 = w2c_p0 + w2c_l3 + 128u
   // v[w2c_i4] = 0u
   w2c_i4 = 0u;
   // v[w2c_i5] = w2c_p0
   w2c_i5 = w2c_p0;
-  // clear w2c_i4
-  w2c_i4 -= w2c_p0;
+  // v[w2c_i4] = 0u - w2c_p0
+  w2c_i4 = 0u - w2c_p0
   // clear w2c_i0
-  w2c_i0 = w2c_f5(w2c_p1, 1049928u, 2u, w2c_i3, w2c_i4);
+  w2c_i0 = w2c_f5(w2c_p1, 1049928u, 2u, w2c_p0 + w2c_l3 + 128u, 0u - w2c_p0);
   // v[w2c_i1] = w2c_l3
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 128u
   w2c_i2 = 128u;
-  // clear w2c_i1
-  w2c_i1 += 128u;
+  // v[w2c_i1] = w2c_l3 + 128u
+  w2c_i1 = w2c_l3 + 128u
   // clear cache
   w2c_g0 = w2c_i1;
   FUNC_EPILOGUE;
@@ -18501,8 +18507,8 @@ static u32 w2c_f27(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 128u
   w2c_i1 = 128u;
-  // clear w2c_i0
-  w2c_i0 -= 128u;
+  // v[w2c_i0] = w2c_g0 - 128u
+  w2c_i0 = w2c_g0 - 128u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -18520,18 +18526,18 @@ static u32 w2c_f27(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_l3
     w2c_i1 = w2c_l3;
-  // clear w2c_i0
-    w2c_i0 += w2c_l3;
+  // v[w2c_i0] = w2c_p0 + w2c_l3
+    w2c_i0 = w2c_p0 + w2c_l3
   // v[w2c_i1] = 127u
     w2c_i1 = 127u;
-  // clear w2c_i0
-    w2c_i0 += 127u;
+  // v[w2c_i0] = w2c_p0 + w2c_l3 + 127u
+    w2c_i0 = w2c_p0 + w2c_l3 + 127u
   // v[w2c_i1] = w2c_l2
     w2c_i1 = w2c_l2;
   // v[w2c_i2] = 15u
     w2c_i2 = 15u;
-  // clear w2c_i1
-    w2c_i1 &= 15u;
+  // v[w2c_i1] = w2c_l2 \& 15u
+    w2c_i1 = w2c_l2 & 15u
   // clear cache
     w2c_l4 = w2c_i1;
   // v[w2c_i2] = 48u
@@ -18542,8 +18548,8 @@ static u32 w2c_f27(u32 w2c_p0, u32 w2c_p1) {
     w2c_i2 = w2c_l4;
   // v[w2c_i3] = 55u
     w2c_i3 = 55u;
-  // clear w2c_i2
-    w2c_i2 += 55u;
+  // v[w2c_i2] = w2c_l4 + 55u
+    w2c_i2 = w2c_l4 + 55u
   // v[w2c_i3] = w2c_l4
     w2c_i3 = w2c_l4;
   // v[w2c_i4] = 10u
@@ -18551,15 +18557,15 @@ static u32 w2c_f27(u32 w2c_p0, u32 w2c_p1) {
   // clear w2c_i3
     w2c_i3 = w2c_l4 < 10u;
   // clear w2c_i1
-    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_i2;
+    w2c_i1 = w2c_i3 ? w2c_i1 : w2c_l4 + 55u;
   // clear cache
     i32_store8((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_p0
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4294967295u
     w2c_i1 = 4294967295u;
-  // clear w2c_i0
-    w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p0 + 4294967295u
+    w2c_i0 = w2c_p0 + 4294967295u
   // clear cache
     w2c_p0 = w2c_i0;
   // v[w2c_i0] = w2c_l2
@@ -18575,8 +18581,8 @@ static u32 w2c_f27(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 128u
   w2c_i1 = 128u;
-  // clear w2c_i0
-  w2c_i0 += 128u;
+  // v[w2c_i0] = w2c_p0 + 128u
+  w2c_i0 = w2c_p0 + 128u
   // clear cache
   w2c_l2 = w2c_i0;
   // v[w2c_i1] = 129u
@@ -18605,26 +18611,26 @@ static u32 w2c_f27(u32 w2c_p0, u32 w2c_p1) {
   w2c_i3 = w2c_p0;
   // v[w2c_i4] = w2c_l3
   w2c_i4 = w2c_l3;
-  // clear w2c_i3
-  w2c_i3 += w2c_l3;
+  // v[w2c_i3] = w2c_p0 + w2c_l3
+  w2c_i3 = w2c_p0 + w2c_l3
   // v[w2c_i4] = 128u
   w2c_i4 = 128u;
-  // clear w2c_i3
-  w2c_i3 += 128u;
+  // v[w2c_i3] = w2c_p0 + w2c_l3 + 128u
+  w2c_i3 = w2c_p0 + w2c_l3 + 128u
   // v[w2c_i4] = 0u
   w2c_i4 = 0u;
   // v[w2c_i5] = w2c_p0
   w2c_i5 = w2c_p0;
-  // clear w2c_i4
-  w2c_i4 -= w2c_p0;
+  // v[w2c_i4] = 0u - w2c_p0
+  w2c_i4 = 0u - w2c_p0
   // clear w2c_i0
-  w2c_i0 = w2c_f5(w2c_p1, 1049928u, 2u, w2c_i3, w2c_i4);
+  w2c_i0 = w2c_f5(w2c_p1, 1049928u, 2u, w2c_p0 + w2c_l3 + 128u, 0u - w2c_p0);
   // v[w2c_i1] = w2c_l3
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 128u
   w2c_i2 = 128u;
-  // clear w2c_i1
-  w2c_i1 += 128u;
+  // v[w2c_i1] = w2c_l3 + 128u
+  w2c_i1 = w2c_l3 + 128u
   // clear cache
   w2c_g0 = w2c_i1;
   FUNC_EPILOGUE;
@@ -18929,8 +18935,8 @@ static void w2c_f30(u32 w2c_p0) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l1 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19130,8 +19136,8 @@ static void w2c_f31(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
-  // clear w2c_i0
-    w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+    w2c_i0 = w2c_p0 + 8u
   // v[w2c_i1] = 1u
     w2c_i1 = 1u;
   // clear cache
@@ -19171,8 +19177,8 @@ static void w2c_f32(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 -= 48u;
+  // v[w2c_i0] = w2c_g0 - 48u
+  w2c_i0 = w2c_g0 - 48u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19192,8 +19198,8 @@ static void w2c_f32(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 28u
   w2c_i1 = 28u;
-  // clear w2c_i0
-  w2c_i0 += 28u;
+  // v[w2c_i0] = w2c_l3 + 28u
+  w2c_i0 = w2c_l3 + 28u
   // v[w2c_i1] = 2u
   w2c_i1 = 2u;
   // clear cache
@@ -19202,8 +19208,8 @@ static void w2c_f32(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 44u
   w2c_i1 = 44u;
-  // clear w2c_i0
-  w2c_i0 += 44u;
+  // v[w2c_i0] = w2c_l3 + 44u
+  w2c_i0 = w2c_l3 + 44u
   // v[w2c_i1] = 21u
   w2c_i1 = 21u;
   // clear cache
@@ -19231,8 +19237,8 @@ static void w2c_f32(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l3 + 32u
+  w2c_i1 = w2c_l3 + 32u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l3
@@ -19247,16 +19253,16 @@ static void w2c_f32(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 4u
   w2c_i2 = 4u;
-  // clear w2c_i1
-  w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_l3 + 4u
+  w2c_i1 = w2c_l3 + 4u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 32, w2c_i1);
   // v[w2c_i0] = w2c_l3
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l3 + 8u
+  w2c_i0 = w2c_l3 + 8u
   // v[w2c_i1] = w2c_p2
   w2c_i1 = w2c_p2;
   // clear cache
@@ -19274,8 +19280,8 @@ static void w2c_f33(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 -= 48u;
+  // v[w2c_i0] = w2c_g0 - 48u
+  w2c_i0 = w2c_g0 - 48u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19295,8 +19301,8 @@ static void w2c_f33(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 28u
   w2c_i1 = 28u;
-  // clear w2c_i0
-  w2c_i0 += 28u;
+  // v[w2c_i0] = w2c_l2 + 28u
+  w2c_i0 = w2c_l2 + 28u
   // v[w2c_i1] = 2u
   w2c_i1 = 2u;
   // clear cache
@@ -19305,8 +19311,8 @@ static void w2c_f33(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 44u
   w2c_i1 = 44u;
-  // clear w2c_i0
-  w2c_i0 += 44u;
+  // v[w2c_i0] = w2c_l2 + 44u
+  w2c_i0 = w2c_l2 + 44u
   // v[w2c_i1] = 21u
   w2c_i1 = 21u;
   // clear cache
@@ -19334,8 +19340,8 @@ static void w2c_f33(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -19344,8 +19350,8 @@ static void w2c_f33(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 4u
   w2c_i2 = 4u;
-  // clear w2c_i1
-  w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_l2 + 4u
+  w2c_i1 = w2c_l2 + 4u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 40, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -19358,8 +19364,8 @@ static void w2c_f33(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l2 + 8u
+  w2c_i0 = w2c_l2 + 8u
   // v[w2c_i1] = 1048972u
   w2c_i1 = 1048972u;
   // clear cache
@@ -19377,8 +19383,8 @@ static void w2c_f34(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 -= 48u;
+  // v[w2c_i0] = w2c_g0 - 48u
+  w2c_i0 = w2c_g0 - 48u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19398,8 +19404,8 @@ static void w2c_f34(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 28u
   w2c_i1 = 28u;
-  // clear w2c_i0
-  w2c_i0 += 28u;
+  // v[w2c_i0] = w2c_l2 + 28u
+  w2c_i0 = w2c_l2 + 28u
   // v[w2c_i1] = 2u
   w2c_i1 = 2u;
   // clear cache
@@ -19408,8 +19414,8 @@ static void w2c_f34(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 44u
   w2c_i1 = 44u;
-  // clear w2c_i0
-  w2c_i0 += 44u;
+  // v[w2c_i0] = w2c_l2 + 44u
+  w2c_i0 = w2c_l2 + 44u
   // v[w2c_i1] = 21u
   w2c_i1 = 21u;
   // clear cache
@@ -19437,8 +19443,8 @@ static void w2c_f34(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -19447,8 +19453,8 @@ static void w2c_f34(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 4u
   w2c_i2 = 4u;
-  // clear w2c_i1
-  w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_l2 + 4u
+  w2c_i1 = w2c_l2 + 4u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 40, w2c_i1);
   // v[w2c_i0] = w2c_l2
@@ -19461,8 +19467,8 @@ static void w2c_f34(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l2 + 8u
+  w2c_i0 = w2c_l2 + 8u
   // v[w2c_i1] = 1048972u
   w2c_i1 = 1048972u;
   // clear cache
@@ -19480,8 +19486,8 @@ static void w2c_f35(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 -= 48u;
+  // v[w2c_i0] = w2c_g0 - 48u
+  w2c_i0 = w2c_g0 - 48u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19501,8 +19507,8 @@ static void w2c_f35(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 28u
   w2c_i1 = 28u;
-  // clear w2c_i0
-  w2c_i0 += 28u;
+  // v[w2c_i0] = w2c_l3 + 28u
+  w2c_i0 = w2c_l3 + 28u
   // v[w2c_i1] = 2u
   w2c_i1 = 2u;
   // clear cache
@@ -19511,8 +19517,8 @@ static void w2c_f35(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 44u
   w2c_i1 = 44u;
-  // clear w2c_i0
-  w2c_i0 += 44u;
+  // v[w2c_i0] = w2c_l3 + 44u
+  w2c_i0 = w2c_l3 + 44u
   // v[w2c_i1] = 21u
   w2c_i1 = 21u;
   // clear cache
@@ -19540,8 +19546,8 @@ static void w2c_f35(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l3 + 32u
+  w2c_i1 = w2c_l3 + 32u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 24, w2c_i1);
   // v[w2c_i0] = w2c_l3
@@ -19550,8 +19556,8 @@ static void w2c_f35(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 4u
   w2c_i2 = 4u;
-  // clear w2c_i1
-  w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_l3 + 4u
+  w2c_i1 = w2c_l3 + 4u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 40, w2c_i1);
   // v[w2c_i0] = w2c_l3
@@ -19564,8 +19570,8 @@ static void w2c_f35(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l3 + 8u
+  w2c_i0 = w2c_l3 + 8u
   // v[w2c_i1] = w2c_p2
   w2c_i1 = w2c_p2;
   // clear cache
@@ -19583,8 +19589,8 @@ static u32 w2c_f36(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 -= 32u;
+  // v[w2c_i0] = w2c_g0 - 32u
+  w2c_i0 = w2c_g0 - 32u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19600,14 +19606,14 @@ static u32 w2c_f36(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 24u
   w2c_i1 = 24u;
-  // clear w2c_i0
-  w2c_i0 += 24u;
+  // v[w2c_i0] = w2c_l2 + 24u
+  w2c_i0 = w2c_l2 + 24u
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 16u
   w2c_i2 = 16u;
-  // clear w2c_i1
-  w2c_i1 += 16u;
+  // v[w2c_i1] = w2c_p1 + 16u
+  w2c_i1 = w2c_p1 + 16u
   // clear cache
   w2c_j1 = i64_load((&w2c_memory), (u64)(w2c_i1));
   i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -19615,14 +19621,14 @@ static u32 w2c_f36(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 8u
   w2c_i2 = 8u;
-  // clear w2c_i1
-  w2c_i1 += 8u;
+  // v[w2c_i1] = w2c_p1 + 8u
+  w2c_i1 = w2c_p1 + 8u
   // clear cache
   w2c_j1 = i64_load((&w2c_memory), (u64)(w2c_i1));
   i64_store((&w2c_memory), (u64)(w2c_i0), w2c_j1);
@@ -19637,22 +19643,22 @@ static u32 w2c_f36(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
-  // clear w2c_i0
-  w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_l2 + 4u
+  w2c_i0 = w2c_l2 + 4u
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 8u
   w2c_i2 = 8u;
-  // clear w2c_i1
-  w2c_i1 += 8u;
+  // v[w2c_i1] = w2c_l2 + 8u
+  w2c_i1 = w2c_l2 + 8u
   // clear w2c_i0
-  w2c_i0 = w2c_f6(w2c_i0, w2c_i1);
+  w2c_i0 = w2c_f6(w2c_l2 + 4u, w2c_l2 + 8u);
   // v[w2c_i1] = w2c_l2
   w2c_i1 = w2c_l2;
   // v[w2c_i2] = 32u
   w2c_i2 = 32u;
-  // clear w2c_i1
-  w2c_i1 += 32u;
+  // v[w2c_i1] = w2c_l2 + 32u
+  w2c_i1 = w2c_l2 + 32u
   // clear cache
   w2c_g0 = w2c_i1;
   FUNC_EPILOGUE;
@@ -19687,8 +19693,8 @@ static void w2c_f38(void) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 48u
   w2c_i1 = 48u;
-  // clear w2c_i0
-  w2c_i0 -= 48u;
+  // v[w2c_i0] = w2c_g0 - 48u
+  w2c_i0 = w2c_g0 - 48u
   // clear cache
   w2c_l0 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19708,8 +19714,8 @@ static void w2c_f38(void) {
   w2c_i0 = w2c_l0;
   // v[w2c_i1] = 36u
   w2c_i1 = 36u;
-  // clear w2c_i0
-  w2c_i0 += 36u;
+  // v[w2c_i0] = w2c_l0 + 36u
+  w2c_i0 = w2c_l0 + 36u
   // v[w2c_i1] = 1u
   w2c_i1 = 1u;
   // clear cache
@@ -19737,8 +19743,8 @@ static void w2c_f38(void) {
   w2c_i1 = w2c_l0;
   // v[w2c_i2] = 40u
   w2c_i2 = 40u;
-  // clear w2c_i1
-  w2c_i1 += 40u;
+  // v[w2c_i1] = w2c_l0 + 40u
+  w2c_i1 = w2c_l0 + 40u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 32, w2c_i1);
   // v[w2c_i0] = w2c_l0
@@ -19747,16 +19753,16 @@ static void w2c_f38(void) {
   w2c_i1 = w2c_l0;
   // v[w2c_i2] = 8u
   w2c_i2 = 8u;
-  // clear w2c_i1
-  w2c_i1 += 8u;
+  // v[w2c_i1] = w2c_l0 + 8u
+  w2c_i1 = w2c_l0 + 8u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 40, w2c_i1);
   // v[w2c_i0] = w2c_l0
   w2c_i0 = w2c_l0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l0 + 16u
+  w2c_i0 = w2c_l0 + 16u
   // v[w2c_i1] = 1048940u
   w2c_i1 = 1048940u;
   // clear cache
@@ -19774,8 +19780,8 @@ static void w2c_f39(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -19812,16 +19818,16 @@ static void w2c_f39(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 76u
   w2c_i2 = 76u;
-  // clear w2c_i1
-  w2c_i1 += 76u;
+  // v[w2c_i1] = w2c_p0 + 76u
+  w2c_i1 = w2c_p0 + 76u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 12, w2c_i1);
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+  w2c_i0 = w2c_p0 + 8u
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = w2c_p2
@@ -19830,16 +19836,16 @@ static void w2c_f39(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i3 = w2c_l3;
   // v[w2c_i4] = 12u
   w2c_i4 = 12u;
-  // clear w2c_i3
-  w2c_i3 += 12u;
+  // v[w2c_i3] = w2c_l3 + 12u
+  w2c_i3 = w2c_l3 + 12u
   // clear cache
   w2c_f11(w2c_i0, w2c_i1, w2c_i2, w2c_i3);
   // v[w2c_i0] = w2c_l3
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l3 + 16u
+  w2c_i0 = w2c_l3 + 16u
   // clear cache
   w2c_g0 = w2c_i0;
   FUNC_EPILOGUE;
@@ -19892,12 +19898,12 @@ static void w2c_f40(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
     w2c_i1 = w2c_p1;
   // v[w2c_i2] = w2c_l4
     w2c_i2 = w2c_l4;
-  // clear w2c_i1
-    w2c_i1 += w2c_l4;
+  // v[w2c_i1] = w2c_p1 + w2c_l4
+    w2c_i1 = w2c_p1 + w2c_l4
   // v[w2c_i2] = 4u
     w2c_i2 = 4u;
-  // clear w2c_i1
-    w2c_i1 += 4u;
+  // v[w2c_i1] = w2c_p1 + w2c_l4 + 4u
+    w2c_i1 = w2c_p1 + w2c_l4 + 4u
   // clear cache
     i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
     goto w2c_Bfunc;
@@ -20014,20 +20020,20 @@ static void w2c_f42(u32 w2c_p0) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_l1
     w2c_i1 = w2c_l1;
-  // clear w2c_i0
-    w2c_i0 += w2c_l1;
+  // v[w2c_i0] = w2c_p0 + w2c_l1
+    w2c_i0 = w2c_p0 + w2c_l1
   // v[w2c_i1] = 4u
     w2c_i1 = 4u;
-  // clear w2c_i0
-    w2c_i0 += 4u;
+  // v[w2c_i0] = w2c_p0 + w2c_l1 + 4u
+    w2c_i0 = w2c_p0 + w2c_l1 + 4u
   // v[w2c_i1] = 56u
     w2c_i1 = 56u;
   // v[w2c_i2] = w2c_l1
     w2c_i2 = w2c_l1;
-  // clear w2c_i1
-    w2c_i1 -= w2c_l1;
+  // v[w2c_i1] = 56u - w2c_l1
+    w2c_i1 = 56u - w2c_l1
   // clear w2c_i0
-    w2c_i0 = w2c_f58(w2c_i0, w2c_i1);
+    w2c_i0 = w2c_f58(w2c_p0 + w2c_l1 + 4u, 56u - w2c_l1);
   // v[w2c_i0] = w2c_p0
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 56u
@@ -20057,8 +20063,8 @@ static void w2c_f43(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -20084,10 +20090,10 @@ static void w2c_f43(u32 w2c_p0, u32 w2c_p1) {
     w2c_i0 = w2c_l2;
   // v[w2c_i1] = 8u
     w2c_i1 = 8u;
+  // v[w2c_i0] = w2c_l2 + 8u
+    w2c_i0 = w2c_l2 + 8u
   // clear w2c_i0
-    w2c_i0 += 8u;
-  // clear w2c_i0
-    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_l2 + 8u));
   // clear cache
     w2c_p0 = w2c_i0;
   // clear w2c_i0
@@ -20107,8 +20113,8 @@ static void w2c_f43(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_l2;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 += 16u;
+  // v[w2c_i0] = w2c_l2 + 16u
+  w2c_i0 = w2c_l2 + 16u
   // clear cache
   w2c_g0 = w2c_i0;
   goto w2c_Bfunc;
@@ -20142,10 +20148,10 @@ static u32 w2c_f44(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
     w2c_i3 = w2c_p0;
   // v[w2c_i4] = 28u
     w2c_i4 = 28u;
+  // v[w2c_i3] = w2c_p0 + 28u
+    w2c_i3 = w2c_p0 + 28u
   // clear w2c_i3
-    w2c_i3 += 28u;
-  // clear w2c_i3
-    w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3));
+    w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_p0 + 28u));
   // clear w2c_i3
     w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3) + 16u);
   // clear w2c_i1
@@ -20175,10 +20181,10 @@ static u32 w2c_f44(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i3 = w2c_p0;
   // v[w2c_i4] = 28u
   w2c_i4 = 28u;
+  // v[w2c_i3] = w2c_p0 + 28u
+  w2c_i3 = w2c_p0 + 28u
   // clear w2c_i3
-  w2c_i3 += 28u;
-  // clear w2c_i3
-  w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3));
+  w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_p0 + 28u));
   // clear w2c_i3
   w2c_i3 = i32_load((&w2c_memory), (u64)(w2c_i3) + 12u);
   // clear w2c_i0
@@ -20199,8 +20205,8 @@ static void w2c_f45(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 32u
   w2c_i1 = 32u;
-  // clear w2c_i0
-  w2c_i0 -= 32u;
+  // v[w2c_i0] = w2c_g0 - 32u
+  w2c_i0 = w2c_g0 - 32u
   // clear cache
   w2c_l3 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -20208,8 +20214,8 @@ static void w2c_f45(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i0 = w2c_l3;
   // v[w2c_i1] = 20u
   w2c_i1 = 20u;
-  // clear w2c_i0
-  w2c_i0 += 20u;
+  // v[w2c_i0] = w2c_l3 + 20u
+  w2c_i0 = w2c_l3 + 20u
   // v[w2c_i1] = 0u
   w2c_i1 = 0u;
   // clear cache
@@ -20243,8 +20249,8 @@ static void w2c_f45(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_l3;
   // v[w2c_i2] = 24u
   w2c_i2 = 24u;
-  // clear w2c_i1
-  w2c_i1 += 24u;
+  // v[w2c_i1] = w2c_l3 + 24u
+  w2c_i1 = w2c_l3 + 24u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l3
@@ -20277,8 +20283,8 @@ static void w2c_f46(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 100u
   w2c_i1 = 100u;
-  // clear w2c_i0
-  w2c_i0 += 100u;
+  // v[w2c_i0] = w2c_p0 + 100u
+  w2c_i0 = w2c_p0 + 100u
   // v[w2c_i1] = 1049468u
   w2c_i1 = 1049468u;
   // clear cache
@@ -20288,8 +20294,8 @@ static void w2c_f46(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 92u
   w2c_i1 = 92u;
-  // clear w2c_i0
-  w2c_i0 += 92u;
+  // v[w2c_i0] = w2c_p0 + 92u
+  w2c_i0 = w2c_p0 + 92u
   // v[w2c_i1] = 1049460u
   w2c_i1 = 1049460u;
   // clear cache
@@ -20299,8 +20305,8 @@ static void w2c_f46(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 84u
   w2c_i1 = 84u;
-  // clear w2c_i0
-  w2c_i0 += 84u;
+  // v[w2c_i0] = w2c_p0 + 84u
+  w2c_i0 = w2c_p0 + 84u
   // v[w2c_i1] = 1049452u
   w2c_i1 = 1049452u;
   // clear cache
@@ -20436,8 +20442,8 @@ static void w2c_f49(u32 w2c_p0, u32 w2c_p1) {
   w2c_i2 = w2c_p1;
   // v[w2c_i3] = 4294901760u
   w2c_i3 = 4294901760u;
-  // clear w2c_i2
-  w2c_i2 &= 4294901760u;
+  // v[w2c_i2] = w2c_p1 \& 4294901760u
+  w2c_i2 = w2c_p1 & 4294901760u
   // v[w2c_i3] = w2c_l2
   w2c_i3 = w2c_l2;
   // v[w2c_i4] = 4294967295u
@@ -20476,8 +20482,8 @@ static void w2c_f50(u32 w2c_p0) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l1 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -20568,33 +20574,33 @@ static u32 w2c_f51(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
       w2c_i0 = w2c_p1;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_p1 + 1u
+      w2c_i0 = w2c_p1 + 1u
   // clear cache
       w2c_p1 = w2c_i0;
   // v[w2c_i0] = w2c_l3
       w2c_i0 = w2c_l3;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l3 + 1u
+      w2c_i0 = w2c_l3 + 1u
   // clear cache
       w2c_l3 = w2c_i0;
   // v[w2c_i0] = w2c_p2
       w2c_i0 = w2c_p2;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p2 + 4294967295u
+      w2c_i0 = w2c_p2 + 4294967295u
   // clear cache
       w2c_p2 = w2c_i0;
       if (w2c_i0) {goto w2c_L1;}
   }
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
-  // clear cache
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0;
+  // clear cache
 }
 
 static u32 w2c___wbindgen_malloc(u32 w2c_p0) {
@@ -20641,9 +20647,9 @@ static u32 w2c___wbindgen_malloc(u32 w2c_p0) {
   w2c_B0:;
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
-  // clear cache
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0;
+  // clear cache
 }
 
 static u32 w2c_f53(u32 w2c_p0, u32 w2c_p1) {
@@ -20767,8 +20773,8 @@ static void w2c_f55(u32 w2c_p0) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l1 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -20776,16 +20782,16 @@ static void w2c_f55(u32 w2c_p0) {
   w2c_i0 = w2c_l1;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l1 + 8u
+  w2c_i0 = w2c_l1 + 8u
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 8u
   w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_p0 + 8u
+  w2c_i1 = w2c_p0 + 8u
   // clear w2c_i1
-  w2c_i1 += 8u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 8u));
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l1
@@ -20812,8 +20818,8 @@ static void w2c_f56(u32 w2c_p0) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l1 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -20821,16 +20827,16 @@ static void w2c_f56(u32 w2c_p0) {
   w2c_i0 = w2c_l1;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l1 + 8u
+  w2c_i0 = w2c_l1 + 8u
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
   // v[w2c_i2] = 8u
   w2c_i2 = 8u;
+  // v[w2c_i1] = w2c_p0 + 8u
+  w2c_i1 = w2c_p0 + 8u
   // clear w2c_i1
-  w2c_i1 += 8u;
-  // clear w2c_i1
-  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_i1));
+  w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0 + 8u));
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0), w2c_i1);
   // v[w2c_i0] = w2c_l1
@@ -20856,8 +20862,8 @@ static void w2c_f57(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l2 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -20916,25 +20922,25 @@ static u32 w2c_f58(u32 w2c_p0, u32 w2c_p1) {
       w2c_i0 = w2c_l2;
   // v[w2c_i1] = 1u
       w2c_i1 = 1u;
-  // clear w2c_i0
-      w2c_i0 += 1u;
+  // v[w2c_i0] = w2c_l2 + 1u
+      w2c_i0 = w2c_l2 + 1u
   // clear cache
       w2c_l2 = w2c_i0;
   // v[w2c_i0] = w2c_p1
       w2c_i0 = w2c_p1;
   // v[w2c_i1] = 4294967295u
       w2c_i1 = 4294967295u;
-  // clear w2c_i0
-      w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p1 + 4294967295u
+      w2c_i0 = w2c_p1 + 4294967295u
   // clear cache
       w2c_p1 = w2c_i0;
       if (w2c_i0) {goto w2c_L1;}
   }
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
-  // clear cache
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0;
+  // clear cache
 }
 
 static void w2c_f59(u32 w2c_p0, u32 w2c_p1) {
@@ -20964,8 +20970,8 @@ static void w2c_f59(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
-  // clear w2c_i0
-  w2c_i0 += w2c_p1;
+  // v[w2c_i0] = w2c_p0 + w2c_p1
+  w2c_i0 = w2c_p0 + w2c_p1
   // clear cache
   w2c_p0 = w2c_i0;
   // v[w2c_i1] = w2c_p0
@@ -20990,8 +20996,8 @@ static void w2c_f60(u32 w2c_p0) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l1 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -21006,8 +21012,8 @@ static void w2c_f60(u32 w2c_p0) {
   w2c_i0 = w2c_l1;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
+  // v[w2c_i0] = w2c_l1 + 8u
+  w2c_i0 = w2c_l1 + 8u
   // v[w2c_i1] = 1049476u
   w2c_i1 = 1049476u;
   // v[w2c_i2] = 0u
@@ -21030,8 +21036,8 @@ static void w2c_f61(void) {
   w2c_i0 = w2c_g0;
   // v[w2c_i1] = 16u
   w2c_i1 = 16u;
-  // clear w2c_i0
-  w2c_i0 -= 16u;
+  // v[w2c_i0] = w2c_g0 - 16u
+  w2c_i0 = w2c_g0 - 16u
   // clear cache
   w2c_l0 = w2c_i0;
   w2c_g0 = w2c_i0;
@@ -21114,10 +21120,10 @@ static void w2c_f63(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4u
   w2c_i1 = 4u;
+  // v[w2c_i0] = w2c_p0 + 4u
+  w2c_i0 = w2c_p0 + 4u
   // clear w2c_i0
-  w2c_i0 += 4u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 4u));
   // clear w2c_i0
   w2c_i0 = !(w2c_i0);
   // clear cache
@@ -21146,10 +21152,10 @@ static void w2c_f64(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
+  // v[w2c_i0] = w2c_p0 + 8u
+  w2c_i0 = w2c_p0 + 8u
   // clear w2c_i0
-  w2c_i0 += 8u;
-  // clear w2c_i0
-  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+  w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 8u));
   // clear w2c_i0
   w2c_i0 = !(w2c_i0);
   // clear cache
@@ -21183,12 +21189,12 @@ static u32 w2c_f65(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p0;
   // clear w2c_i1
   w2c_i1 = i32_load((&w2c_memory), (u64)(w2c_p0) + 4u);
-  // clear w2c_i0
-  w2c_i0 += w2c_i1;
+  // v[w2c_i0] = w2c_l2 + w2c_i1
+  w2c_i0 = w2c_l2 + w2c_i1
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // clear w2c_i0
-  w2c_i0 = w2c_i0 <= w2c_p1;
+  w2c_i0 = w2c_l2 + w2c_i1 <= w2c_p1;
   // clear cache
   if (w2c_i0) {goto w2c_B0;}
   // v[w2c_i0] = 1u
@@ -21225,16 +21231,16 @@ static void w2c_f66(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 1u
   w2c_i2 = 1u;
-  // clear w2c_i1
-  w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_p1 | 1u
+  w2c_i1 = w2c_p1 | 1u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
-  // clear w2c_i0
-  w2c_i0 += w2c_p1;
+  // v[w2c_i0] = w2c_p0 + w2c_p1
+  w2c_i0 = w2c_p0 + w2c_p1
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // clear cache
@@ -21251,16 +21257,16 @@ static void w2c_f67(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 3u
   w2c_i2 = 3u;
-  // clear w2c_i1
-  w2c_i1 |= 3u;
+  // v[w2c_i1] = w2c_p1 | 3u
+  w2c_i1 = w2c_p1 | 3u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
-  // clear w2c_i0
-  w2c_i0 += w2c_p1;
+  // v[w2c_i0] = w2c_p0 + w2c_p1
+  w2c_i0 = w2c_p0 + w2c_p1
   // clear cache
   w2c_p0 = w2c_i0;
   // v[w2c_i1] = w2c_p0
@@ -21321,10 +21327,10 @@ static u32 w2c_f69(u32 w2c_p0) {
     w2c_i0 = w2c_p0;
   // v[w2c_i1] = 20u
     w2c_i1 = 20u;
+  // v[w2c_i0] = w2c_p0 + 20u
+    w2c_i0 = w2c_p0 + 20u
   // clear w2c_i0
-    w2c_i0 += 20u;
-  // clear w2c_i0
-    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_i0));
+    w2c_i0 = i32_load((&w2c_memory), (u64)(w2c_p0 + 20u));
   // clear cache
   }
   FUNC_EPILOGUE;
@@ -21344,8 +21350,8 @@ static u32 w2c_f70(u32 w2c_p0) {
   w2c_i3 = 1u;
   // clear w2c_i2
   w2c_i2 >>= (1u & 31);
-  // clear w2c_i1
-  w2c_i1 -= w2c_i2;
+  // v[w2c_i1] = 25u - w2c_i2
+  w2c_i1 = 25u - w2c_i2
   // v[w2c_i2] = w2c_p0
   w2c_i2 = w2c_p0;
   // v[w2c_i3] = 31u
@@ -21353,10 +21359,10 @@ static u32 w2c_f70(u32 w2c_p0) {
   // clear w2c_i2
   w2c_i2 = w2c_p0 == 31u;
   // clear w2c_i0
-  w2c_i0 = w2c_i2 ? 0u : w2c_i1;
-  // clear cache
+  w2c_i0 = w2c_i2 ? 0u : 25u - w2c_i2;
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static void w2c_f71(u32 w2c_p0, u32 w2c_p1) {
@@ -21368,16 +21374,16 @@ static void w2c_f71(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 1u
   w2c_i2 = 1u;
-  // clear w2c_i1
-  w2c_i1 |= 1u;
+  // v[w2c_i1] = w2c_p1 | 1u
+  w2c_i1 = w2c_p1 | 1u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   // v[w2c_i0] = w2c_p0
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
-  // clear w2c_i0
-  w2c_i0 += w2c_p1;
+  // v[w2c_i0] = w2c_p0 + w2c_p1
+  w2c_i0 = w2c_p0 + w2c_p1
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
   // clear cache
@@ -21392,23 +21398,23 @@ static u32 w2c_f72(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
-  // clear w2c_i0
-  w2c_i0 += w2c_p1;
+  // v[w2c_i0] = w2c_p0 + w2c_p1
+  w2c_i0 = w2c_p0 + w2c_p1
   // v[w2c_i1] = 4294967295u
   w2c_i1 = 4294967295u;
-  // clear w2c_i0
-  w2c_i0 += 4294967295u;
+  // v[w2c_i0] = w2c_p0 + w2c_p1 + 4294967295u
+  w2c_i0 = w2c_p0 + w2c_p1 + 4294967295u
   // v[w2c_i1] = 0u
   w2c_i1 = 0u;
   // v[w2c_i2] = w2c_p1
   w2c_i2 = w2c_p1;
-  // clear w2c_i1
-  w2c_i1 -= w2c_p1;
-  // clear w2c_i0
-  w2c_i0 &= w2c_i1;
-  // clear cache
+  // v[w2c_i1] = 0u - w2c_p1
+  w2c_i1 = 0u - w2c_p1
+  // v[w2c_i0] = w2c_p0 + w2c_p1 + 4294967295u \& 0u - w2c_p1
+  w2c_i0 = w2c_p0 + w2c_p1 + 4294967295u & 0u - w2c_p1
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0 + w2c_p1 + 4294967295u & 0u - w2c_p1;
+  // clear cache
 }
 
 static u32 w2c_f73(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
@@ -21424,9 +21430,9 @@ static u32 w2c_f73(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2, u32 w2c_p3) {
   w2c_i3 = w2c_p3;
   // clear w2c_i0
   w2c_i0 = w2c_f4(w2c_p0, w2c_p1, w2c_p2, w2c_p3);
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static void w2c___wbindgen_free(u32 w2c_p0, u32 w2c_p1) {
@@ -21457,15 +21463,15 @@ static u32 w2c_f75(u32 w2c_p0, u32 w2c_p1, u32 w2c_p2) {
   w2c_i2 = w2c_p1;
   // v[w2c_i3] = w2c_p2
   w2c_i3 = w2c_p2;
-  // clear w2c_i2
-  w2c_i2 += w2c_p2;
+  // v[w2c_i2] = w2c_p1 + w2c_p2
+  w2c_i2 = w2c_p1 + w2c_p2
   // clear cache
   w2c_f19(w2c_i0, w2c_i1, w2c_i2);
   // v[w2c_i0] = 0u
   w2c_i0 = 0u;
-  // clear cache
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return 0u;
+  // clear cache
 }
 
 static u32 w2c_f76(u32 w2c_p0) {
@@ -21483,13 +21489,13 @@ static u32 w2c_f76(u32 w2c_p0) {
   w2c_i1 = 0u;
   // v[w2c_i2] = w2c_p0
   w2c_i2 = w2c_p0;
-  // clear w2c_i1
-  w2c_i1 -= w2c_p0;
+  // v[w2c_i1] = 0u - w2c_p0
+  w2c_i1 = 0u - w2c_p0
   // clear w2c_i0
-  w2c_i0 |= w2c_i1;
-  // clear cache
+  w2c_i0 |= 0u - w2c_p0;
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static u32 w2c_f77(u32 w2c_p0, u32 w2c_p1) {
@@ -21501,9 +21507,9 @@ static u32 w2c_f77(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // clear w2c_i0
   w2c_i0 = w2c_f10(w2c_p0, w2c_p1);
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static void w2c_f78(u32 w2c_p0, u32 w2c_p1) {
@@ -21557,9 +21563,9 @@ static u32 w2c_f80(u32 w2c_p0) {
   w2c_i1 = 1u;
   // clear w2c_i0
   w2c_i0 >>= (1u & 31);
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static u32 w2c_f81(u32 w2c_p0, u32 w2c_p1) {
@@ -21588,15 +21594,15 @@ static u32 w2c_f82(u32 w2c_p0) {
   w2c_i0 = 0u;
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
-  // clear w2c_i0
-  w2c_i0 -= w2c_p0;
+  // v[w2c_i0] = 0u - w2c_p0
+  w2c_i0 = 0u - w2c_p0
   // v[w2c_i1] = w2c_p0
   w2c_i1 = w2c_p0;
-  // clear w2c_i0
-  w2c_i0 &= w2c_p0;
-  // clear cache
+  // v[w2c_i0] = 0u - w2c_p0 \& w2c_p0
+  w2c_i0 = 0u - w2c_p0 & w2c_p0
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return 0u - w2c_p0 & w2c_p0;
+  // clear cache
 }
 
 static u32 w2c_f83(u32 w2c_p0) {
@@ -21612,9 +21618,9 @@ static u32 w2c_f83(u32 w2c_p0) {
   w2c_i0 &= 3u;
   // clear w2c_i0
   w2c_i0 = !(w2c_i0);
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static void w2c_f84(u32 w2c_p0, u32 w2c_p1) {
@@ -21626,8 +21632,8 @@ static void w2c_f84(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // v[w2c_i2] = 3u
   w2c_i2 = 3u;
-  // clear w2c_i1
-  w2c_i1 |= 3u;
+  // v[w2c_i1] = w2c_p1 | 3u
+  w2c_i1 = w2c_p1 | 3u
   // clear cache
   i32_store((&w2c_memory), (u64)(w2c_i0) + 4, w2c_i1);
   FUNC_EPILOGUE;
@@ -21691,9 +21697,9 @@ static u32 w2c_f88(u32 w2c_p0, u32 w2c_p1) {
   w2c_i1 = w2c_p1;
   // clear w2c_i0
   w2c_i0 = w2c_f12(w2c_j0, w2c_p1);
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static u32 w2c_f89(u32 w2c_p0) {
@@ -21707,9 +21713,9 @@ static u32 w2c_f89(u32 w2c_p0) {
   w2c_i1 = 4294967288u;
   // clear w2c_i0
   w2c_i0 &= 4294967288u;
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static u32 w2c_f90(u32 w2c_p0) {
@@ -21723,9 +21729,9 @@ static u32 w2c_f90(u32 w2c_p0) {
   w2c_i1 = 1u;
   // clear w2c_i0
   w2c_i0 &= 1u;
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static u32 w2c_f91(u32 w2c_p0) {
@@ -21739,9 +21745,9 @@ static u32 w2c_f91(u32 w2c_p0) {
   w2c_i1 = 1u;
   // clear w2c_i0
   w2c_i0 &= 1u;
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static u32 w2c_f92(u32 w2c_p0) {
@@ -21755,9 +21761,9 @@ static u32 w2c_f92(u32 w2c_p0) {
   w2c_i1 = 1u;
   // clear w2c_i0
   w2c_i0 >>= (1u & 31);
-  // clear cache
   FUNC_EPILOGUE;
   return w2c_i0;
+  // clear cache
 }
 
 static void w2c_f93(u32 w2c_p0, u32 w2c_p1) {
@@ -21792,11 +21798,11 @@ static u32 w2c_f94(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
-  // clear w2c_i0
-  w2c_i0 += w2c_p1;
-  // clear cache
+  // v[w2c_i0] = w2c_p0 + w2c_p1
+  w2c_i0 = w2c_p0 + w2c_p1
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0 + w2c_p1;
+  // clear cache
 }
 
 static u32 w2c_f95(u32 w2c_p0, u32 w2c_p1) {
@@ -21806,11 +21812,11 @@ static u32 w2c_f95(u32 w2c_p0, u32 w2c_p1) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = w2c_p1
   w2c_i1 = w2c_p1;
-  // clear w2c_i0
-  w2c_i0 -= w2c_p1;
-  // clear cache
+  // v[w2c_i0] = w2c_p0 - w2c_p1
+  w2c_i0 = w2c_p0 - w2c_p1
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0 - w2c_p1;
+  // clear cache
 }
 
 static u32 w2c_f96(u32 w2c_p0) {
@@ -21820,11 +21826,11 @@ static u32 w2c_f96(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 8u
   w2c_i1 = 8u;
-  // clear w2c_i0
-  w2c_i0 += 8u;
-  // clear cache
+  // v[w2c_i0] = w2c_p0 + 8u
+  w2c_i0 = w2c_p0 + 8u
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0 + 8u;
+  // clear cache
 }
 
 static u32 w2c_f97(u32 w2c_p0) {
@@ -21834,11 +21840,11 @@ static u32 w2c_f97(u32 w2c_p0) {
   w2c_i0 = w2c_p0;
   // v[w2c_i1] = 4294967288u
   w2c_i1 = 4294967288u;
-  // clear w2c_i0
-  w2c_i0 += 4294967288u;
-  // clear cache
+  // v[w2c_i0] = w2c_p0 + 4294967288u
+  w2c_i0 = w2c_p0 + 4294967288u
   FUNC_EPILOGUE;
-  return w2c_i0;
+  return w2c_p0 + 4294967288u;
+  // clear cache
 }
 
 static u64 w2c_f98(u32 w2c_p0) {
