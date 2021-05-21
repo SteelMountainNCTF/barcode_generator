@@ -2,6 +2,10 @@
 
 BEGIN { FPAT = "([[:space:]]*[^[:space:]]+)"; OFS = ""; }
 
+function alen (a,     i) {
+    for (i in a);
+    return i;}
+
 function ltrim(x) {
   return gensub(/^[[:space:]]+/, "", "g", x)
 }
@@ -19,13 +23,16 @@ function ltrim(x) {
       v[ltrim($1)] = gensub(";", "", "g", ltrim($3))
       print "  // v[" ltrim($1) "] = " v[ltrim($1)]
     } else {
-      print "  // clear cache"
+      print "  // clear " ltrim($1)
       delete v[ltrim($1)]
     }
   } else {
     # invalidate cache
-    for (var in v)
-      delete v[var]
+    if (alen(v) > 0) {
+      print "  // clear cache"
+      for (var in v)
+        delete v[var]
+    }
   }
 
   print
