@@ -10,22 +10,35 @@ function ltrim(x) {
   return gensub(/^[[:space:]]+/, "", "g", x)
 }
 
+function vargensub(search, var, trg) {
+  if (v[var] != "") {
+    return gensub(search, gensub("([&>?])", "\\\\\\1", "g", v[var]), "g", trg)
+  } else {
+    return trg
+  }
+}
+
 {
   if ($1 ~ /w2c_.[0-9]+/ && $2 ~ /=/) {
     for (var in v) {
       if (v[var] == "") continue;
       for(i=3; i<=NF; i++) {
-        gsub(var, v[var], $i)
+        $i = vargensub(var, var, $i)
       }
     }
 
     var = ltrim($1)
-    if ($2 ~ /^[[:space:]]*=$/ && $3 ~ /(w2c_.[0-9]+|[0-9]+u);$/) {
-      v[var] = gensub(";", "", "g", ltrim($3))
+    rest = ""
+    for (i=3; i<=NF; i++) {
+      rest = rest $i
+    }
+    if ($2 ~ /^[[:space:]]*=$/ && rest ~ /(w2c_.[0-9]+|[0-9]+u|i32_load.+);$/) {
+      # we assume that calls to i32_load don't modify anything
+      v[var] = gensub(";", "", "g", ltrim(rest))
     } else if ($2 ~ /^[[:space:]]*[+\-*/|&]=$/ && $3 ~ /(w2c_.[0-9]+|[0-9]+u);$/ && v[var] != "") {
-      v[var] = v[var] " " gensub("&", "\\\\&", "g", gensub(/[[:space:]=]/, "", "g", $2)) " " gensub(";", "", "g", ltrim($3))
+      v[var] = v[var] " " gensub(/[[:space:]=]/, "", "g", $2) " " gensub(";", "", "g", ltrim($3))
       gsub(/.=/, "=", $2)
-      gsub(ltrim($3), v[var], $3)
+      $3 = vargensub(gensub(";", "", "g", ltrim($3)), var, $3)
     } else if (alen(v) > 0) {
       if ($0 ~ /=.+,.+=/) {
         # invalidate cache
@@ -39,10 +52,27 @@ function ltrim(x) {
     }
   } else if ($1 ~ /^[[:space:]]*return$/ && $2 ~ /^[[:space:]]*w2c_.[0-9]+;$/) {
     for (var in v) {
-      if (v[var] == "") continue;
-      gsub(var, v[var], $2)
+      $2 = vargensub(var, var, $2)
     }
-  } else if (ltrim($0) != "FUNC_EPILOGUE;") {
+  } else if (ltrim($0) == "FUNC_EPILOGUE;") {
+    # pass
+  } else if ($0 ~ /i32_store.+;/) {
+    # we assume that calls to i32_store don't modify anything except i32_load's
+    for (var in v) {
+      $0 = vargensub(var, var, $0)
+    }
+    # invalidate cache
+    i = 0
+    for (var in v) {
+      if (v[var] ~ /i32_load/) {
+        delete v[var]
+        i++
+      }
+    }
+    if (i > 0) {
+      print "  // clear storage cache"
+    }
+  } else {
     # invalidate cache
     if (alen(v) > 0) {
       print "  // clear cache"
